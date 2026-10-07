@@ -1,0 +1,4 @@
+# Deploy the prebuilt dist/ folder; no build step on Netlify.
+[build]
+  publish = "dist"
+  command = ""
