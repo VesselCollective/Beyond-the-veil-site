@@ -21,7 +21,7 @@ P = json.loads(_PRIV.read_text())
 e = html.escape
 L = dict(C["links"], map=P["map"], whatsapp=P["whatsapp"])
 C["guide"]["address"] = P["address"]
-VERSION = "6"
+VERSION = "7"
 
 
 def head(title, description, extra=""):
