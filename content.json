@@ -451,7 +451,7 @@
       "The Witching Hour"
     ],
     "notes": [
-      "Refunds and transfers to a friend are both allowed.",
+      "Can't make it? You can transfer your ticket to a friend.",
       "If it sells out, a waitlist opens.",
       "Add a parking pass ($50 per car) and LoveStack (20% off) at checkout."
     ]
@@ -601,8 +601,8 @@
       "a": "No animal pets are allowed at the party or on the property."
     },
     {
-      "q": "Can I get a refund or transfer my ticket?",
-      "a": "Yes, both are allowed. Email us and we'll take care of it."
+      "q": "Can I transfer my ticket?",
+      "a": "Yes, you can transfer it to a friend. Email us and we'll take care of it."
     },
     {
       "q": "What if it sells out?",
