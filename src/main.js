@@ -76,6 +76,24 @@
     });
   }
 
+  // Pinterest board: sized to its frame, loaded only when the costume section comes near.
+  var pin = document.getElementById('pin-frame');
+  if (pin) {
+    var loadPin = function () {
+      var a = pin.querySelector('[data-pin-do]');
+      if (!a || pin.dataset.loaded) return;
+      pin.dataset.loaded = '1';
+      a.setAttribute('data-pin-board-width', String(Math.max(280, Math.min(1000, pin.clientWidth - 32))));
+      var s = document.createElement('script');
+      s.async = true; s.src = 'https://assets.pinterest.com/js/pinit.js';
+      document.body.appendChild(s);
+    };
+    if ('IntersectionObserver' in window) {
+      var pio = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { loadPin(); pio.disconnect(); } }, { rootMargin: '600px 0px' });
+      pio.observe(pin);
+    } else { loadPin(); }
+  }
+
   // Only one FAQ answer open at a time keeps the list scannable.
   var faqs = document.querySelectorAll('.faq-list details');
   faqs.forEach(function (d) {

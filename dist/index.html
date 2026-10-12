@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Beyond the Veil · A Halloween Transformation</title>
-<meta name="description" content="A private, alcohol-free Halloween gathering, October 31 to November 1, 2026, in the hills of Lakeway, TX. Two stages until sunrise.">
+<meta name="description" content="A private, alcohol-free Halloween gathering at HAVAN, October 31 to November 1, 2026. Two stages until sunrise.">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="theme-color" content="#07080d">
 <meta name="color-scheme" content="dark">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Beyond the Veil">
 <meta property="og:title" content="Beyond the Veil: A Halloween Transformation">
-<meta property="og:description" content="A private, alcohol-free Halloween gathering, October 31 to November 1, 2026, in the hills of Lakeway, TX. Two stages until sunrise.">
+<meta property="og:description" content="A private, alcohol-free Halloween gathering at HAVAN, October 31 to November 1, 2026. Two stages until sunrise.">
 <meta property="og:image" content="https://beyondtheveil-atx.netlify.app/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -19,115 +19,167 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/touch-icon.png">
+<link rel="preload" href="/img/hero.webp" as="image" type="image/webp">
 <link rel="preload" href="/fonts/cinzel-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css?v=10">
-
+<link rel="preload" href="/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=11">
 </head>
 <body>
 <a class="skip" href="#main">Skip to the invitation</a>
+<canvas class="veil" aria-hidden="true"></canvas>
+<div class="veil-dim" aria-hidden="true"></div>
 <header class="nav" id="nav">
   <a class="brand" href="#top" aria-label="Beyond the Veil, back to top"><span class="gem" aria-hidden="true"></span><span>Beyond the Veil</span></a>
-  <nav class="nav-links" aria-label="Sections"><a href="#flow">The Flow</a><a href="#lineup">Lineup</a><a href="#costume">Costume</a><a href="#tickets">Tickets</a><a href="#faq">FAQ</a></nav>
-  <a class="btn btn-holo btn-sm nav-cta" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Tickets</a>
+  <nav class="nav-links" aria-label="Sections"><a href="#flow">The Flow</a><a href="#music">Music</a><a href="#costume">Costume</a><a href="#tickets">Tickets</a><a href="#vessel">VESSEL</a><a href="#venue">Venue</a><a href="#faq">FAQ</a></nav>
+  <a class="btn btn-holo btn-sm nav-cta" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Buy tickets</a>
   <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span class="sr-only">Open menu</span><i></i><i></i></button>
 </header>
 <div class="menu" id="menu" hidden>
-  <nav aria-label="Menu"><a href="#flow">The Flow</a><a href="#lineup">Lineup</a><a href="#costume">Costume</a><a href="#tickets">Tickets</a><a href="#faq">FAQ</a><a href="#nominate">Nominate</a></nav>
+  <nav aria-label="Menu"><a href="#flow">The Flow</a><a href="#music">Music</a><a href="#costume">Costume</a><a href="#tickets">Tickets</a><a href="#vessel">VESSEL</a><a href="#venue">Venue</a><a href="#faq">FAQ</a><a href="#nominate">Nominate</a></nav>
+  <a class="btn btn-holo" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Buy tickets</a>
 </div>
-
-<canvas class="veil" aria-hidden="true"></canvas>
-<div class="veil-dim" aria-hidden="true"></div>
 <section class="hero" id="top" aria-label="Beyond the Veil">
-  <div class="hero-inner">
-    <img class="hand" src="/img/hand.webp" alt="" width="810" height="277" fetchpriority="high">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="/img/hero.webp" srcset="/img/hero-800.webp 800w, /img/hero.webp 1254w" sizes="(max-width: 700px) 800px, 1254px" alt="" width="1254" height="1254" fetchpriority="high">
+  </div>
+  <div class="hero-top">
     <p class="presenters">Michael Pullano and Austin Dance Temple present</p>
     <h1>Beyond the Veil</h1>
     <p class="subtitle">A Halloween Transformation</p>
-    <div class="rule" aria-hidden="true"><span></span></div>
+  </div>
+  <div class="hero-window" aria-hidden="true"></div>
+  <div class="hero-info">
     <p class="dates">October 31 to November 1, 2026</p>
-    <p class="place">Hills of Lakeway, TX <span class="gem" aria-hidden="true"></span> HAVAN</p>
-    <p class="times"><span>Doors 7 PM</span> <span class="gem" aria-hidden="true"></span> <span>Opening ceremony 8:30 PM</span></p>
-    <p class="tagline">Two stages until sunrise</p>
+    <p class="place"><strong>HAVAN</strong> <span class="gem" aria-hidden="true"></span> West Austin / Lakeway</p>
+    <dl class="facts"><div><dt>Arrival</dt><dd>7 to 8 PM</dd></div><div><dt>Doors close</dt><dd>8 PM</dd></div><div><dt>Opening ceremony</dt><dd>8:30 PM</dd></div><div><dt>Two stages</dt><dd>Until sunrise</dd></div></dl>
     <div class="actions">
-      <a class="btn btn-holo" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Secure your place</a>
+      <a class="btn btn-holo btn-lg" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Buy tickets</a>
       <a class="btn btn-ghost" href="#nominate">Nominate a guest</a>
     </div>
-    <div class="countdown" role="timer" aria-label="Time until doors open">
-      <div><b data-u="d">--</b><small>Days</small></div>
-      <div><b data-u="h">--</b><small>Hours</small></div>
-      <div><b data-u="m">--</b><small>Minutes</small></div>
-      <div><b data-u="s">--</b><small>Seconds</small></div>
-    </div>
-    <p class="countdown-label">until the gate opens</p>
+    <p class="rules-line"><span>21+</span> <span class="gem" aria-hidden="true"></span> <span>Alcohol-free</span> <span class="gem" aria-hidden="true"></span> <span>Private event</span></p>
   </div>
 </section>
+<div class="countdown-band" aria-label="Time until the gate opens">
+  <div class="countdown" role="timer">
+    <div><b data-u="d">--</b><small>Days</small></div>
+    <div><b data-u="h">--</b><small>Hours</small></div>
+    <div><b data-u="m">--</b><small>Minutes</small></div>
+    <div><b data-u="s">--</b><small>Seconds</small></div>
+  </div>
+  <p class="countdown-label">until the gate opens</p>
+</div>
 
 <main id="main">
 <section class="invitation" id="invitation" aria-labelledby="inv-h">
   <div class="letter">
-    <h2 id="inv-h" class="sr-only">The invitation</h2>
-    <p class="greeting">Welcome, epic being.</p>
+    <h2 id="inv-h" class="greeting">Welcome, epic being.</h2>
     <p>You have been invited to join us this Halloween for a truly transformational gathering we call Beyond the Veil.</p>
-<p>On the 31st of October, as the sun goes down and the veil between worlds thins, a gate will open in the hills of Lakeway to an estate that will become our playground.</p>
+<p>On the 31st of October, as the sun goes down and the veil between worlds thins, a gate will open in the hills of Austin to an estate that will become our playground.</p>
 <p>For centuries, people have gathered at this time of year to mark the turning from harvest to winter and to honor those who came before. Disguises were worn as a way to walk between worlds, to become someone else for one night and pass unrecognized among the spirits.</p>
 <p>This year, we&#x27;re giving you a permission slip to wear a disguise that does the opposite. Create a costume that celebrates the bigness of your expression.</p>
 <p>This event is your canvas, and your gifts are the paint. Be bold, be wild, and play BIG!!</p>
-<p>Inside the gates, every expression is honored: your movement, your voice, your dance, and your vibration.</p>
+<p>Inside the gates, every expression is honored: your movement, your voice, your dance, and your essence.</p>
 <p>As we move beyond the veil, let the friction fall away, let your “try” die, and let your gifts live.</p>
-<p>Everything you need to walk between worlds is below: the flow of the night, inspiration for your costume, and how to get your tickets, rideshare, and parking. Read on, and secure your place before the gate closes.</p>
-    <p class="signoff">See you on the other side,<strong>Michael &amp; Austin Dance Temple</strong></p>
+<p>Everything you need to walk between worlds is below: the flow of the night, inspiration for your costume, how to buy tickets, ride-sharing options and parking. Read on and secure your place. This event will 100% sell out!</p>
+    <p class="signoff">See you on the other side…<strong>Michael &amp; Nate</strong></p>
   </div>
-</section>
-
-<section class="statement" aria-label="What this night is">
-  <blockquote>This isn&#x27;t a show you watch or a costume contest. Everyone here is part of the art, and there&#x27;s room for you to make some.</blockquote>
 </section>
 
 <section id="flow" aria-labelledby="flow-h">
   <div class="wrap">
-    <h2 id="flow-h">The Flow</h2>
-    <div class="rule" aria-hidden="true"><span></span></div>
+    <p class="kicker">October 31 into November 1</p><h2 id="flow-h">The Flow</h2><div class="rule" aria-hidden="true"><span></span></div>
     <ol class="flow">
-<li class=""><time>7:00 to 8:00 PM</time><h3>The Arrival</h3><p>Doors open at 7 and close at 8. Check in and find your people.</p></li>
-<li class=""><time>8:00 to 8:30 PM</time><h3>The Gathering</h3><p>Photos, then everyone gathers outside.</p></li>
-<li class="key"><time>8:30 PM</time><h3>The Crossing</h3><p>The opening ceremony, led by Leah Free, sets the agreements for the whole night. Be there for it.</p></li>
-<li class=""><time>9:00 PM to sunrise</time><h3>The Night</h3><p>Two stages run until morning, with performances between the sets. At 2 AM the clocks fall back, and Halloween gives us an extra hour.</p></li>
+<li class=""><time>7:00 to 8:00 PM</time><h3>The Arrival</h3><p>Please arrive during the arrival window to preserve the integrity and flow of the experience. Doors open at 7 and close at 8.</p></li>
+<li class=""><time>8:00 to 8:30 PM</time><h3>The Gathering</h3><p>Professional photos, then everyone gathers outside.</p></li>
+<li class="key"><time>8:30 PM</time><h3>The Crossing</h3><p>The opening ceremony, led by Leah Free. We name the group agreements together and cross the veil.</p></li>
+<li class=""><time>9:00 PM to sunrise</time><h3>The Night</h3><p>Two stages run until morning. At 9, phones go away so we can enjoy the night, and at 2 AM the clocks fall back, giving us an extra hour.</p></li>
 <li class=""><time>Sunrise, about 6:45 AM</time><h3>First Light</h3><p>Sunshine plays the sunrise set as the sun comes up over the hills.</p></li>
     </ol>
     <div class="cal">
       <a class="btn btn-ghost btn-sm" href="/beyond-the-veil.ics" download>Add to Apple or Outlook calendar</a>
-      <a class="btn btn-ghost btn-sm" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Beyond%20the%20Veil&amp;dates=20261101T000000Z/20261101T130000Z&amp;details=A%20Halloween%20Transformation.%20Doors%207%20PM%2C%20opening%20ceremony%208%3A30%20PM.%20https%3A//beyondtheveil-atx.netlify.app&amp;location=Hills%20of%20Lakeway%2C%20TX%20%28address%20in%20the%20ticket-holder%20guide%29" target="_blank" rel="noopener">Add to Google Calendar</a>
+      <a class="btn btn-ghost btn-sm" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Beyond%20the%20Veil&amp;dates=20261101T000000Z/20261101T130000Z&amp;details=A%20Halloween%20Transformation.%20Arrival%207%20to%208%20PM%2C%20doors%20close%20at%208%2C%20opening%20ceremony%208%3A30.%20https%3A//beyondtheveil-atx.netlify.app&amp;location=HAVAN%2C%2017301%20Flint%20Rock%20Rd%2C%20Austin%2C%20TX%2078738" target="_blank" rel="noopener">Add to Google Calendar</a>
     </div>
   </div>
 </section>
 
-<section id="lineup" class="lineup" aria-labelledby="lineup-h">
+<section id="music" class="music" aria-labelledby="music-h">
   <div class="wrap wide">
-    <h2 id="lineup-h">The Lineup</h2>
-    <div class="rule" aria-hidden="true"><span></span></div>
-    <p class="label">Creative direction &amp; opening ceremony</p>
-    <p class="headliner">Leah Free</p>
-    <p class="label">Music performances</p>
+    <p class="kicker">Two stages</p><h2 id="music-h">Music Performances</h2><div class="rule" aria-hidden="true"><span></span></div>
+    <p class="intro">We will have two stages on site with some of Austin&#x27;s best DJs.</p>
     <div class="stages">
 <div class="stage"><h3>Bass Stage</h3><div class="rule" aria-hidden="true"><span></span></div><ul><li class="artist"><span>Equanimous</span></li><li class="artist"><span>Avatara</span></li><li class="artist"><span>Ted Drops</span></li><li class="artist"><span>Haddaddy</span></li><li class="artist"><span>Reina</span></li><li class="artist"><span>Essent B2B Ayshra</span></li><li class="artist"><span>BTRU</span></li><li class="artist"><span>Sunshine<small>Sunrise set</small></span></li></ul></div>
-<div class="stage"><h3>House Stage</h3><div class="rule" aria-hidden="true"><span></span></div><ul><li class="artist"><span>a&#x27;lou</span></li><li class="artist"><span>MAMU</span></li><li class="artist"><span>Luana</span></li><li class="artist"><span>Seanchaí</span></li></ul></div>
+<div class="stage"><h3>House Stage</h3><div class="rule" aria-hidden="true"><span></span></div><ul><li class="artist"><span>a&#x27;lou</span></li><li class="artist"><span>MAMU</span></li><li class="artist"><span>Luana</span></li><li class="artist"><span>Seanchaí</span></li></ul><p class="more">and more</p></div>
     </div>
-    <p class="label">Featuring</p>
-    <p class="joined featuring"><span>Brent Pella</span> <span class="gem" aria-hidden="true"></span> <span>Natalie Porretta</span> <span class="gem" aria-hidden="true"></span> <span>Zoe Dane</span></p>
+    <div class="credits">
+      <p class="label">Creative Direction &amp; Opening Ceremony</p>
+      <p class="headliner">Leah Free</p>
+      <p class="label">Featuring</p>
+      <p class="joined featuring"><span>Brent Pella</span> <span class="gem" aria-hidden="true"></span> <span>Natalie Porretta</span> <span class="gem" aria-hidden="true"></span> <span>Zoe Dane</span></p>
+    </div>
     <p class="label">Activations</p>
-    <p class="joined small"><span>Photo area</span> <span class="gem" aria-hidden="true"></span> <span>Tea service by Casa Akasha</span> <span class="gem" aria-hidden="true"></span> <span>Tobacco bar</span></p>
+    <ul class="activations"><li><span class="act-name">Photo Area</span></li><li><span class="act-name">Tea Service</span><span class="act-by">by Casa Akasha</span></li><li><span class="act-name">Tobacco Bar</span></li></ul>
+  </div>
+</section>
+
+<section id="agreement" class="agreement" aria-labelledby="agree-h">
+  <div class="wrap">
+    <p class="kicker">Important details</p><h2 id="agree-h">The Group Agreement</h2><div class="rule" aria-hidden="true"><span></span></div>
+    <p class="intro">This is a curated guest list. Everyone here was invited because we trust them to care for the room and the people in it.</p>
+    <p>Consent matters here, from personal space to photos. By attending, you agree to:</p>
+    <ol class="agree"><li><strong>Ask first.</strong><span>Ask before you hug, touch, or photograph someone.</span></li><li><strong>Respect the answer.</strong><span>A no, or a change of mind, is honored right away, with no questions asked.</span></li><li><strong>When in doubt, don&#x27;t.</strong><span>If you&#x27;re not sure, the answer is no.</span></li></ol>
+    <p class="outro">We&#x27;ll open the night by naming these agreements together at the opening ceremony. Anyone who doesn&#x27;t honor them will be asked to leave.</p>
+  </div>
+</section>
+
+<section id="costume" class="costume" aria-labelledby="costume-h">
+  <div class="wrap">
+    <p class="kicker">Your costume</p><h2 id="costume-h">Outfit / Dress</h2><div class="rule" aria-hidden="true"><span></span></div>
+    <p class="intro">This night is asking you to GO BIG, so treat your costume creation as part of the experience, not an afterthought.</p>
+    <ul class="points"><li><strong>Plan ahead.</strong> Start now, use the moodboard and Etsy idea links below, and order anything you need early so you&#x27;re not scrambling at the last moment for a long-shot Etsy delivery.</li><li><strong>Go big, be bold.</strong> Step out of your comfort zone, and show up as the version of you that finally got the permission slip to be unapologetically yourself.</li><li><strong>Dress for the whole night.</strong> You&#x27;ll be moving through different energies and spaces and even spending time outdoors at times, so wear layers you can shed as it unfolds. We&#x27;ll have plenty of places for coats, bags and your extra items to be stored.</li></ul>
+  </div>
+  <aside class="warning" aria-label="Fair warning">
+    <p class="warning-label">Fair warning</p>
+    <p class="warning-text">A last-minute costume-in-a-bag from Amazon IS NOT what we&#x27;re doing here. If you show up in a zero-effort onesie, expect to be playfully roasted and sent to the costume corner to change before you cross the veil.</p>
+    <p class="warning-after">You got this... we believe in you! ;)</p>
+  </aside>
+  <div class="wrap wide palette-words">
+    <figure class="costume-board"><img src="/img/silver-veil.webp" alt="The Silver Veil moodboard: lunar, chrome and mystic tones with sheer organza, crystal and liquid metal" loading="lazy" width="480" height="600"></figure>
+    <div>
+      <h3 class="label">Color Palette Options</h3>
+      <ul class="colors"><li><span class="sw sw-iridescent"></span>Iridescent</li><li><span class="sw sw-metallic"></span>Shiny/Metallic</li><li><span class="sw sw-pearl"></span>Pearl</li><li><span class="sw sw-chrome"></span>Chrome</li><li><span class="sw sw-white"></span>White</li><li><span class="sw sw-silver"></span>Silver</li><li><span class="sw sw-gold"></span>Gold</li><li><span class="sw sw-steel"></span>Steel</li><li><span class="sw sw-smoke"></span>Blacks/Charcoal/Smoke</li></ul>
+    </div>
+    <div>
+      <h3 class="label">Style Words</h3>
+      <p class="words"><span>Sexy (duh)</span> <span class="gem" aria-hidden="true"></span> <span>Chic</span> <span class="gem" aria-hidden="true"></span> <span>Sheer/Gossamer</span> <span class="gem" aria-hidden="true"></span> <span>Alluring</span> <span class="gem" aria-hidden="true"></span> <span>Veiled</span> <span class="gem" aria-hidden="true"></span> <span>Mystical</span> <span class="gem" aria-hidden="true"></span> <span>Ethereal</span> <span class="gem" aria-hidden="true"></span> <span>Lunar</span> <span class="gem" aria-hidden="true"></span> <span>Moonlit</span> <span class="gem" aria-hidden="true"></span> <span>Cosmic</span> <span class="gem" aria-hidden="true"></span> <span>Starborn</span></p>
+    </div>
+  </div>
+  <div class="wrap wide moodboard">
+    <h3 class="label">Pinterest Mood Board (For Men &amp; Women)</h3>
+    <div class="pin-frame" id="pin-frame">
+      <a class="pin-fallback" data-pin-do="embedBoard" data-pin-scale-height="380" data-pin-scale-width="110" href="https://www.pinterest.com/mikepullano/beyond-the-veil-2026/">Open the mood board on Pinterest</a>
+    </div>
+    <p class="center"><a class="btn btn-ghost btn-sm" href="https://www.pinterest.com/mikepullano/beyond-the-veil-2026/" target="_blank" rel="noopener">Open the full board on Pinterest</a></p>
+  </div>
+  <div class="wrap wide">
+    <h3 class="label">Etsy Shop Ideas (For Men &amp; Women)</h3>
+    <div class="etsy">
+<div class="etsy-group"><h4>For him</h4><ul><li><a href="https://www.etsy.com/listing/4549753275/mens-gothic-raven-shoulder-cape-leather" target="_blank" rel="noopener"><span>Gothic raven shoulder cape</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4546164972/mens-festival-outfit-futuristic-silver" target="_blank" rel="noopener"><span>Futuristic silver festival outfit</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4343039041/bronze-mens-festival-set-metallic-harem" target="_blank" rel="noopener"><span>Metallic bronze harem set</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/1663992247/mens-holographic-opal-leggings-meggings" target="_blank" rel="noopener"><span>Holographic opal leggings</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/1662283374/mens-black-body-chain-vest-gothic-chest" target="_blank" rel="noopener"><span>Black body chain vest</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4439125877/gold-mens-suit-14k-champagne-gold-flip" target="_blank" rel="noopener"><span>Champagne gold suit</span><em>Etsy</em></a></li></ul></div>
+<div class="etsy-group"><h4>For her</h4><ul><li><a href="https://www.etsy.com/listing/4487192951/crystal-mesh-rave-dress-sheer-rhinestone" target="_blank" rel="noopener"><span>Crystal mesh rhinestone dress</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4508510742/ethereal-white-fairycore-rave-set-pearl" target="_blank" rel="noopener"><span>Ethereal white pearl set</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4579816751/black-feather-corset-top-gothic-swan" target="_blank" rel="noopener"><span>Black swan feather corset</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4404675788/new-style-handmade-beaded-belly-dancing" target="_blank" rel="noopener"><span>Handmade beaded belly-dance set</span><em>Etsy</em></a></li></ul></div>
+<div class="etsy-group"><h4>Capes and wings</h4><ul><li><a href="https://www.etsy.com/listing/4539285040/black-silver-angel-wing-fringe-cape" target="_blank" rel="noopener"><span>Black and silver angel-wing fringe cape</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4546570685/black-feather-cape-gothic-shoulder-wrap" target="_blank" rel="noopener"><span>Black feather shoulder wrap</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4344765448/sculptural-shoulder-armor-cape-hedone" target="_blank" rel="noopener"><span>Sculptural shoulder armor cape</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/1547806476/gold-cleo-sequin-cape-disco-festivals" target="_blank" rel="noopener"><span>Gold sequin Cleo cape</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4527764974/giant-holographic-fairy-wings-large" target="_blank" rel="noopener"><span>Giant holographic wings</span><em>Etsy</em></a></li></ul></div>
+<div class="etsy-group"><h4>Layers and details</h4><ul><li><a href="https://www.etsy.com/listing/4445803373/crushed-iridescent-organza-sheer-pleated" target="_blank" rel="noopener"><span>Crushed iridescent organza</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/1413881554/iridescent-blue-festival-kimono-vest" target="_blank" rel="noopener"><span>Iridescent blue kimono vest</span><em>Etsy</em></a></li><li><a href="https://www.etsy.com/listing/4341183074/black-turquoise-horned-masquerade-mask" target="_blank" rel="noopener"><span>Horned masquerade mask</span><em>Etsy</em></a></li></ul></div>
+    </div>
+    <p class="center"><a class="btn btn-ghost btn-sm" href="https://www.etsy.com/people/mikepullano/favorites/beyond-the-veil-halloween-2026" target="_blank" rel="noopener">See every Etsy favorite</a></p>
   </div>
 </section>
 
 <section id="community" class="community" aria-labelledby="community-h">
-  <div class="wrap"><h2 id="community-h">The Community</h2><div class="rule" aria-hidden="true"><span></span></div><p class="lead">Halloween 2025. Every year is a different world, but this is the community you&#x27;ll be dancing with.</p></div>
+  <div class="wrap"><p class="kicker">Halloween 2025</p><h2 id="community-h">The Community</h2><div class="rule" aria-hidden="true"><span></span></div><p class="lead">Halloween 2025. Every year is a different world, but this is the community you&#x27;ll be dancing with.</p></div>
   <div class="gallery">
-<figure class="shot shot-0"><img src="/img/angels.webp" alt="Three guests in holographic silver, white wings and eye halos" loading="lazy" width="1400" height="1400"></figure>
-<figure class="shot shot-1"><img src="/img/dancefloor.webp" alt="Guests in horned masks under violet lasers on the dance floor" loading="lazy" width="1024" height="1533"></figure>
-<figure class="shot shot-2"><img src="/img/fire-circle.webp" alt="A fire performer above a circle of guests, one kneeling in the center" loading="lazy" width="1024" height="1533"></figure>
-<figure class="shot shot-3"><img src="/img/fire-fans.webp" alt="A fire performer spinning flaming fans" loading="lazy" width="1024" height="1533"></figure>
-<figure class="shot shot-4"><img src="/img/grounds.webp" alt="A guest in a glowing crown looks out over the estate grounds at night" loading="lazy" width="1024" height="1533"></figure>
+<figure class="shot"><img src="/img/angels.webp" alt="Three guests in holographic silver, white wings and eye halos" loading="lazy" width="1400" height="1400"></figure>
+<figure class="shot"><img src="/img/dancefloor.webp" alt="Guests in horned masks under violet lasers on the dance floor" loading="lazy" width="1024" height="1533"></figure>
+<figure class="shot"><img src="/img/fire-circle.webp" alt="A fire performer above a circle of guests, one kneeling in the center" loading="lazy" width="1024" height="1533"></figure>
+<figure class="shot"><img src="/img/fire-fans.webp" alt="A fire performer spinning flaming fans" loading="lazy" width="1024" height="1533"></figure>
+<figure class="shot"><img src="/img/grounds.webp" alt="A guest in a glowing crown looks out over the estate grounds at night" loading="lazy" width="1024" height="1533"></figure>
   </div>
   <div class="video">
     <button type="button" data-id="0vq4PG9OyAU" aria-label="Play the Halloween 2025 recap video">
@@ -138,45 +190,14 @@
   <p class="credit">Photos from Halloween 2025 by Last Weekend.</p>
 </section>
 
-<section id="costume" class="costume" aria-labelledby="costume-h">
-  <div class="wrap">
-    <h2 id="costume-h">The Costume</h2>
-    <div class="rule" aria-hidden="true"><span></span></div>
-    <p class="lead">Come as who you&#x27;re becoming.</p>
-    <p>Wear silver, violet, blue, chrome, pearl, or anything that catches the light. Disguises once let people pass unseen between worlds. This one should make you impossible to miss.</p>
-  </div>
-  <div class="costume-grid">
-    <figure class="board"><img src="/img/silver-veil.webp" alt="The Silver Veil moodboard: lunar, chrome and mystic tones with sheer organza, crystal and liquid metal" loading="lazy" width="480" height="600"></figure>
-    <div class="costume-side">
-      <h3>The palette</h3>
-      <ul class="palette" aria-label="The Silver Veil palette">
-<li><span class="chip" style="--c:#F4F5F0"></span>Spectral White</li>
-<li><span class="chip" style="--c:#E7E9E7"></span>Lunar Pearl</li>
-<li><span class="chip metal" style="--c:#A9ACAF"></span>Liquid Silver</li>
-<li><span class="chip" style="--c:#5B6770"></span>Slate Eclipse</li>
-<li><span class="chip" style="--c:#1D252D"></span>Moonlit Charcoal</li>
-<li><span class="chip" style="--c:#D9D3F0"></span>Alien Pearl</li>
-      </ul>
-      <h3>Materials that belong here</h3>
-      <ul class="materials"><li>Liquid lamé and chrome</li><li>Sheer organza and veils</li><li>Crystal, pearl and chain</li><li>Holographic film</li><li>Silver skin, glitter and chrome tears</li></ul>
-      <div class="inspo">
-        <a href="https://www.pinterest.com/mikepullano/beyond-the-veil-2026/" target="_blank" rel="noopener"><strong>The moodboard</strong><span>Looks for men and women, pinned for this year.</span><em>Open on Pinterest</em></a>
-        <a href="https://www.etsy.com/people/mikepullano/favorites/beyond-the-veil-halloween-2026" target="_blank" rel="noopener"><strong>Costume picks</strong><span>Headpieces, chrome, sheer layers and jewelry we&#x27;d wear.</span><em>Shop on Etsy</em></a>
-      </div>
-    </div>
-  </div>
-  <div class="wrap"><p class="aside">Dress in layers you can move in. The night runs from a cool October evening to sunrise, and much of it happens outdoors. Costume shoes may stay on; everyday shoes come off inside the house.</p></div>
-</section>
-
 <section id="tickets" class="tickets" aria-labelledby="tickets-h">
   <div class="wrap">
-    <h2 id="tickets-h">Tickets</h2>
-    <div class="rule" aria-hidden="true"><span></span></div>
+    <h2 id="tickets-h">Tickets</h2><div class="rule" aria-hidden="true"><span></span></div>
     <div class="ticket">
       <div class="ticket-face">
         <p class="admit">Admit one</p>
         <p class="ticket-title">Beyond the Veil</p>
-        <p class="ticket-meta">October 31 to November 1, 2026<br>Hills of Lakeway, TX</p>
+        <p class="ticket-meta">October 31 to November 1, 2026<br>HAVAN, West Austin / Lakeway</p>
         <p class="lead">Two hundred guests. One night.</p>
         <p class="center">Tickets are released in four tiers, and each tier closes when it sells out. The earliest tier is the lowest price you&#x27;ll see.</p>
         <ol class="tiers">
@@ -186,71 +207,101 @@
 <li><span class="tier-n">4</span>The Witching Hour</li>
         </ol>
       </div>
-      <div class="ticket-stub">
-        <a class="btn btn-holo btn-lg" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Secure your place</a>
+      <div class="ticket-stub"><a class="btn btn-holo btn-lg" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Buy tickets</a></div>
+    </div>
+    <ul class="ticket-notes"><li>Refunds and transfers to a friend are both allowed.</li><li>If it sells out, a waitlist opens.</li><li>Add a parking pass ($50 per car) and LoveStack (20% off) at checkout.</li></ul>
+  </div>
+</section>
+
+<section id="vessel" class="vessel" aria-labelledby="vessel-h">
+  <div class="vessel-inner">
+    <p class="label">Official Supplement Partner</p>
+    <img class="wordmark" src="/img/vessel-white.svg" alt="VESSEL" width="320" height="65" loading="lazy">
+    <h2 id="vessel-h" class="spaced">L O V E S T A C K</h2>
+    <p class="stats"><span>21 Ingredients</span> <span class="gem" aria-hidden="true"></span> <span>1 Complete Protocol</span></p>
+    <div class="vessel-grid">
+      <img class="vessel-photo" src="/img/lovestack.webp" alt="The VESSEL LoveStack box with white and black organza pouches under an eclipse" loading="lazy" width="900" height="900">
+      <div class="vessel-copy">
+        <p>We built LoveStack so you could skip the research and focus on your journey.</p><p>Two formulas, five days, every dose portioned and organized by day. LoveStack makes taking care of your body during heart-opening experiences simple.</p>
+        <p class="offer">Add LoveStack to your ticket for 20% off, and pick it up when you arrive.</p>
+        <a class="btn btn-holo btn-lg" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Buy tickets + LoveStack</a>
       </div>
     </div>
-    <ul class="ticket-notes"><li>Refunds and transfers to a friend are both allowed.</li><li>If it sells out, a waitlist opens.</li></ul>
-    <p class="after">After you buy, you&#x27;ll receive our Partiful invite. It holds the code to the ticket-holder guide: the address, the rideshare group and parking.</p>
-    <div class="addon"><h3>Parking pass</h3><p>Parking on site is very limited. Passes are $50 per car; add one at checkout.</p></div>
+    <img class="vessel-chart" src="/img/lovestack-protocol.webp" alt="How to use LoveStack: LoveSupport doses 1 to 3 on days 1 and 2, then LoveRestore doses 4 to 6 with your first meal on days 3 to 5" loading="lazy" width="1200" height="1200">
   </div>
 </section>
 
-<section class="partner" aria-labelledby="partner-h">
-  <div class="partner-grid">
-    <img class="partner-photo" src="/img/lovestack.webp" alt="The VESSEL LoveStack box with white and black organza pouches under an eclipse" loading="lazy" width="900" height="900">
-    <div class="partner-copy">
-      <p class="label">Official supplement partner</p>
-      <img class="wordmark" src="/img/vessel-white.svg" alt="VESSEL" width="300" height="61" loading="lazy">
-      <h2 id="partner-h">The LoveStack™ Protocol</h2>
-      <p>Beyond the Veil guests get 20% off LoveStack by VESSEL. Add it at checkout and pick it up when you arrive.</p>
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="faq" aria-labelledby="faq-h">
+<section id="venue" class="venue" aria-labelledby="venue-h">
   <div class="wrap">
-    <h2 id="faq-h">Before You Cross</h2>
-    <div class="rule" aria-hidden="true"><span></span></div>
-    <ul class="rules">
-<li><strong>21 and over</strong><span>Bring your ID.</span></li>
-<li><strong>Alcohol-free</strong><span>Grazing table, non-alcoholic drinks and water provided.</span></li>
-<li><strong>Doors close at 8 PM</strong><span>Be settled for the 8:30 ceremony.</span></li>
-<li><strong>No re-entry</strong><span>Once you&#x27;re inside, you&#x27;re inside.</span></li>
-    </ul>
-    <div class="faq-list">
-<details><summary>Who is this for?</summary><p>Couples, singles, friends, collaborators, and anyone arriving as a new version of themselves. Every guest must be 21 or older.</p></details>
-<details><summary>What kind of night is it?</summary><p>A party that&#x27;s sexy, wild and wholesome all at once, held within clear boundaries and mutual respect. We never repeat a night, so please don&#x27;t assume what this one holds based on past events. Our only promise is intention, craft and a few surprises.</p></details>
-<details><summary>When should I arrive?</summary><p>Doors open at 7 PM and close at 8 PM. The opening ceremony begins outside at 8:30, and it sets the agreements for the whole night, so be there for it.</p></details>
-<details><summary>Can I leave and come back?</summary><p>No. There&#x27;s no re-entry once you&#x27;re inside.</p></details>
-<details><summary>Is there alcohol, and what&#x27;s there to eat?</summary><p>This is an alcohol-free night. We&#x27;ll have a grazing table, non-alcoholic drinks and water, plus tea service by Casa Akasha.</p></details>
-<details><summary>Where is it?</summary><p>A private estate in the hills of Lakeway. The address is shared with ticket holders in the guide, which opens with the code in your Partiful invite.</p></details>
-<details><summary>How do I get there?</summary><p>Rideshare or arrange a drop-off. The ticket-holder guide links to a rideshare group so you can share cars with other guests. Parking passes are limited and sold at checkout for $50 per car. Never park on the road leading in: cars there will be towed, and guests who walk in from the road will be turned away.</p></details>
-<details><summary>Can I take photos?</summary><p>A videographer will film the opening ceremony. Some spaces are camera-free, and we ask you to respect them.</p></details>
-<details><summary>Can I get a refund or transfer my ticket?</summary><p>Yes. Refunds and transfers to a friend are both allowed. Email us and we&#x27;ll take care of it.</p></details>
-<details><summary>What if it sells out?</summary><p>A waitlist opens. You can also nominate as many people as you like for the guest list.</p></details>
-<details><summary>What about shoes?</summary><p>Costume shoes may stay on. Everyday shoes come off inside the house.</p></details>
-<details><summary>Can I bring my pet?</summary><p>Please leave pets at home, and treat the property, art and furnishings with care.</p></details>
-<details><summary>Anything else I should know?</summary><p>By attending, you agree to honor consent, clear communication and the people around you. If you need help at any point, find any member of our team.</p></details>
+    <p class="kicker">Getting there</p><h2 id="venue-h">The Venue</h2><div class="rule" aria-hidden="true"><span></span></div>
+    <p class="intro">Beyond the Veil is hosted at HAVAN, a private estate in west Austin/Lakeway chosen for its beauty, intimacy and spaciousness.</p>
+    <div class="address">
+      <strong>HAVAN</strong>
+      <span>17301 Flint Rock Rd, Austin, TX 78738</span>
+      <a class="btn btn-ghost btn-sm" href="https://maps.app.goo.gl/XPe5EBJudQ72DAZX9" target="_blank" rel="noopener">Open in Maps</a>
     </div>
-    <p class="center ask">Still wondering? Email <a href="mailto:beyondtheveil.atx@gmail.com">beyondtheveil.atx@gmail.com</a>. Please don't text the producers directly.</p>
+    <h3>Event Start</h3>
+    <p>Please arrive during the arrival window (7 to 8 PM) to preserve the integrity and flow of the experience.</p>
+    <dl class="facts small"><div><dt>Doors open</dt><dd>7 PM</dd></div><div><dt>Doors close</dt><dd>8 PM</dd></div></dl>
+    <h3>Parking</h3>
+    <p>Parking at HAVAN is very limited, so we&#x27;re offering a small number of parking passes for $50 per car. Add one to your order at checkout.</p><p>Only cars with a parking pass will be allowed on the property, so if you don&#x27;t have one, please rideshare or arrange a drop-off.</p>
+    <h3>Ridesharing</h3>
+    <p>We strongly encourage rideshare, carpools, and drop-offs. HAVAN sits in a remote part of the hills outside Austin, and finding a ride home late at night or early in the morning can be difficult, so please arrange your ride home before you arrive.</p><p>To make it easier, we&#x27;ve created a WhatsApp group just for Beyond the Veil guests. Join it to coordinate carpools to and from HAVAN.</p>
+    <p class="center"><a class="btn btn-holo" href="https://chat.whatsapp.com/I1if1DSFr8KDo9C47AAp6F" target="_blank" rel="noopener">Join the rideshare WhatsApp group</a></p>
+  </div>
+</section>
+
+<section id="inside" class="inside" aria-labelledby="inside-h">
+  <div class="wrap">
+    <p class="kicker">Read everything below</p><h2 id="inside-h">Inside the Gates</h2><div class="rule" aria-hidden="true"><span></span></div>
+    <ul class="inside-list"><li><h3>Phones, Pictures, Videos</h3><p>Professional photography will be provided at the beginning of the night, but after the opening ceremonies, all phones should be stored away and out of sight. You can use your phones for dedicated pictures and video time (7 to 9 PM), and then we ask you to put them away so we can enjoy the night.</p><p class="must">Ask for consent from anyone you are taking a picture or video of BEFORE doing so.</p></li><li><h3>Respect the space</h3><p>Please treat the property, the art, and the furnishings with care.</p></li><li><h3>Shoes</h3><p>Shoes will be allowed for this event if they are a part of your costume. Otherwise, take your shoes off and leave them at the front door outside.</p></li><li><h3>Pets</h3><p>No animal pets will be allowed at the party or on the property.</p></li></ul>
+    <h3 class="label">Food and Drink</h3>
+    <ul class="points"><li><strong>Come fed.</strong> We&#x27;ll have a grazing table and plenty of water and non-alcoholic drinks, but this is not a dinner, so please eat a nourishing meal before you arrive.</li><li><strong>Alcohol-free.</strong> This is an alcohol-free event, so please leave outside alcohol at home.</li></ul>
   </div>
 </section>
 
 <section id="nominate" class="nominate" aria-labelledby="nominate-h">
   <div class="wrap center">
-    <h2 id="nominate-h">Nominate a Guest</h2>
-    <div class="rule" aria-hidden="true"><span></span></div>
-    <p class="lead">Know someone who belongs on the other side?</p>
-    <p>Tell us about them. Every nomination is read by our team, and you can nominate as many people as you like. A nomination is not an invitation: if your nominee is selected, we&#x27;ll reach out to them directly, usually within 48 hours.</p>
+    <h2 id="nominate-h">About Plus-Ones</h2><div class="rule" aria-hidden="true"><span></span></div>
+    <p>Beyond the Veil is a curated gathering, and our guest list has been carefully assembled. Your invitation is personal and doesn&#x27;t include a plus-one.</p>
+    <p class="lead">Know someone who would add real magic to this night? You can nominate them below. Our team reviews every nomination, and with so few places left, we can&#x27;t promise a ticket. If there&#x27;s a fit, we&#x27;ll reach out to them directly.</p>
     <a class="btn btn-ghost" href="https://forms.gle/hRtfTwiN5PHb1TMy7" target="_blank" rel="noopener">Nominate a guest</a>
   </div>
 </section>
 
+<section id="faq" class="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <p class="kicker">Quick answers</p><h2 id="faq-h">Questions</h2><div class="rule" aria-hidden="true"><span></span></div>
+    <div class="faq-list">
+<details><summary>Who is this for?</summary><p>Our curated community, 21 and over. Bring your ID.</p></details>
+<details><summary>Can I bring a plus-one?</summary><p>No, every invitation is personal. Nominate them instead, and our team will review it.</p></details>
+<details><summary>When should I arrive?</summary><p>Between 7 and 8 PM; doors close at 8. The opening ceremony starts at 8:30.</p></details>
+<details><summary>Can I leave and come back?</summary><p>No, there&#x27;s no re-entry once you&#x27;re inside.</p></details>
+<details><summary>When does it end?</summary><p>Music runs until sunrise, around 6:45 AM. Leave whenever you like, but book your ride home before you arrive.</p></details>
+<details><summary>Is there alcohol?</summary><p>No, this is an alcohol-free event. Please leave outside alcohol at home.</p></details>
+<details><summary>Will there be food?</summary><p>A grazing table, water and non-alcoholic drinks, plus tea service by Casa Akasha. It&#x27;s not a dinner, so eat a nourishing meal first.</p></details>
+<details><summary>Where is it?</summary><p>HAVAN, 17301 Flint Rock Rd, Austin, TX 78738. It&#x27;s a private estate in the hills of west Austin and Lakeway.</p></details>
+<details><summary>How do I get there?</summary><p>Rideshare, carpool or get dropped off. Join the guest WhatsApp group to share rides.</p></details>
+<details><summary>Can I park on site?</summary><p>Only with a $50 parking pass, added at checkout. Cars without one won&#x27;t be allowed on the property.</p></details>
+<details><summary>Can I use my phone?</summary><p>Yes, from 7 to 9 PM for photos and video, always with consent. After that, phones go away for the night.</p></details>
+<details><summary>Will there be a photographer?</summary><p>Yes, professional photography is provided at the beginning of the night.</p></details>
+<details><summary>What should I wear?</summary><p>Go big in iridescent, metallic, pearl, chrome, silver, gold or smoke. Zero-effort costumes get sent to the costume corner.</p></details>
+<details><summary>Where do my coat and bag go?</summary><p>We&#x27;ll have plenty of places to store coats, bags and extra layers.</p></details>
+<details><summary>Do I keep my shoes on?</summary><p>Only if they&#x27;re part of your costume. Otherwise, leave them at the front door outside.</p></details>
+<details><summary>Can I bring my pet?</summary><p>No animal pets are allowed at the party or on the property.</p></details>
+<details><summary>Can I get a refund or transfer my ticket?</summary><p>Yes, both are allowed. Email us and we&#x27;ll take care of it.</p></details>
+<details><summary>What if it sells out?</summary><p>A waitlist opens. You can also nominate as many people as you like.</p></details>
+<details><summary>What&#x27;s LoveStack?</summary><p>A supplement protocol by VESSEL, our official supplement partner. Add it to your ticket for 20% off and pick it up when you arrive.</p></details>
+<details><summary>What if someone crosses a line?</summary><p>Anyone who doesn&#x27;t honor the group agreements will be asked to leave. Find any member of our team if you need help.</p></details>
+    </div>
+    <p class="center ask">Still wondering? Email <a href="mailto:beyondtheveil.atx@gmail.com">beyondtheveil.atx@gmail.com</a>.</p>
+  </div>
+</section>
+
 <section class="closing" aria-label="Closing">
-  <p class="closing-line">There are two hundred places, and this night happens once.</p>
-  <p class="closing-call">Show the fuck up.</p>
-  <a class="btn btn-holo btn-lg" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Secure your place</a>
+  <p class="closing-line">Two hundred places. One night.</p>
+  <p class="closing-call">See you on the other side…</p>
+  <a class="btn btn-holo btn-lg" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener">Buy tickets</a>
 </section>
 </main>
 
@@ -258,12 +309,11 @@
   <div class="rule" aria-hidden="true"><span></span></div>
   <p>Questions: <a href="mailto:beyondtheveil.atx@gmail.com">beyondtheveil.atx@gmail.com</a></p>
   <p>This is a private invitation. Please don&#x27;t post this link publicly.</p>
-  <p><a href="/guide/">Ticket holders: enter the guide</a></p>
   <p class="fine">Michael Pullano and Austin Dance Temple. Photos from Halloween 2025 by Last Weekend.</p>
 </footer>
 
-<div class="sticky" aria-hidden="true"><a class="btn btn-holo" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener" tabindex="-1">Secure your place</a></div>
-<script src="/veil.js?v=10" defer></script>
-<script src="/main.js?v=10" defer></script>
+<div class="sticky" aria-hidden="true"><a class="btn btn-holo" href="https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&amp;ticketType=in-person" target="_blank" rel="noopener" tabindex="-1">Buy tickets</a></div>
+<script src="/veil.js?v=11" defer></script>
+<script src="/main.js?v=11" defer></script>
 </body>
 </html>

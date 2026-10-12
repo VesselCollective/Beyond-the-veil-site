@@ -1,31 +1,28 @@
 {
   "meta": {
     "title": "Beyond the Veil · A Halloween Transformation",
-    "description": "A private, alcohol-free Halloween gathering, October 31 to November 1, 2026, in the hills of Lakeway, TX. Two stages until sunrise.",
+    "description": "A private, alcohol-free Halloween gathering at HAVAN, October 31 to November 1, 2026. Two stages until sunrise.",
     "site_url": "https://beyondtheveil-atx.netlify.app"
   },
   "event": {
     "doors_utc": "2026-11-01T00:00:00Z",
     "end_utc": "2026-11-01T13:00:00Z",
-    "calendar_location": "Hills of Lakeway, TX (address in the ticket-holder guide)"
+    "calendar_location": "HAVAN, 17301 Flint Rock Rd, Austin, TX 78738"
   },
   "hero": {
     "presenters": "Michael Pullano and Austin Dance Temple present",
     "title": "Beyond the Veil",
     "subtitle": "A Halloween Transformation",
     "dates": "October 31 to November 1, 2026",
-    "location": "Hills of Lakeway, TX",
     "venue": "HAVAN",
-    "times": [
-      "Doors 7 PM",
-      "Opening ceremony 8:30 PM"
+    "place": "West Austin / Lakeway",
+    "facts": [
+      {"k": "Arrival", "v": "7 to 8 PM"},
+      {"k": "Doors close", "v": "8 PM"},
+      {"k": "Opening ceremony", "v": "8:30 PM"},
+      {"k": "Two stages", "v": "Until sunrise"}
     ],
-    "rules": [
-      "21+",
-      "Alcohol-free",
-      "Private"
-    ],
-    "tagline": "Two stages until sunrise"
+    "rules": ["21+", "Alcohol-free", "Private event"]
   },
   "links": {
     "tickets": "https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&ticketType=in-person",
@@ -33,6 +30,8 @@
     "nominate": "https://forms.gle/hRtfTwiN5PHb1TMy7",
     "pinterest": "https://www.pinterest.com/mikepullano/beyond-the-veil-2026/",
     "etsy": "https://www.etsy.com/people/mikepullano/favorites/beyond-the-veil-halloween-2026",
+    "map": "https://maps.app.goo.gl/XPe5EBJudQ72DAZX9",
+    "whatsapp": "https://chat.whatsapp.com/I1if1DSFr8KDo9C47AAp6F",
     "video_id": "0vq4PG9OyAU",
     "email": "beyondtheveil.atx@gmail.com"
   },
@@ -40,334 +39,209 @@
     "greeting": "Welcome, epic being.",
     "paragraphs": [
       "You have been invited to join us this Halloween for a truly transformational gathering we call Beyond the Veil.",
-      "On the 31st of October, as the sun goes down and the veil between worlds thins, a gate will open in the hills of Lakeway to an estate that will become our playground.",
+      "On the 31st of October, as the sun goes down and the veil between worlds thins, a gate will open in the hills of Austin to an estate that will become our playground.",
       "For centuries, people have gathered at this time of year to mark the turning from harvest to winter and to honor those who came before. Disguises were worn as a way to walk between worlds, to become someone else for one night and pass unrecognized among the spirits.",
       "This year, we're giving you a permission slip to wear a disguise that does the opposite. Create a costume that celebrates the bigness of your expression.",
       "This event is your canvas, and your gifts are the paint. Be bold, be wild, and play BIG!!",
-      "Inside the gates, every expression is honored: your movement, your voice, your dance, and your vibration.",
+      "Inside the gates, every expression is honored: your movement, your voice, your dance, and your essence.",
       "As we move beyond the veil, let the friction fall away, let your “try” die, and let your gifts live.",
-      "Everything you need to walk between worlds is below: the flow of the night, inspiration for your costume, and how to get your tickets, rideshare, and parking. Read on, and secure your place before the gate closes."
+      "Everything you need to walk between worlds is below: the flow of the night, inspiration for your costume, how to buy tickets, ride-sharing options and parking. Read on and secure your place. This event will 100% sell out!"
     ],
-    "closing": "See you on the other side,",
-    "signature": "Michael & Austin Dance Temple"
+    "closing": "See you on the other side…",
+    "signature": "Michael & Nate"
   },
-  "statement": "This isn't a show you watch or a costume contest. Everyone here is part of the art, and there's room for you to make some.",
   "flow": [
-    {
-      "time": "7:00 to 8:00 PM",
-      "name": "The Arrival",
-      "text": "Doors open at 7 and close at 8. Check in and find your people."
-    },
-    {
-      "time": "8:00 to 8:30 PM",
-      "name": "The Gathering",
-      "text": "Photos, then everyone gathers outside."
-    },
-    {
-      "time": "8:30 PM",
-      "name": "The Crossing",
-      "text": "The opening ceremony, led by Leah Free, sets the agreements for the whole night. Be there for it.",
-      "key": true
-    },
-    {
-      "time": "9:00 PM to sunrise",
-      "name": "The Night",
-      "text": "Two stages run until morning, with performances between the sets. At 2 AM the clocks fall back, and Halloween gives us an extra hour."
-    },
-    {
-      "time": "Sunrise, about 6:45 AM",
-      "name": "First Light",
-      "text": "Sunshine plays the sunrise set as the sun comes up over the hills."
-    }
+    {"time": "7:00 to 8:00 PM", "name": "The Arrival", "text": "Please arrive during the arrival window to preserve the integrity and flow of the experience. Doors open at 7 and close at 8."},
+    {"time": "8:00 to 8:30 PM", "name": "The Gathering", "text": "Professional photos, then everyone gathers outside."},
+    {"time": "8:30 PM", "name": "The Crossing", "text": "The opening ceremony, led by Leah Free. We name the group agreements together and cross the veil.", "key": true},
+    {"time": "9:00 PM to sunrise", "name": "The Night", "text": "Two stages run until morning. At 9, phones go away so we can enjoy the night, and at 2 AM the clocks fall back, giving us an extra hour."},
+    {"time": "Sunrise, about 6:45 AM", "name": "First Light", "text": "Sunshine plays the sunrise set as the sun comes up over the hills."}
   ],
-  "lineup": {
-    "direction_label": "Creative direction & opening ceremony",
+  "music": {
+    "intro": "We will have two stages on site with some of Austin's best DJs.",
+    "direction_label": "Creative Direction & Opening Ceremony",
     "direction": "Leah Free",
     "stages": [
-      {
-        "name": "Bass Stage",
-        "artists": [
-          {
-            "name": "Equanimous"
-          },
-          {
-            "name": "Avatara"
-          },
-          {
-            "name": "Ted Drops"
-          },
-          {
-            "name": "Haddaddy"
-          },
-          {
-            "name": "Reina"
-          },
-          {
-            "name": "Essent B2B Ayshra"
-          },
-          {
-            "name": "BTRU"
-          },
-          {
-            "name": "Sunshine",
-            "note": "Sunrise set"
-          }
-        ]
-      },
-      {
-        "name": "House Stage",
-        "artists": [
-          {
-            "name": "a'lou"
-          },
-          {
-            "name": "MAMU"
-          },
-          {
-            "name": "Luana"
-          },
-          {
-            "name": "Seanchaí"
-          }
-        ]
-      }
+      {"name": "Bass Stage", "artists": [
+        {"name": "Equanimous"}, {"name": "Avatara"}, {"name": "Ted Drops"}, {"name": "Haddaddy"},
+        {"name": "Reina"}, {"name": "Essent B2B Ayshra"}, {"name": "BTRU"}, {"name": "Sunshine", "note": "Sunrise set"}
+      ]},
+      {"name": "House Stage", "artists": [
+        {"name": "a'lou"}, {"name": "MAMU"}, {"name": "Luana"}, {"name": "Seanchaí"}
+      ], "more": "and more"}
     ],
     "featuring_label": "Featuring",
-    "featuring": [
-      "Brent Pella",
-      "Natalie Porretta",
-      "Zoe Dane"
-    ],
+    "featuring": ["Brent Pella", "Natalie Porretta", "Zoe Dane"],
     "activations_label": "Activations",
     "activations": [
-      "Photo area",
-      "Tea service by Casa Akasha",
-      "Tobacco bar"
+      {"name": "Photo Area"},
+      {"name": "Tea Service", "by": "by Casa Akasha"},
+      {"name": "Tobacco Bar"}
+    ]
+  },
+  "agreement": {
+    "title": "The Group Agreement",
+    "intro": "This is a curated guest list. Everyone here was invited because we trust them to care for the room and the people in it.",
+    "lead": "Consent matters here, from personal space to photos. By attending, you agree to:",
+    "items": [
+      {"k": "Ask first.", "v": "Ask before you hug, touch, or photograph someone."},
+      {"k": "Respect the answer.", "v": "A no, or a change of mind, is honored right away, with no questions asked."},
+      {"k": "When in doubt, don't.", "v": "If you're not sure, the answer is no."}
+    ],
+    "outro": "We'll open the night by naming these agreements together at the opening ceremony. Anyone who doesn't honor them will be asked to leave."
+  },
+  "costume": {
+    "title": "Outfit / Dress",
+    "lead": "This night is asking you to GO BIG, so treat your costume creation as part of the experience, not an afterthought.",
+    "points": [
+      {"k": "Plan ahead.", "v": "Start now, use the moodboard and Etsy idea links below, and order anything you need early so you're not scrambling at the last moment for a long-shot Etsy delivery."},
+      {"k": "Go big, be bold.", "v": "Step out of your comfort zone, and show up as the version of you that finally got the permission slip to be unapologetically yourself."},
+      {"k": "Dress for the whole night.", "v": "You'll be moving through different energies and spaces and even spending time outdoors at times, so wear layers you can shed as it unfolds. We'll have plenty of places for coats, bags and your extra items to be stored."}
+    ],
+    "warning_label": "Fair warning",
+    "warning": "A last-minute costume-in-a-bag from Amazon IS NOT what we're doing here. If you show up in a zero-effort onesie, expect to be playfully roasted and sent to the costume corner to change before you cross the veil.",
+    "warning_after": "You got this... we believe in you! ;)",
+    "colors_label": "Color Palette Options",
+    "colors": [
+      {"name": "Iridescent", "swatch": "iridescent"},
+      {"name": "Shiny/Metallic", "swatch": "metallic"},
+      {"name": "Pearl", "swatch": "pearl"},
+      {"name": "Chrome", "swatch": "chrome"},
+      {"name": "White", "swatch": "white"},
+      {"name": "Silver", "swatch": "silver"},
+      {"name": "Gold", "swatch": "gold"},
+      {"name": "Steel", "swatch": "steel"},
+      {"name": "Blacks/Charcoal/Smoke", "swatch": "smoke"}
+    ],
+    "words_label": "Style Words",
+    "words": ["Sexy (duh)", "Chic", "Sheer/Gossamer", "Alluring", "Veiled", "Mystical", "Ethereal", "Lunar", "Moonlit", "Cosmic", "Starborn"],
+    "pinterest_label": "Pinterest Mood Board (For Men & Women)",
+    "etsy_label": "Etsy Shop Ideas (For Men & Women)",
+    "etsy_groups": [
+      {"name": "For him", "items": [
+        {"t": "Gothic raven shoulder cape", "u": "https://www.etsy.com/listing/4549753275/mens-gothic-raven-shoulder-cape-leather"},
+        {"t": "Futuristic silver festival outfit", "u": "https://www.etsy.com/listing/4546164972/mens-festival-outfit-futuristic-silver"},
+        {"t": "Metallic bronze harem set", "u": "https://www.etsy.com/listing/4343039041/bronze-mens-festival-set-metallic-harem"},
+        {"t": "Holographic opal leggings", "u": "https://www.etsy.com/listing/1663992247/mens-holographic-opal-leggings-meggings"},
+        {"t": "Black body chain vest", "u": "https://www.etsy.com/listing/1662283374/mens-black-body-chain-vest-gothic-chest"},
+        {"t": "Champagne gold suit", "u": "https://www.etsy.com/listing/4439125877/gold-mens-suit-14k-champagne-gold-flip"}
+      ]},
+      {"name": "For her", "items": [
+        {"t": "Crystal mesh rhinestone dress", "u": "https://www.etsy.com/listing/4487192951/crystal-mesh-rave-dress-sheer-rhinestone"},
+        {"t": "Ethereal white pearl set", "u": "https://www.etsy.com/listing/4508510742/ethereal-white-fairycore-rave-set-pearl"},
+        {"t": "Black swan feather corset", "u": "https://www.etsy.com/listing/4579816751/black-feather-corset-top-gothic-swan"},
+        {"t": "Handmade beaded belly-dance set", "u": "https://www.etsy.com/listing/4404675788/new-style-handmade-beaded-belly-dancing"}
+      ]},
+      {"name": "Capes and wings", "items": [
+        {"t": "Black and silver angel-wing fringe cape", "u": "https://www.etsy.com/listing/4539285040/black-silver-angel-wing-fringe-cape"},
+        {"t": "Black feather shoulder wrap", "u": "https://www.etsy.com/listing/4546570685/black-feather-cape-gothic-shoulder-wrap"},
+        {"t": "Sculptural shoulder armor cape", "u": "https://www.etsy.com/listing/4344765448/sculptural-shoulder-armor-cape-hedone"},
+        {"t": "Gold sequin Cleo cape", "u": "https://www.etsy.com/listing/1547806476/gold-cleo-sequin-cape-disco-festivals"},
+        {"t": "Giant holographic wings", "u": "https://www.etsy.com/listing/4527764974/giant-holographic-fairy-wings-large"}
+      ]},
+      {"name": "Layers and details", "items": [
+        {"t": "Crushed iridescent organza", "u": "https://www.etsy.com/listing/4445803373/crushed-iridescent-organza-sheer-pleated"},
+        {"t": "Iridescent blue kimono vest", "u": "https://www.etsy.com/listing/1413881554/iridescent-blue-festival-kimono-vest"},
+        {"t": "Horned masquerade mask", "u": "https://www.etsy.com/listing/4341183074/black-turquoise-horned-masquerade-mask"}
+      ]}
     ]
   },
   "community": {
     "caption": "Halloween 2025. Every year is a different world, but this is the community you'll be dancing with.",
     "credit": "Photos from Halloween 2025 by Last Weekend.",
     "photos": [
-      {
-        "src": "angels.webp",
-        "alt": "Three guests in holographic silver, white wings and eye halos",
-        "w": 1400,
-        "h": 1400
-      },
-      {
-        "src": "dancefloor.webp",
-        "alt": "Guests in horned masks under violet lasers on the dance floor",
-        "w": 1024,
-        "h": 1533
-      },
-      {
-        "src": "fire-circle.webp",
-        "alt": "A fire performer above a circle of guests, one kneeling in the center",
-        "w": 1024,
-        "h": 1533
-      },
-      {
-        "src": "fire-fans.webp",
-        "alt": "A fire performer spinning flaming fans",
-        "w": 1024,
-        "h": 1533
-      },
-      {
-        "src": "grounds.webp",
-        "alt": "A guest in a glowing crown looks out over the estate grounds at night",
-        "w": 1024,
-        "h": 1533
-      }
+      {"src": "angels.webp", "alt": "Three guests in holographic silver, white wings and eye halos", "w": 1400, "h": 1400},
+      {"src": "dancefloor.webp", "alt": "Guests in horned masks under violet lasers on the dance floor", "w": 1024, "h": 1533},
+      {"src": "fire-circle.webp", "alt": "A fire performer above a circle of guests, one kneeling in the center", "w": 1024, "h": 1533},
+      {"src": "fire-fans.webp", "alt": "A fire performer spinning flaming fans", "w": 1024, "h": 1533},
+      {"src": "grounds.webp", "alt": "A guest in a glowing crown looks out over the estate grounds at night", "w": 1024, "h": 1533}
     ]
-  },
-  "costume": {
-    "lead": "Come as who you're becoming.",
-    "text": "Wear silver, violet, blue, chrome, pearl, or anything that catches the light. Disguises once let people pass unseen between worlds. This one should make you impossible to miss.",
-    "palette": [
-      {
-        "name": "Spectral White",
-        "hex": "#F4F5F0"
-      },
-      {
-        "name": "Lunar Pearl",
-        "hex": "#E7E9E7"
-      },
-      {
-        "name": "Liquid Silver",
-        "hex": "#A9ACAF",
-        "metal": true
-      },
-      {
-        "name": "Slate Eclipse",
-        "hex": "#5B6770"
-      },
-      {
-        "name": "Moonlit Charcoal",
-        "hex": "#1D252D"
-      },
-      {
-        "name": "Alien Pearl",
-        "hex": "#D9D3F0"
-      }
-    ],
-    "materials": [
-      "Liquid lamé and chrome",
-      "Sheer organza and veils",
-      "Crystal, pearl and chain",
-      "Holographic film",
-      "Silver skin, glitter and chrome tears"
-    ],
-    "pinterest_text": "Looks for men and women, pinned for this year.",
-    "etsy_text": "Headpieces, chrome, sheer layers and jewelry we'd wear.",
-    "layers": "Dress in layers you can move in. The night runs from a cool October evening to sunrise, and much of it happens outdoors. Costume shoes may stay on; everyday shoes come off inside the house."
   },
   "tickets": {
     "lead": "Two hundred guests. One night.",
     "text": "Tickets are released in four tiers, and each tier closes when it sells out. The earliest tier is the lowest price you'll see.",
-    "tiers": [
-      "The Invitation",
-      "The Gate",
-      "The Threshold",
-      "The Witching Hour"
-    ],
+    "tiers": ["The Invitation", "The Gate", "The Threshold", "The Witching Hour"],
     "notes": [
       "Refunds and transfers to a friend are both allowed.",
-      "If it sells out, a waitlist opens."
+      "If it sells out, a waitlist opens.",
+      "Add a parking pass ($50 per car) and LoveStack (20% off) at checkout."
+    ]
+  },
+  "vessel": {
+    "label": "Official Supplement Partner",
+    "spaced": "L O V E S T A C K",
+    "stats": ["21 Ingredients", "1 Complete Protocol"],
+    "paragraphs": [
+      "We built LoveStack so you could skip the research and focus on your journey.",
+      "Two formulas, five days, every dose portioned and organized by day. LoveStack makes taking care of your body during heart-opening experiences simple."
     ],
-    "after": "After you buy, you'll receive our Partiful invite. It holds the code to the ticket-holder guide: the address, the rideshare group and parking.",
-    "parking": {
-      "name": "Parking pass",
-      "text": "Parking on site is very limited. Passes are $50 per car; add one at checkout."
-    }
+    "offer": "Add LoveStack to your ticket for 20% off, and pick it up when you arrive."
   },
-  "partner": {
-    "label": "Official supplement partner",
-    "product": "The LoveStack™ Protocol",
-    "text": "Beyond the Veil guests get 20% off LoveStack by VESSEL. Add it at checkout and pick it up when you arrive."
+  "venue": {
+    "title": "The Venue",
+    "text": "Beyond the Veil is hosted at HAVAN, a private estate in west Austin/Lakeway chosen for its beauty, intimacy and spaciousness.",
+    "name": "HAVAN",
+    "address": "17301 Flint Rock Rd, Austin, TX 78738",
+    "start_label": "Event Start",
+    "start": "Please arrive during the arrival window (7 to 8 PM) to preserve the integrity and flow of the experience.",
+    "times": [{"k": "Doors open", "v": "7 PM"}, {"k": "Doors close", "v": "8 PM"}],
+    "parking_label": "Parking",
+    "parking": [
+      "Parking at HAVAN is very limited, so we're offering a small number of parking passes for $50 per car. Add one to your order at checkout.",
+      "Only cars with a parking pass will be allowed on the property, so if you don't have one, please rideshare or arrange a drop-off."
+    ],
+    "rides_label": "Ridesharing",
+    "rides": [
+      "We strongly encourage rideshare, carpools, and drop-offs. HAVAN sits in a remote part of the hills outside Austin, and finding a ride home late at night or early in the morning can be difficult, so please arrange your ride home before you arrive.",
+      "To make it easier, we've created a WhatsApp group just for Beyond the Veil guests. Join it to coordinate carpools to and from HAVAN."
+    ]
   },
-  "rules": [
-    {
-      "name": "21 and over",
-      "text": "Bring your ID."
-    },
-    {
-      "name": "Alcohol-free",
-      "text": "Grazing table, non-alcoholic drinks and water provided."
-    },
-    {
-      "name": "Doors close at 8 PM",
-      "text": "Be settled for the 8:30 ceremony."
-    },
-    {
-      "name": "No re-entry",
-      "text": "Once you're inside, you're inside."
-    }
-  ],
+  "inside": {
+    "title": "Inside the Gates",
+    "items": [
+      {"k": "Phones, Pictures, Videos", "v": "Professional photography will be provided at the beginning of the night, but after the opening ceremonies, all phones should be stored away and out of sight. You can use your phones for dedicated pictures and video time (7 to 9 PM), and then we ask you to put them away so we can enjoy the night.", "strong": "Ask for consent from anyone you are taking a picture or video of BEFORE doing so."},
+      {"k": "Respect the space", "v": "Please treat the property, the art, and the furnishings with care."},
+      {"k": "Shoes", "v": "Shoes will be allowed for this event if they are a part of your costume. Otherwise, take your shoes off and leave them at the front door outside."},
+      {"k": "Pets", "v": "No animal pets will be allowed at the party or on the property."}
+    ],
+    "food_label": "Food and Drink",
+    "food": [
+      {"k": "Come fed.", "v": "We'll have a grazing table and plenty of water and non-alcoholic drinks, but this is not a dinner, so please eat a nourishing meal before you arrive."},
+      {"k": "Alcohol-free.", "v": "This is an alcohol-free event, so please leave outside alcohol at home."}
+    ]
+  },
+  "plusones": {
+    "title": "About Plus-Ones",
+    "text": "Beyond the Veil is a curated gathering, and our guest list has been carefully assembled. Your invitation is personal and doesn't include a plus-one.",
+    "nominate": "Know someone who would add real magic to this night? You can nominate them below. Our team reviews every nomination, and with so few places left, we can't promise a ticket. If there's a fit, we'll reach out to them directly."
+  },
   "faq": [
-    {
-      "q": "Who is this for?",
-      "a": "Couples, singles, friends, collaborators, and anyone arriving as a new version of themselves. Every guest must be 21 or older."
-    },
-    {
-      "q": "What kind of night is it?",
-      "a": "A party that's sexy, wild and wholesome all at once, held within clear boundaries and mutual respect. We never repeat a night, so please don't assume what this one holds based on past events. Our only promise is intention, craft and a few surprises."
-    },
-    {
-      "q": "When should I arrive?",
-      "a": "Doors open at 7 PM and close at 8 PM. The opening ceremony begins outside at 8:30, and it sets the agreements for the whole night, so be there for it."
-    },
-    {
-      "q": "Can I leave and come back?",
-      "a": "No. There's no re-entry once you're inside."
-    },
-    {
-      "q": "Is there alcohol, and what's there to eat?",
-      "a": "This is an alcohol-free night. We'll have a grazing table, non-alcoholic drinks and water, plus tea service by Casa Akasha."
-    },
-    {
-      "q": "Where is it?",
-      "a": "A private estate in the hills of Lakeway. The address is shared with ticket holders in the guide, which opens with the code in your Partiful invite."
-    },
-    {
-      "q": "How do I get there?",
-      "a": "Rideshare or arrange a drop-off. The ticket-holder guide links to a rideshare group so you can share cars with other guests. Parking passes are limited and sold at checkout for $50 per car. Never park on the road leading in: cars there will be towed, and guests who walk in from the road will be turned away."
-    },
-    {
-      "q": "Can I take photos?",
-      "a": "A videographer will film the opening ceremony. Some spaces are camera-free, and we ask you to respect them."
-    },
-    {
-      "q": "Can I get a refund or transfer my ticket?",
-      "a": "Yes. Refunds and transfers to a friend are both allowed. Email us and we'll take care of it."
-    },
-    {
-      "q": "What if it sells out?",
-      "a": "A waitlist opens. You can also nominate as many people as you like for the guest list."
-    },
-    {
-      "q": "What about shoes?",
-      "a": "Costume shoes may stay on. Everyday shoes come off inside the house."
-    },
-    {
-      "q": "Can I bring my pet?",
-      "a": "Please leave pets at home, and treat the property, art and furnishings with care."
-    },
-    {
-      "q": "Anything else I should know?",
-      "a": "By attending, you agree to honor consent, clear communication and the people around you. If you need help at any point, find any member of our team."
-    }
+    {"q": "Who is this for?", "a": "Our curated community, 21 and over. Bring your ID."},
+    {"q": "Can I bring a plus-one?", "a": "No, every invitation is personal. Nominate them instead, and our team will review it."},
+    {"q": "When should I arrive?", "a": "Between 7 and 8 PM; doors close at 8. The opening ceremony starts at 8:30."},
+    {"q": "Can I leave and come back?", "a": "No, there's no re-entry once you're inside."},
+    {"q": "When does it end?", "a": "Music runs until sunrise, around 6:45 AM. Leave whenever you like, but book your ride home before you arrive."},
+    {"q": "Is there alcohol?", "a": "No, this is an alcohol-free event. Please leave outside alcohol at home."},
+    {"q": "Will there be food?", "a": "A grazing table, water and non-alcoholic drinks, plus tea service by Casa Akasha. It's not a dinner, so eat a nourishing meal first."},
+    {"q": "Where is it?", "a": "HAVAN, 17301 Flint Rock Rd, Austin, TX 78738. It's a private estate in the hills of west Austin and Lakeway."},
+    {"q": "How do I get there?", "a": "Rideshare, carpool or get dropped off. Join the guest WhatsApp group to share rides."},
+    {"q": "Can I park on site?", "a": "Only with a $50 parking pass, added at checkout. Cars without one won't be allowed on the property."},
+    {"q": "Can I use my phone?", "a": "Yes, from 7 to 9 PM for photos and video, always with consent. After that, phones go away for the night."},
+    {"q": "Will there be a photographer?", "a": "Yes, professional photography is provided at the beginning of the night."},
+    {"q": "What should I wear?", "a": "Go big in iridescent, metallic, pearl, chrome, silver, gold or smoke. Zero-effort costumes get sent to the costume corner."},
+    {"q": "Where do my coat and bag go?", "a": "We'll have plenty of places to store coats, bags and extra layers."},
+    {"q": "Do I keep my shoes on?", "a": "Only if they're part of your costume. Otherwise, leave them at the front door outside."},
+    {"q": "Can I bring my pet?", "a": "No animal pets are allowed at the party or on the property."},
+    {"q": "Can I get a refund or transfer my ticket?", "a": "Yes, both are allowed. Email us and we'll take care of it."},
+    {"q": "What if it sells out?", "a": "A waitlist opens. You can also nominate as many people as you like."},
+    {"q": "What's LoveStack?", "a": "A supplement protocol by VESSEL, our official supplement partner. Add it to your ticket for 20% off and pick it up when you arrive."},
+    {"q": "What if someone crosses a line?", "a": "Anyone who doesn't honor the group agreements will be asked to leave. Find any member of our team if you need help."}
   ],
-  "nominate": {
-    "lead": "Know someone who belongs on the other side?",
-    "text": "Tell us about them. Every nomination is read by our team, and you can nominate as many people as you like. A nomination is not an invitation: if your nominee is selected, we'll reach out to them directly, usually within 48 hours."
-  },
   "closing": {
-    "line": "There are two hundred places, and this night happens once.",
-    "call": "Show the fuck up."
+    "line": "Two hundred places. One night.",
+    "call": "See you on the other side…"
   },
   "footer": {
-    "noshare": "This is a private invitation. Please don't post this link publicly.",
-    "guide_link": "Ticket holders: enter the guide"
-  },
-  "guide": {
-    "intro": "You're through. Everything you need for the night is here. Please keep it to yourself.",
-    "address_name": "HAVAN",
-    "sections": [
-      {
-        "name": "Getting here",
-        "items": [
-          "Rideshare or arrange a drop-off. It's the easiest way in and out.",
-          "Join the rideshare group to share cars with other guests.",
-          "Parking on site is for parking-pass holders only.",
-          "Never park on the road leading in. Cars there will be towed, and guests who walk in from the road will be turned away by security."
-        ]
-      },
-      {
-        "name": "Arrival",
-        "items": [
-          "Doors open at 7 PM and close at 8 PM.",
-          "Bring your ID: this is a 21+ event.",
-          "Have your ticket ready on your phone at check-in.",
-          "If you added LoveStack by VESSEL at checkout, pick it up at check-in.",
-          "The opening ceremony begins outside at 8:30 PM.",
-          "There's no re-entry once you're inside."
-        ]
-      },
-      {
-        "name": "Bring",
-        "items": [
-          "Your costume, and layers you can move in for a cool night outdoors.",
-          "Costume shoes may stay on; everyday shoes come off inside the house."
-        ]
-      },
-      {
-        "name": "Leave at home",
-        "items": [
-          "Alcohol. This is an alcohol-free night.",
-          "Pets."
-        ]
-      }
-    ]
+    "noshare": "This is a private invitation. Please don't post this link publicly."
   }
 }

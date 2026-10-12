@@ -8,8 +8,8 @@ DTSTAMP:20261101T000000Z
 DTSTART:20261101T000000Z
 DTEND:20261101T130000Z
 SUMMARY:Beyond the Veil
-DESCRIPTION:A Halloween Transformation. Doors 7 PM, opening ceremony 8:30 PM. https://beyondtheveil-atx.netlify.app
-LOCATION:Hills of Lakeway\, TX (address in the ticket-holder guide)
+DESCRIPTION:A Halloween Transformation. Arrival 7 to 8 PM\, doors close at 8\, opening ceremony 8:30. https://beyondtheveil-atx.netlify.app
+LOCATION:HAVAN\, 17301 Flint Rock Rd\, Austin\, TX 78738
 URL:https://beyondtheveil-atx.netlify.app
 BEGIN:VALARM
 TRIGGER:-PT3H
