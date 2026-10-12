@@ -97,35 +97,45 @@
   "music": {
     "intro": "We will have two stages on site with some of Austin's best DJs.",
     "direction_label": "Creative Direction & Opening Ceremony",
-    "direction": "Leah Free",
+    "direction": {
+      "name": "Leah Free",
+      "photo": "leah-free.webp"
+    },
     "stages": [
       {
         "name": "Bass Stage",
         "artists": [
           {
-            "name": "Equanimous"
+            "name": "Equanimous",
+            "photo": "equanimous.webp"
           },
           {
-            "name": "Avatara"
+            "name": "Avatara",
+            "photo": "avatara.webp"
           },
           {
-            "name": "Ted Drops"
+            "name": "Ted Drops",
+            "photo": "ted-drops.webp"
           },
           {
-            "name": "Haddaddy"
+            "name": "Haddaddy",
+            "photo": "haddaddy.webp"
           },
           {
             "name": "Reina"
           },
           {
-            "name": "Essent B2B Ayshra"
+            "name": "Essent B2B Ayshra",
+            "photo": "essent-ayshra.webp"
           },
           {
-            "name": "BTRU"
+            "name": "BTRU",
+            "photo": "btru.webp"
           },
           {
             "name": "Sunshine",
-            "note": "Sunrise set"
+            "note": "Sunrise set",
+            "photo": "sunshine.webp"
           }
         ]
       },
@@ -133,16 +143,19 @@
         "name": "House Stage",
         "artists": [
           {
-            "name": "a'lou"
+            "name": "a'lou",
+            "photo": "alou.webp"
           },
           {
-            "name": "MAMU"
+            "name": "MAMU",
+            "photo": "mamu.webp"
           },
           {
             "name": "Luana"
           },
           {
-            "name": "Seanchaí"
+            "name": "Seanchaí",
+            "photo": "seanchai.webp"
           }
         ],
         "more": "and more"
@@ -150,9 +163,18 @@
     ],
     "featuring_label": "Featuring",
     "featuring": [
-      "Brent Pella",
-      "Natalie Porretta",
-      "Zoe Dane"
+      {
+        "name": "Brent Pella",
+        "photo": "brent-pella.webp"
+      },
+      {
+        "name": "Natalie Porretta",
+        "photo": "natalie-porretta.webp"
+      },
+      {
+        "name": "Zoe Dane",
+        "photo": "zoe-dane.webp"
+      }
     ],
     "activations_label": "Activations",
     "activations": [
@@ -166,7 +188,12 @@
       {
         "name": "Tobacco Bar"
       }
-    ]
+    ],
+    "host_label": "Your host",
+    "host": {
+      "name": "Michael Pullano",
+      "photo": "michael-pullano.webp"
+    }
   },
   "agreement": {
     "title": "The Group Agreement",

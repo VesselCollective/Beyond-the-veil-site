@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "12"
+VERSION = "13"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -156,17 +156,24 @@ def index_page():
         f'<li class="{"key" if s.get("key") else ""}"><time>{e(s["time"])}</time>'
         f'<h3>{e(s["name"])}</h3><p>{e(s["text"])}</p></li>' for s in C["flow"])
 
-    def artist(a):
-        note = f'<small>{e(a["note"])}</small>' if a.get("note") else ""
-        if a.get("photo"):
-            return (f'<li class="artist has-photo"><img src="/img/artists/{e(a["photo"])}" alt="{e(a["name"])}" loading="lazy">'
-                    f'<span>{e(a["name"])}{note}</span></li>')
-        return f'<li class="artist"><span>{e(a["name"])}{note}</span></li>'
+    def portrait(name, photo=None, note="", role=""):
+        if photo:
+            pic = f'<img src="/img/artists/{e(photo)}" alt="" loading="lazy" decoding="async" width="600" height="750">'
+        else:
+            pic = f'<span class="mono" aria-hidden="true">{e(name[:1].upper())}</span>'
+        role = f'<small class="role">{e(role)}</small>' if role else ""
+        note = f'<small>{e(note)}</small>' if note else ""
+        return (f'<li class="artist{"" if photo else " no-photo"}"><figure>{pic}</figure>'
+                f'<span class="nm">{role}<b>{e(name)}</b>{note}</span></li>')
 
     stages = "\n".join(
-        f'<div class="stage"><h3>{e(s["name"])}</h3>{rule()}<ul>' + "".join(artist(a) for a in s["artists"])
+        f'<div class="stage"><h3>{e(s["name"])}</h3>{rule()}<ul class="lineup">'
+        + "".join(portrait(a["name"], a.get("photo"), a.get("note", "")) for a in s["artists"])
         + "</ul>" + (f'<p class="more">{e(s["more"])}</p>' if s.get("more") else "") + "</div>"
         for s in mu["stages"])
+    cast_people = ([(mu["host_label"], mu["host"]), (mu["direction_label"], mu["direction"])]
+                   + [(mu["featuring_label"], f) for f in mu["featuring"]])
+    cast = "".join(portrait(p["name"], p.get("photo"), role=r) for r, p in cast_people)
     acts = "".join(
         f'<li><span class="act-name">{e(a["name"])}</span>' + (f'<span class="act-by">{e(a["by"])}</span>' if a.get("by") else "") + "</li>"
         for a in mu["activations"])
@@ -237,12 +244,8 @@ def index_page():
     <div class="stages">
 {stages}
     </div>
-    <div class="credits">
-      <p class="label">{e(mu['direction_label'])}</p>
-      <p class="headliner">{e(mu['direction'])}</p>
-      <p class="label">{e(mu['featuring_label'])}</p>
-      {joined(mu['featuring'], 'featuring')}
-    </div>
+    <p class="label cast-label">The cast</p>
+    <ul class="cast lineup">{cast}</ul>
     <p class="label">{e(mu['activations_label'])}</p>
     <ul class="activations">{acts}</ul>
   </div>
