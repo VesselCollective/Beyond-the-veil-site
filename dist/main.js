@@ -94,6 +94,14 @@
     } else { loadPin(); }
   }
 
+  // Etsy photos: fall back to the full-size image once, then show the dark tile.
+  document.querySelectorAll('.etsy-img img').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var full = img.getAttribute('data-full');
+      if (full && img.src !== full) { img.src = full; } else { img.remove(); }
+    });
+  });
+
   // Only one FAQ answer open at a time keeps the list scannable.
   var faqs = document.querySelectorAll('.faq-list details');
   faqs.forEach(function (d) {

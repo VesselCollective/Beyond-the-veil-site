@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "11"
+VERSION = "12"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -178,7 +178,9 @@ def index_page():
     words = f" {GEM} ".join(f"<span>{e(w)}</span>" for w in co["words"])
     etsy = "\n".join(
         f'<div class="etsy-group"><h4>{e(g["name"])}</h4><ul>'
-        + "".join(f'<li><a href="{e(i["u"])}" target="_blank" rel="noopener"><span>{e(i["t"])}</span><em>Etsy</em></a></li>' for i in g["items"])
+        + "".join(f'<li><a href="{e(i["u"])}" target="_blank" rel="noopener">'
+                  f'<span class="etsy-img"><img src="{e(i["img"].replace("il_1080xN.", "il_570xN.").replace("il_794xN.", "il_570xN."))}" data-full="{e(i["img"])}" alt="" loading="lazy" referrerpolicy="no-referrer"></span>'
+                  f'<span class="etsy-t">{e(i["t"])}</span><em>Shop on Etsy</em></a></li>' for i in g["items"])
         + "</ul></div>" for g in co["etsy_groups"])
 
     gallery = "\n".join(

@@ -17,12 +17,28 @@
     "venue": "HAVAN",
     "place": "West Austin / Lakeway",
     "facts": [
-      {"k": "Arrival", "v": "7 to 8 PM"},
-      {"k": "Doors close", "v": "8 PM"},
-      {"k": "Opening ceremony", "v": "8:30 PM"},
-      {"k": "Two stages", "v": "Until sunrise"}
+      {
+        "k": "Arrival",
+        "v": "7 to 8 PM"
+      },
+      {
+        "k": "Doors close",
+        "v": "8 PM"
+      },
+      {
+        "k": "Opening ceremony",
+        "v": "8:30 PM"
+      },
+      {
+        "k": "Two stages",
+        "v": "Until sunrise"
+      }
     ],
-    "rules": ["21+", "Alcohol-free", "Private event"]
+    "rules": [
+      "21+",
+      "Alcohol-free",
+      "Private event"
+    ]
   },
   "links": {
     "tickets": "https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&ticketType=in-person",
@@ -51,32 +67,105 @@
     "signature": "Michael Pullano and the Austin Dance Temple"
   },
   "flow": [
-    {"time": "7:00 to 8:00 PM", "name": "The Arrival", "text": "Please arrive during the arrival window to preserve the integrity and flow of the experience. Doors open at 7 and close at 8."},
-    {"time": "8:00 to 8:30 PM", "name": "The Gathering", "text": "Professional photos, then everyone gathers outside."},
-    {"time": "8:30 PM", "name": "The Crossing", "text": "The opening ceremony, led by Leah Free. We name the group agreements together and cross the veil.", "key": true},
-    {"time": "9:00 PM to sunrise", "name": "The Night", "text": "Two stages run until morning. At 9, phones go away so we can enjoy the night, and at 2 AM the clocks fall back, giving us an extra hour."},
-    {"time": "Sunrise, about 6:45 AM", "name": "First Light", "text": "Sunshine plays the sunrise set as the sun comes up over the hills."}
+    {
+      "time": "7:00 to 8:00 PM",
+      "name": "The Arrival",
+      "text": "Please arrive during the arrival window to preserve the integrity and flow of the experience. Doors open at 7 and close at 8."
+    },
+    {
+      "time": "8:00 to 8:30 PM",
+      "name": "The Gathering",
+      "text": "Professional photos, then everyone gathers outside."
+    },
+    {
+      "time": "8:30 PM",
+      "name": "The Crossing",
+      "text": "The opening ceremony, led by Leah Free. We name the group agreements together and cross the veil.",
+      "key": true
+    },
+    {
+      "time": "9:00 PM to sunrise",
+      "name": "The Night",
+      "text": "Two stages run until morning. At 9, phones go away so we can enjoy the night, and at 2 AM the clocks fall back, giving us an extra hour."
+    },
+    {
+      "time": "Sunrise, about 6:45 AM",
+      "name": "First Light",
+      "text": "Sunshine plays the sunrise set as the sun comes up over the hills."
+    }
   ],
   "music": {
     "intro": "We will have two stages on site with some of Austin's best DJs.",
     "direction_label": "Creative Direction & Opening Ceremony",
     "direction": "Leah Free",
     "stages": [
-      {"name": "Bass Stage", "artists": [
-        {"name": "Equanimous"}, {"name": "Avatara"}, {"name": "Ted Drops"}, {"name": "Haddaddy"},
-        {"name": "Reina"}, {"name": "Essent B2B Ayshra"}, {"name": "BTRU"}, {"name": "Sunshine", "note": "Sunrise set"}
-      ]},
-      {"name": "House Stage", "artists": [
-        {"name": "a'lou"}, {"name": "MAMU"}, {"name": "Luana"}, {"name": "Seanchaí"}
-      ], "more": "and more"}
+      {
+        "name": "Bass Stage",
+        "artists": [
+          {
+            "name": "Equanimous"
+          },
+          {
+            "name": "Avatara"
+          },
+          {
+            "name": "Ted Drops"
+          },
+          {
+            "name": "Haddaddy"
+          },
+          {
+            "name": "Reina"
+          },
+          {
+            "name": "Essent B2B Ayshra"
+          },
+          {
+            "name": "BTRU"
+          },
+          {
+            "name": "Sunshine",
+            "note": "Sunrise set"
+          }
+        ]
+      },
+      {
+        "name": "House Stage",
+        "artists": [
+          {
+            "name": "a'lou"
+          },
+          {
+            "name": "MAMU"
+          },
+          {
+            "name": "Luana"
+          },
+          {
+            "name": "Seanchaí"
+          }
+        ],
+        "more": "and more"
+      }
     ],
     "featuring_label": "Featuring",
-    "featuring": ["Brent Pella", "Natalie Porretta", "Zoe Dane"],
+    "featuring": [
+      "Brent Pella",
+      "Natalie Porretta",
+      "Zoe Dane"
+    ],
     "activations_label": "Activations",
     "activations": [
-      {"name": "Photo Area"},
-      {"name": "Tea Service", "by": "by Casa Akasha"},
-      {"name": "Tobacco Bar"}
+      {
+        "name": "Photo Area"
+      },
+      {
+        "name": "Tea Service",
+        "by": "by Casa Akasha"
+      },
+      {
+        "name": "Tobacco Bar"
+      }
     ]
   },
   "agreement": {
@@ -84,9 +173,18 @@
     "intro": "This is a curated guest list. Everyone here was invited because we trust them to care for the room and the people in it.",
     "lead": "Consent matters here, from personal space to photos. By attending, you agree to:",
     "items": [
-      {"k": "Ask first.", "v": "Ask before you hug, touch, or photograph someone."},
-      {"k": "Respect the answer.", "v": "A no, or a change of mind, is honored right away, with no questions asked."},
-      {"k": "When in doubt, don't.", "v": "If you're not sure, the answer is no."}
+      {
+        "k": "Ask first.",
+        "v": "Ask before you hug, touch, or photograph someone."
+      },
+      {
+        "k": "Respect the answer.",
+        "v": "A no, or a change of mind, is honored right away, with no questions asked."
+      },
+      {
+        "k": "When in doubt, don't.",
+        "v": "If you're not sure, the answer is no."
+      }
     ],
     "outro": "We'll open the night by naming these agreements together at the opening ceremony. Anyone who doesn't honor them will be asked to leave."
   },
@@ -94,73 +192,235 @@
     "title": "Outfit / Dress",
     "lead": "This night is asking you to GO BIG, so treat your costume creation as part of the experience, not an afterthought.",
     "points": [
-      {"k": "Plan ahead.", "v": "Start now, use the moodboard and Etsy idea links below, and order anything you need early so you're not scrambling at the last moment for a long-shot Etsy delivery."},
-      {"k": "Go big, be bold.", "v": "Step out of your comfort zone, and show up as the version of you that finally got the permission slip to be unapologetically yourself."},
-      {"k": "Dress for the whole night.", "v": "You'll be moving through different energies and spaces and even spending time outdoors at times, so wear layers you can shed as it unfolds. We'll have plenty of places for coats, bags and your extra items to be stored."}
+      {
+        "k": "Plan ahead.",
+        "v": "Start now, use the moodboard and Etsy idea links below, and order anything you need early so you're not scrambling at the last moment for a long-shot Etsy delivery."
+      },
+      {
+        "k": "Go big, be bold.",
+        "v": "Step out of your comfort zone, and show up as the version of you that finally got the permission slip to be unapologetically yourself."
+      },
+      {
+        "k": "Dress for the whole night.",
+        "v": "You'll be moving through different energies and spaces and even spending time outdoors at times, so wear layers you can shed as it unfolds. We'll have plenty of places for coats, bags and your extra items to be stored."
+      }
     ],
     "warning_label": "Fair warning",
     "warning": "A last-minute costume-in-a-bag from Amazon IS NOT what we're doing here. If you show up in a zero-effort onesie, expect to be playfully roasted and sent to the costume corner to change before you cross the veil.",
     "warning_after": "You got this... we believe in you! ;)",
     "colors_label": "Color Palette Options",
     "colors": [
-      {"name": "Iridescent", "swatch": "iridescent"},
-      {"name": "Shiny/Metallic", "swatch": "metallic"},
-      {"name": "Pearl", "swatch": "pearl"},
-      {"name": "Chrome", "swatch": "chrome"},
-      {"name": "White", "swatch": "white"},
-      {"name": "Silver", "swatch": "silver"},
-      {"name": "Gold", "swatch": "gold"},
-      {"name": "Steel", "swatch": "steel"},
-      {"name": "Blacks/Charcoal/Smoke", "swatch": "smoke"}
+      {
+        "name": "Iridescent",
+        "swatch": "iridescent"
+      },
+      {
+        "name": "Shiny/Metallic",
+        "swatch": "metallic"
+      },
+      {
+        "name": "Pearl",
+        "swatch": "pearl"
+      },
+      {
+        "name": "Chrome",
+        "swatch": "chrome"
+      },
+      {
+        "name": "White",
+        "swatch": "white"
+      },
+      {
+        "name": "Silver",
+        "swatch": "silver"
+      },
+      {
+        "name": "Gold",
+        "swatch": "gold"
+      },
+      {
+        "name": "Steel",
+        "swatch": "steel"
+      },
+      {
+        "name": "Blacks/Charcoal/Smoke",
+        "swatch": "smoke"
+      }
     ],
     "words_label": "Style Words",
-    "words": ["Sexy (duh)", "Chic", "Sheer/Gossamer", "Alluring", "Veiled", "Mystical", "Ethereal", "Lunar", "Moonlit", "Cosmic", "Starborn"],
+    "words": [
+      "Sexy (duh)",
+      "Chic",
+      "Sheer/Gossamer",
+      "Alluring",
+      "Veiled",
+      "Mystical",
+      "Ethereal",
+      "Lunar",
+      "Moonlit",
+      "Cosmic",
+      "Starborn"
+    ],
     "pinterest_label": "Pinterest Mood Board (For Men & Women)",
     "etsy_label": "Etsy Shop Ideas (For Men & Women)",
     "etsy_groups": [
-      {"name": "For him", "items": [
-        {"t": "Gothic raven shoulder cape", "u": "https://www.etsy.com/listing/4549753275/mens-gothic-raven-shoulder-cape-leather"},
-        {"t": "Futuristic silver festival outfit", "u": "https://www.etsy.com/listing/4546164972/mens-festival-outfit-futuristic-silver"},
-        {"t": "Metallic bronze harem set", "u": "https://www.etsy.com/listing/4343039041/bronze-mens-festival-set-metallic-harem"},
-        {"t": "Holographic opal leggings", "u": "https://www.etsy.com/listing/1663992247/mens-holographic-opal-leggings-meggings"},
-        {"t": "Black body chain vest", "u": "https://www.etsy.com/listing/1662283374/mens-black-body-chain-vest-gothic-chest"},
-        {"t": "Champagne gold suit", "u": "https://www.etsy.com/listing/4439125877/gold-mens-suit-14k-champagne-gold-flip"}
-      ]},
-      {"name": "For her", "items": [
-        {"t": "Crystal mesh rhinestone dress", "u": "https://www.etsy.com/listing/4487192951/crystal-mesh-rave-dress-sheer-rhinestone"},
-        {"t": "Ethereal white pearl set", "u": "https://www.etsy.com/listing/4508510742/ethereal-white-fairycore-rave-set-pearl"},
-        {"t": "Black swan feather corset", "u": "https://www.etsy.com/listing/4579816751/black-feather-corset-top-gothic-swan"},
-        {"t": "Handmade beaded belly-dance set", "u": "https://www.etsy.com/listing/4404675788/new-style-handmade-beaded-belly-dancing"}
-      ]},
-      {"name": "Capes and wings", "items": [
-        {"t": "Black and silver angel-wing fringe cape", "u": "https://www.etsy.com/listing/4539285040/black-silver-angel-wing-fringe-cape"},
-        {"t": "Black feather shoulder wrap", "u": "https://www.etsy.com/listing/4546570685/black-feather-cape-gothic-shoulder-wrap"},
-        {"t": "Sculptural shoulder armor cape", "u": "https://www.etsy.com/listing/4344765448/sculptural-shoulder-armor-cape-hedone"},
-        {"t": "Gold sequin Cleo cape", "u": "https://www.etsy.com/listing/1547806476/gold-cleo-sequin-cape-disco-festivals"},
-        {"t": "Giant holographic wings", "u": "https://www.etsy.com/listing/4527764974/giant-holographic-fairy-wings-large"}
-      ]},
-      {"name": "Layers and details", "items": [
-        {"t": "Crushed iridescent organza", "u": "https://www.etsy.com/listing/4445803373/crushed-iridescent-organza-sheer-pleated"},
-        {"t": "Iridescent blue kimono vest", "u": "https://www.etsy.com/listing/1413881554/iridescent-blue-festival-kimono-vest"},
-        {"t": "Horned masquerade mask", "u": "https://www.etsy.com/listing/4341183074/black-turquoise-horned-masquerade-mask"}
-      ]}
+      {
+        "name": "For him",
+        "items": [
+          {
+            "t": "Gothic raven shoulder cape",
+            "u": "https://www.etsy.com/listing/4549753275/mens-gothic-raven-shoulder-cape-leather",
+            "img": "https://i.etsystatic.com/57720054/r/il/0cb334/8338354304/il_1080xN.8338354304_95lf.jpg"
+          },
+          {
+            "t": "Futuristic silver festival outfit",
+            "u": "https://www.etsy.com/listing/4546164972/mens-festival-outfit-futuristic-silver",
+            "img": "https://i.etsystatic.com/54033853/r/il/c40c98/8260675940/il_1080xN.8260675940_4z93.jpg"
+          },
+          {
+            "t": "Metallic bronze harem set",
+            "u": "https://www.etsy.com/listing/4343039041/bronze-mens-festival-set-metallic-harem",
+            "img": "https://i.etsystatic.com/44105618/r/il/e05793/7061646202/il_1080xN.7061646202_891r.jpg"
+          },
+          {
+            "t": "Holographic opal leggings",
+            "u": "https://www.etsy.com/listing/1663992247/mens-holographic-opal-leggings-meggings",
+            "img": "https://i.etsystatic.com/14434677/r/il/705ff4/5747291965/il_1080xN.5747291965_gajm.jpg"
+          },
+          {
+            "t": "Black body chain vest",
+            "u": "https://www.etsy.com/listing/1662283374/mens-black-body-chain-vest-gothic-chest",
+            "img": "https://i.etsystatic.com/7711918/r/il/743714/7660672091/il_1080xN.7660672091_3zjr.jpg"
+          },
+          {
+            "t": "Champagne gold suit",
+            "u": "https://www.etsy.com/listing/4439125877/gold-mens-suit-14k-champagne-gold-flip",
+            "img": "https://i.etsystatic.com/21882165/r/il/93fb9d/7637007569/il_1080xN.7637007569_j4a5.jpg"
+          }
+        ]
+      },
+      {
+        "name": "For her",
+        "items": [
+          {
+            "t": "Crystal mesh rhinestone dress",
+            "u": "https://www.etsy.com/listing/4487192951/crystal-mesh-rave-dress-sheer-rhinestone",
+            "img": "https://i.etsystatic.com/65410474/r/il/b0dec4/7950829993/il_1080xN.7950829993_k4ic.jpg"
+          },
+          {
+            "t": "Ethereal white pearl set",
+            "u": "https://www.etsy.com/listing/4508510742/ethereal-white-fairycore-rave-set-pearl",
+            "img": "https://i.etsystatic.com/63484923/r/il/318ed6/8089034693/il_1080xN.8089034693_f3rb.jpg"
+          },
+          {
+            "t": "Black swan feather corset",
+            "u": "https://www.etsy.com/listing/4579816751/black-feather-corset-top-gothic-swan",
+            "img": "https://i.etsystatic.com/49152428/r/il/fb8d9c/8605280993/il_1080xN.8605280993_g7na.jpg"
+          },
+          {
+            "t": "Handmade beaded belly-dance set",
+            "u": "https://www.etsy.com/listing/4404675788/new-style-handmade-beaded-belly-dancing",
+            "img": "https://i.etsystatic.com/10697541/r/il/d74905/7395113128/il_794xN.7395113128_isrd.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Capes and wings",
+        "items": [
+          {
+            "t": "Black and silver angel-wing fringe cape",
+            "u": "https://www.etsy.com/listing/4539285040/black-silver-angel-wing-fringe-cape",
+            "img": "https://i.etsystatic.com/66952768/r/il/0f9aa2/8262808098/il_1080xN.8262808098_5m8a.jpg"
+          },
+          {
+            "t": "Black feather shoulder wrap",
+            "u": "https://www.etsy.com/listing/4546570685/black-feather-cape-gothic-shoulder-wrap",
+            "img": "https://i.etsystatic.com/66760957/r/il/4c6e6f/8363550081/il_1080xN.8363550081_c2jm.jpg"
+          },
+          {
+            "t": "Sculptural shoulder armor cape",
+            "u": "https://www.etsy.com/listing/4344765448/sculptural-shoulder-armor-cape-hedone",
+            "img": "https://i.etsystatic.com/35974604/r/il/c0c35b/7714417806/il_1080xN.7714417806_g461.jpg"
+          },
+          {
+            "t": "Gold sequin Cleo cape",
+            "u": "https://www.etsy.com/listing/1547806476/gold-cleo-sequin-cape-disco-festivals",
+            "img": "https://i.etsystatic.com/16413016/r/il/1f7eb0/8261386914/il_1080xN.8261386914_glz6.jpg"
+          },
+          {
+            "t": "Giant holographic wings",
+            "u": "https://www.etsy.com/listing/4527764974/giant-holographic-fairy-wings-large",
+            "img": "https://i.etsystatic.com/52428949/r/il/477864/8380766914/il_1080xN.8380766914_pngr.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Layers and details",
+        "items": [
+          {
+            "t": "Crushed iridescent organza",
+            "u": "https://www.etsy.com/listing/4445803373/crushed-iridescent-organza-sheer-pleated",
+            "img": "https://i.etsystatic.com/61370467/r/il/793a01/7679995115/il_1080xN.7679995115_7s4q.jpg"
+          },
+          {
+            "t": "Iridescent blue kimono vest",
+            "u": "https://www.etsy.com/listing/1413881554/iridescent-blue-festival-kimono-vest",
+            "img": "https://i.etsystatic.com/34291742/r/il/88f52f/8096825212/il_1080xN.8096825212_6faw.jpg"
+          },
+          {
+            "t": "Horned masquerade mask",
+            "u": "https://www.etsy.com/listing/4341183074/black-turquoise-horned-masquerade-mask",
+            "img": "https://i.etsystatic.com/20018368/r/il/7c3c99/7051599372/il_1080xN.7051599372_c3i4.jpg"
+          }
+        ]
+      }
     ]
   },
   "community": {
     "caption": "Halloween 2025. Every year is a different world, but this is the community you'll be dancing with.",
     "credit": "Photos from Halloween 2025 by Last Weekend.",
     "photos": [
-      {"src": "angels.webp", "alt": "Three guests in holographic silver, white wings and eye halos", "w": 1400, "h": 1400},
-      {"src": "dancefloor.webp", "alt": "Guests in horned masks under violet lasers on the dance floor", "w": 1024, "h": 1533},
-      {"src": "fire-circle.webp", "alt": "A fire performer above a circle of guests, one kneeling in the center", "w": 1024, "h": 1533},
-      {"src": "fire-fans.webp", "alt": "A fire performer spinning flaming fans", "w": 1024, "h": 1533},
-      {"src": "grounds.webp", "alt": "A guest in a glowing crown looks out over the estate grounds at night", "w": 1024, "h": 1533}
+      {
+        "src": "angels.webp",
+        "alt": "Three guests in holographic silver, white wings and eye halos",
+        "w": 1400,
+        "h": 1400
+      },
+      {
+        "src": "dancefloor.webp",
+        "alt": "Guests in horned masks under violet lasers on the dance floor",
+        "w": 1024,
+        "h": 1533
+      },
+      {
+        "src": "fire-circle.webp",
+        "alt": "A fire performer above a circle of guests, one kneeling in the center",
+        "w": 1024,
+        "h": 1533
+      },
+      {
+        "src": "fire-fans.webp",
+        "alt": "A fire performer spinning flaming fans",
+        "w": 1024,
+        "h": 1533
+      },
+      {
+        "src": "grounds.webp",
+        "alt": "A guest in a glowing crown looks out over the estate grounds at night",
+        "w": 1024,
+        "h": 1533
+      }
     ]
   },
   "tickets": {
     "lead": "Two hundred guests. One night.",
     "text": "Tickets are released in four tiers, and each tier closes when it sells out. The earliest tier is the lowest price you'll see.",
-    "tiers": ["The Invitation", "The Gate", "The Threshold", "The Witching Hour"],
+    "tiers": [
+      "The Invitation",
+      "The Gate",
+      "The Threshold",
+      "The Witching Hour"
+    ],
     "notes": [
       "Refunds and transfers to a friend are both allowed.",
       "If it sells out, a waitlist opens.",
@@ -170,7 +430,10 @@
   "vessel": {
     "label": "Official Supplement Partner",
     "spaced": "L O V E S T A C K",
-    "stats": ["21 Ingredients", "1 Complete Protocol"],
+    "stats": [
+      "21 Ingredients",
+      "1 Complete Protocol"
+    ],
     "paragraphs": [
       "We built LoveStack so you could skip the research and focus on your journey.",
       "Two formulas, five days, every dose portioned and organized by day. LoveStack makes taking care of your body during heart-opening experiences simple."
@@ -184,7 +447,16 @@
     "address": "17301 Flint Rock Rd, Austin, TX 78738",
     "start_label": "Event Start",
     "start": "Please arrive during the arrival window (7 to 8 PM) to preserve the integrity and flow of the experience.",
-    "times": [{"k": "Doors open", "v": "7 PM"}, {"k": "Doors close", "v": "8 PM"}],
+    "times": [
+      {
+        "k": "Doors open",
+        "v": "7 PM"
+      },
+      {
+        "k": "Doors close",
+        "v": "8 PM"
+      }
+    ],
     "parking_label": "Parking",
     "parking": [
       "Parking at HAVAN is very limited, so we're offering a small number of parking passes for $50 per car. Add one to your order at checkout.",
@@ -199,15 +471,34 @@
   "inside": {
     "title": "Inside the Gates",
     "items": [
-      {"k": "Phones, Pictures, Videos", "v": "Professional photography will be provided at the beginning of the night, but after the opening ceremonies, all phones should be stored away and out of sight. You can use your phones for dedicated pictures and video time (7 to 9 PM), and then we ask you to put them away so we can enjoy the night.", "strong": "Ask for consent from anyone you are taking a picture or video of BEFORE doing so."},
-      {"k": "Respect the space", "v": "Please treat the property, the art, and the furnishings with care."},
-      {"k": "Shoes", "v": "Shoes will be allowed for this event if they are a part of your costume. Otherwise, take your shoes off and leave them at the front door outside."},
-      {"k": "Pets", "v": "No animal pets will be allowed at the party or on the property."}
+      {
+        "k": "Phones, Pictures, Videos",
+        "v": "Professional photography will be provided at the beginning of the night, but after the opening ceremonies, all phones should be stored away and out of sight. You can use your phones for dedicated pictures and video time (7 to 9 PM), and then we ask you to put them away so we can enjoy the night.",
+        "strong": "Ask for consent from anyone you are taking a picture or video of BEFORE doing so."
+      },
+      {
+        "k": "Respect the space",
+        "v": "Please treat the property, the art, and the furnishings with care."
+      },
+      {
+        "k": "Shoes",
+        "v": "Shoes will be allowed for this event if they are a part of your costume. Otherwise, take your shoes off and leave them at the front door outside."
+      },
+      {
+        "k": "Pets",
+        "v": "No animal pets will be allowed at the party or on the property."
+      }
     ],
     "food_label": "Food and Drink",
     "food": [
-      {"k": "Come fed.", "v": "We'll have a grazing table and plenty of water and non-alcoholic drinks, but this is not a dinner, so please eat a nourishing meal before you arrive."},
-      {"k": "Alcohol-free.", "v": "This is an alcohol-free event, so please leave outside alcohol at home."}
+      {
+        "k": "Come fed.",
+        "v": "We'll have a grazing table and plenty of water and non-alcoholic drinks, but this is not a dinner, so please eat a nourishing meal before you arrive."
+      },
+      {
+        "k": "Alcohol-free.",
+        "v": "This is an alcohol-free event, so please leave outside alcohol at home."
+      }
     ]
   },
   "plusones": {
@@ -216,26 +507,86 @@
     "nominate": "Know someone who would add real magic to this night? You can nominate them below. Our team reviews every nomination, and with so few places left, we can't promise a ticket. If there's a fit, we'll reach out to them directly."
   },
   "faq": [
-    {"q": "Who is this for?", "a": "Our curated community, 21 and over. Bring your ID."},
-    {"q": "Can I bring a plus-one?", "a": "No, every invitation is personal. Nominate them instead, and our team will review it."},
-    {"q": "When should I arrive?", "a": "Between 7 and 8 PM; doors close at 8. The opening ceremony starts at 8:30."},
-    {"q": "Can I leave and come back?", "a": "No, there's no re-entry once you're inside."},
-    {"q": "When does it end?", "a": "Music runs until sunrise, around 6:45 AM. Leave whenever you like, but book your ride home before you arrive."},
-    {"q": "Is there alcohol?", "a": "No, this is an alcohol-free event. Please leave outside alcohol at home."},
-    {"q": "Will there be food?", "a": "A grazing table, water and non-alcoholic drinks, plus tea service by Casa Akasha. It's not a dinner, so eat a nourishing meal first."},
-    {"q": "Where is it?", "a": "HAVAN, 17301 Flint Rock Rd, Austin, TX 78738. It's a private estate in the hills of west Austin and Lakeway."},
-    {"q": "How do I get there?", "a": "Rideshare, carpool or get dropped off. Join the guest WhatsApp group to share rides."},
-    {"q": "Can I park on site?", "a": "Only with a $50 parking pass, added at checkout. Cars without one won't be allowed on the property."},
-    {"q": "Can I use my phone?", "a": "Yes, from 7 to 9 PM for photos and video, always with consent. After that, phones go away for the night."},
-    {"q": "Will there be a photographer?", "a": "Yes, professional photography is provided at the beginning of the night."},
-    {"q": "What should I wear?", "a": "Go big in iridescent, metallic, pearl, chrome, silver, gold or smoke. Zero-effort costumes get sent to the costume corner."},
-    {"q": "Where do my coat and bag go?", "a": "We'll have plenty of places to store coats, bags and extra layers."},
-    {"q": "Do I keep my shoes on?", "a": "Only if they're part of your costume. Otherwise, leave them at the front door outside."},
-    {"q": "Can I bring my pet?", "a": "No animal pets are allowed at the party or on the property."},
-    {"q": "Can I get a refund or transfer my ticket?", "a": "Yes, both are allowed. Email us and we'll take care of it."},
-    {"q": "What if it sells out?", "a": "A waitlist opens. You can also nominate as many people as you like."},
-    {"q": "What's LoveStack?", "a": "A supplement protocol by VESSEL, our official supplement partner. Add it to your ticket for 20% off and pick it up when you arrive."},
-    {"q": "What if someone crosses a line?", "a": "Anyone who doesn't honor the group agreements will be asked to leave. Find any member of our team if you need help."}
+    {
+      "q": "Who is this for?",
+      "a": "Our curated community, 21 and over. Bring your ID."
+    },
+    {
+      "q": "Can I bring a plus-one?",
+      "a": "No, every invitation is personal. Nominate them instead, and our team will review it."
+    },
+    {
+      "q": "When should I arrive?",
+      "a": "Between 7 and 8 PM; doors close at 8. The opening ceremony starts at 8:30."
+    },
+    {
+      "q": "Can I leave and come back?",
+      "a": "No, there's no re-entry once you're inside."
+    },
+    {
+      "q": "When does it end?",
+      "a": "Music runs until sunrise, around 6:45 AM. Leave whenever you like, but book your ride home before you arrive."
+    },
+    {
+      "q": "Is there alcohol?",
+      "a": "No, this is an alcohol-free event. Please leave outside alcohol at home."
+    },
+    {
+      "q": "Will there be food?",
+      "a": "A grazing table, water and non-alcoholic drinks, plus tea service by Casa Akasha. It's not a dinner, so eat a nourishing meal first."
+    },
+    {
+      "q": "Where is it?",
+      "a": "HAVAN, 17301 Flint Rock Rd, Austin, TX 78738. It's a private estate in the hills of west Austin and Lakeway."
+    },
+    {
+      "q": "How do I get there?",
+      "a": "Rideshare, carpool or get dropped off. Join the guest WhatsApp group to share rides."
+    },
+    {
+      "q": "Can I park on site?",
+      "a": "Only with a $50 parking pass, added at checkout. Cars without one won't be allowed on the property."
+    },
+    {
+      "q": "Can I use my phone?",
+      "a": "Yes, from 7 to 9 PM for photos and video, always with consent. After that, phones go away for the night."
+    },
+    {
+      "q": "Will there be a photographer?",
+      "a": "Yes, professional photography is provided at the beginning of the night."
+    },
+    {
+      "q": "What should I wear?",
+      "a": "Go big in iridescent, metallic, pearl, chrome, silver, gold or smoke. Zero-effort costumes get sent to the costume corner."
+    },
+    {
+      "q": "Where do my coat and bag go?",
+      "a": "We'll have plenty of places to store coats, bags and extra layers."
+    },
+    {
+      "q": "Do I keep my shoes on?",
+      "a": "Only if they're part of your costume. Otherwise, leave them at the front door outside."
+    },
+    {
+      "q": "Can I bring my pet?",
+      "a": "No animal pets are allowed at the party or on the property."
+    },
+    {
+      "q": "Can I get a refund or transfer my ticket?",
+      "a": "Yes, both are allowed. Email us and we'll take care of it."
+    },
+    {
+      "q": "What if it sells out?",
+      "a": "A waitlist opens. You can also nominate as many people as you like."
+    },
+    {
+      "q": "What's LoveStack?",
+      "a": "A supplement protocol by VESSEL, our official supplement partner. Add it to your ticket for 20% off and pick it up when you arrive."
+    },
+    {
+      "q": "What if someone crosses a line?",
+      "a": "Anyone who doesn't honor the group agreements will be asked to leave. Find any member of our team if you need help."
+    }
   ],
   "closing": {
     "line": "Two hundred places. One night.",
