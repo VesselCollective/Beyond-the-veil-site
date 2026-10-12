@@ -6,38 +6,46 @@
 <title>Ticket holders · Beyond the Veil</title>
 <meta name="description" content="Ticket-holder entry">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="theme-color" content="#0b0c13">
+<meta name="theme-color" content="#07080d">
+<meta name="color-scheme" content="dark">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Beyond the Veil">
 <meta property="og:title" content="Beyond the Veil: A Halloween Transformation">
 <meta property="og:description" content="Ticket-holder entry">
 <meta property="og:image" content="https://beyondtheveil-atx.netlify.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://beyondtheveil-atx.netlify.app/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='9' y='9' width='14' height='14' transform='rotate(45 16 16)' fill='%23e7e9e7'/%3E%3C/svg%3E">
-<link rel="preload" href="/fonts/cinzel-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/touch-icon.png">
+<link rel="preload" href="/fonts/cinzel-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css?v=7">
+<link rel="stylesheet" href="/style.css?v=10">
 
 </head>
-<body>
+<body class="guide-page">
+<canvas class="veil veil-fixed" aria-hidden="true"></canvas>
 <main>
 <section class="gate" id="gate">
-  <div>
+  <div class="gate-card">
+    <span class="gem" aria-hidden="true"></span>
     <h2>Cross the Veil</h2>
     <div class="rule" aria-hidden="true"><span></span></div>
     <p>Enter the code from your Partiful invite to open the ticket-holder guide.</p>
     <form id="gate-form">
       <label class="sr-only" for="code">Gate code</label>
-      <input id="code" name="code" autocomplete="off" autocapitalize="characters" spellcheck="false" required autofocus>
+      <input id="code" name="code" autocomplete="off" autocapitalize="characters" spellcheck="false" required autofocus placeholder="Code">
       <p class="error" role="alert" id="gate-error" hidden>That isn't the code. Check your Partiful invite and try again.</p>
       <button class="btn btn-holo" type="submit">Open the guide</button>
     </form>
-    <p style="margin-top:2rem"><a href="/">Back to the invitation</a></p>
+    <p class="back"><a href="/">Back to the invitation</a></p>
   </div>
 </section>
 <section class="guide" id="guide" hidden><div class="wrap" id="guide-body"></div></section>
 </main>
-<script>window.__VEIL__ = {"salt": "dYSXWpMhFaNBmKs89o6rzQ==", "iv": "LV3+0X5uxFuIws/g", "ct": "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", "iter": 310000};</script>
-<script src="/gate.js?v=7" defer></script>
+<script>window.__VEIL__ = {"salt": "+OQFtbwXv+LpjUKaikabAQ==", "iv": "8HibP6vwpXRxrkou", "ct": "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", "iter": 310000};</script>
+<script src="/veil.js?v=10" defer></script>
+<script src="/gate.js?v=10" defer></script>
 </body>
 </html>
