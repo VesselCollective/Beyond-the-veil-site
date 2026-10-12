@@ -189,7 +189,7 @@
         "name": "Tobacco Bar"
       }
     ],
-    "host_label": "Your host",
+    "host_label": "Co-host",
     "host": {
       "name": "Michael Pullano",
       "photo": "michael-pullano.webp"
