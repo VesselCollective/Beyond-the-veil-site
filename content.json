@@ -492,6 +492,18 @@
         "h": 1533
       },
       {
+        "src": "red-devils.webp",
+        "alt": "Two guests in red light, one in horns and black lace, one in fur",
+        "w": 768,
+        "h": 1024
+      },
+      {
+        "src": "grounds.webp",
+        "alt": "A guest in a glowing crown looks out over the estate grounds at night",
+        "w": 1024,
+        "h": 1533
+      },
+      {
         "src": "medusa.webp",
         "alt": "A smiling Medusa in a golden snake crown opens a candy-stocked case",
         "w": 768,
@@ -508,18 +520,6 @@
         "alt": "Three guests as a ringmaster in a red top hat, a lavender goddess and a golden laurel muse",
         "w": 768,
         "h": 1024
-      },
-      {
-        "src": "fairy.webp",
-        "alt": "A guest in a sequined gown and iridescent fairy wings pulls a playful face",
-        "w": 768,
-        "h": 1024
-      },
-      {
-        "src": "grounds.webp",
-        "alt": "A guest in a glowing crown looks out over the estate grounds at night",
-        "w": 1024,
-        "h": 1533
       },
       {
         "src": "laser-dance.webp",
