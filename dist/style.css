@@ -460,3 +460,18 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
 .guide-toc a:hover { background: rgba(236,238,242,.06); }
 .guide-page .nav .brand { opacity: 1; }
 .nav-links a[aria-current="page"] { color: var(--spectral); text-decoration: underline; text-underline-offset: .4em; }
+
+/* ---------- Venue photos ---------- */
+.venue-photos { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; max-width: 64rem; margin: .4rem auto 2.4rem; }
+.venue-photos figure { margin: 0; border-radius: var(--radius); overflow: hidden; box-shadow: inset 0 0 0 1px var(--hair), 0 20px 50px rgba(0,0,0,.45); }
+.venue-photos figure:first-child, .venue-photos figure:nth-child(4) { grid-column: 1 / -1; }
+.venue-photos figure:nth-child(4) img { aspect-ratio: 16 / 9; }
+.venue-photos img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.venue-photos figure:first-child img { aspect-ratio: 16 / 9; }
+@media (min-width: 761px) {
+  .venue-photos { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: auto auto; gap: 1rem; }
+  .venue-photos figure:first-child { grid-column: 1; grid-row: 1 / span 2; }
+  .venue-photos figure:first-child img { aspect-ratio: auto; }
+  .venue-photos figure:nth-child(4) { grid-column: 2 / span 2; }
+  .venue-photos figure:nth-child(4) img { aspect-ratio: 3 / 1.4; }
+}

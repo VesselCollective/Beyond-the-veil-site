@@ -450,6 +450,9 @@ def index_page():
   <div class="wrap">
     {heading(vn['title'], 'venue-h', 'Getting there')}
     <p class="intro">{e(vn['text'])}</p>
+  </div>
+  <div class="venue-photos">{"".join(f'<figure><img src="/img/{e(p["src"])}" alt="{e(p["alt"])}" loading="lazy" width="1200" height="800"></figure>' for p in vn["photos"])}</div>
+  <div class="wrap">
     <div class="address">
       <strong>{e(vn['name'])}</strong>
       <span>{e(vn['address'])}</span>
