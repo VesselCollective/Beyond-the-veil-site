@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "15"
+VERSION = "16"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -250,7 +250,12 @@ def index_page():
         ("invitation", "music", "agreement", "costume", "tickets", "vessel", "venue", "inside", "plusones"))
     gcal, _ = calendar_links()
 
-    paras = "\n".join(f"<p>{e(p)}</p>" for p in inv["paragraphs"])
+    def rich(t):
+        import re
+        t = e(t)
+        t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
+        return re.sub(r"_(.+?)_", r"<em>\1</em>", t)
+    paras = "\n".join(f'<p{" class=\"cap\"" if i == 0 else ""}>{rich(p)}</p>' for i, p in enumerate(inv["paragraphs"]))
     flow = "\n".join(
         f'<li class="{"key" if s.get("key") else ""}"><time>{e(s["time"])}</time>'
         f'<h3>{e(s["name"])}</h3><p>{e(s["text"])}</p></li>' for s in C["flow"])

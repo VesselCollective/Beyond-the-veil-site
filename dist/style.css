@@ -171,6 +171,10 @@ main > section { position: relative; padding: clamp(2.8rem, 6.5vw, 4.5rem) var(-
 .letter { max-width: 40rem; margin: 0 auto; padding: clamp(2rem, 6vw, 3.6rem) clamp(1.4rem, 5vw, 3.4rem); }
 .letter h2.greeting { font-size: clamp(1.5rem, 1.1rem + 1.8vw, 2.2rem); margin-bottom: 1.8rem; }
 .letter p { color: var(--text); }
+.letter p:not(.signoff) { font-size: 1.1em; line-height: 1.85; margin: 0 0 1.15em; }
+.letter b { font-weight: 500; color: #fff; }
+.letter em { font-family: var(--script); font-style: italic; font-size: 1.22em; line-height: 1; color: var(--spectral); }
+.letter .cap::first-letter { float: left; font-family: var(--display); font-size: 3.5em; line-height: .85; padding: .1em .14em 0 0; color: transparent; background: var(--holo); -webkit-background-clip: text; background-clip: text; }
 .signoff { text-align: right; font-family: var(--script); font-style: italic; font-size: 1.3em; margin: 2rem 0 0; color: var(--spectral) !important; }
 .signoff strong { display: block; font-style: normal; font-family: var(--display); font-size: .8em; letter-spacing: .08em; margin-top: .2rem; }
 
