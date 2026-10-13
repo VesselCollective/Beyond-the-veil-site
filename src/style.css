@@ -125,8 +125,7 @@ h3 { font-family: var(--display); font-weight: 400; color: var(--spectral); lett
   background: var(--void);
 }
 .hero-bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 53% 50%; transform-origin: 53% 50%; animation: drift 26s ease-in-out infinite alternate; }
-@keyframes drift { from { transform: scale(1.02); } to { transform: scale(1.1); } }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 53% 50%; transform: scale(1.04); }
 .hero-bg::after {
   content: ""; position: absolute; inset: 0;
   background:
@@ -148,16 +147,16 @@ h3 { font-family: var(--display); font-weight: 400; color: var(--spectral); lett
 .actions { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; margin-top: 1.7rem; }
 .rules-line { margin: 1.2rem 0 0; font-family: var(--display); letter-spacing: .16em; font-size: .7rem; color: var(--mist); }
 .rules-line .gem { width: .32em; height: .32em; }
-.countdown-band { text-align: center; padding: 1.6rem var(--gutter) 0; }
-.countdown { display: inline-grid; grid-template-columns: repeat(4, auto); border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
-.countdown div { padding: .55rem clamp(.8rem, 3vw, 1.6rem); display: grid; justify-items: center; }
+.countdown-band { text-align: center; padding: 2.2rem var(--gutter) .4rem; }
+.countdown { display: inline-grid; grid-template-columns: repeat(4, auto); border-top: 1px solid var(--hair-strong); border-bottom: 1px solid var(--hair-strong); }
+.countdown div { padding: .9rem clamp(.7rem, 3.4vw, 2.4rem); display: grid; justify-items: center; gap: .2rem; }
 .countdown div + div { border-left: 1px solid var(--hair); }
-.countdown b { font-family: var(--display); font-weight: 400; font-size: clamp(1.4rem, 1rem + 1.8vw, 2rem); color: var(--spectral); font-variant-numeric: tabular-nums; line-height: 1.1; }
-.countdown small { font-family: var(--display); color: var(--mist); letter-spacing: .12em; font-size: .6rem; }
-.countdown-label { font-family: var(--script); font-style: italic; color: var(--mist); margin: .55rem 0 0; font-size: 1.1rem; }
+.countdown b { font-family: var(--display); font-weight: 600; font-size: clamp(2.3rem, 1.4rem + 4vw, 4.4rem); color: #fff; font-variant-numeric: tabular-nums; line-height: 1; text-shadow: 0 0 28px rgba(211,202,246,.35); }
+.countdown small { font-family: var(--display); font-weight: 600; color: var(--alien); letter-spacing: .16em; font-size: clamp(.62rem, .55rem + .3vw, .8rem); }
+.countdown-label { font-family: var(--script); font-style: italic; color: var(--spectral); margin: .7rem 0 0; font-size: clamp(1.2rem, 1rem + .6vw, 1.5rem); }
 
 /* ---------- Sections ---------- */
-main > section { position: relative; padding: clamp(4.5rem, 10vw, 7rem) var(--gutter); }
+main > section { position: relative; padding: clamp(2.8rem, 6.5vw, 4.5rem) var(--gutter); }
 .wrap { max-width: var(--measure); margin: 0 auto; }
 .wrap.wide { max-width: 64rem; }
 .reveal-ready main > section { opacity: 0; transform: translateY(24px); transition: opacity 1s ease, transform 1s cubic-bezier(.2,.7,.2,1); }
@@ -165,7 +164,7 @@ main > section { position: relative; padding: clamp(4.5rem, 10vw, 7rem) var(--gu
 .panel, .letter, .nominate .wrap { background: var(--organza), var(--glass); backdrop-filter: blur(18px) saturate(1.15); -webkit-backdrop-filter: blur(18px) saturate(1.15); box-shadow: inset 0 0 0 1px rgba(236,238,242,.1), 0 30px 80px rgba(0,0,0,.35); border-radius: var(--radius); }
 
 /* Invitation letter */
-.invitation { padding-top: clamp(3rem, 7vw, 4.5rem) !important; }
+.invitation { padding-top: clamp(1.2rem, 3vw, 2rem) !important; }
 .letter { max-width: 40rem; margin: 0 auto; padding: clamp(2rem, 6vw, 3.6rem) clamp(1.4rem, 5vw, 3.4rem); }
 .letter h2.greeting { font-size: clamp(1.5rem, 1.1rem + 1.8vw, 2.2rem); margin-bottom: 1.8rem; }
 .letter p { color: var(--text); }
@@ -213,6 +212,8 @@ main > section { position: relative; padding: clamp(4.5rem, 10vw, 7rem) var(--gu
 .joined .gem { width: .28em; height: .28em; margin: 0 .3em; }
 .activations { list-style: none; padding: 0; margin: 0 auto; display: grid; gap: .8rem; max-width: 52rem; }
 .activations li { padding: 1.4rem 1rem; border-radius: var(--radius); background: var(--organza), var(--glass); box-shadow: inset 0 0 0 1px var(--hair); display: grid; gap: .2rem; }
+.activations li { align-content: center; justify-items: center; }
+.act-logo { display: block; width: auto; height: 4.6rem; max-width: 80%; object-fit: contain; margin: 0 auto .6rem; }
 .act-name { font-family: var(--display); font-size: 1.3rem; color: var(--spectral); letter-spacing: .06em; }
 .act-by { font-family: var(--script); font-style: italic; font-size: 1.15rem; color: var(--alien); }
 
@@ -392,7 +393,7 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
   .lineup { gap: 1.2rem; }
   .lineup li { flex-basis: calc(25% - .9rem); }
   .cast li { flex-basis: calc(20% - .96rem); }
-  .activations { grid-template-columns: repeat(3, 1fr); }
+  .activations { grid-template-columns: repeat(4, 1fr); max-width: 64rem; }
   .palette-words { grid-template-columns: minmax(0, 22rem) 1fr; gap: 1rem 3.4rem; align-items: start; }
   .palette-words .costume-board { grid-row: span 2; margin: 2.6rem 0 0; }
   .palette-words .colors { grid-template-columns: repeat(5, 1fr); max-width: none; }
@@ -433,14 +434,14 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
 }
 
 /* ---------- Halloween 2025: recap first, then a slow river of photos ---------- */
-.community { padding-top: clamp(3.4rem, 8vw, 5.5rem) !important; }
+.community { padding-top: clamp(2.6rem, 6vw, 4rem) !important; }
 .community .video { margin-top: 1.4rem; }
 .marquee { overflow: hidden; margin: 2.2rem 0 0; padding: .4rem 0 1rem; -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); scrollbar-width: none; }
 .marquee::-webkit-scrollbar { display: none; }
-.marquee-track { display: flex; width: max-content; animation: drift 190s linear infinite; }
+.marquee-track { display: flex; width: max-content; animation: river 190s linear infinite; }
 .marquee .shot { flex: 0 0 auto; width: min(52vw, 15rem); margin-right: .9rem; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
-@keyframes drift { to { transform: translateX(-50%); } }
+@keyframes river { to { transform: translateX(-50%); } }
 
 /* ---------- The hook, above the letter ---------- */
 .hook { max-width: 44rem; margin: 0 auto clamp(2.4rem, 6vw, 3.6rem); text-align: center; display: grid; gap: 1.3rem; justify-items: center; }

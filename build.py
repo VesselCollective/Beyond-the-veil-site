@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "14"
+VERSION = "15"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -274,7 +274,7 @@ def index_page():
                    + [(mu["featuring_label"], f) for f in mu["featuring"]])
     cast = "".join(portrait(p["name"], p.get("photo"), role=r) for r, p in cast_people)
     acts = "".join(
-        f'<li><span class="act-name">{e(a["name"])}</span>' + (f'<span class="act-by">{e(a["by"])}</span>' if a.get("by") else "") + "</li>"
+        f'<li>' + (f'<img class="act-logo" src="/img/{e(a["logo"])}" alt="{e(a["logo_alt"])}" width="{a["logo_w"]}" height="{a["logo_h"]}" loading="lazy">' if a.get("logo") else "") + f'<span class="act-name">{e(a["name"])}</span>'  + (f'<span class="act-by">{e(a["by"])}</span>' if a.get("by") else "") + "</li>"
         for a in mu["activations"])
 
     agree = "".join(f'<li><strong>{e(i["k"])}</strong><span>{e(i["v"])}</span></li>' for i in ag["items"])

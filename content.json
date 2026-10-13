@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Beyond the Veil · Arrive as your most expressed self",
+    "title": "Beyond the Veil · Celebrate your most expressed self",
     "description": "A private, alcohol-free Halloween gathering at HAVAN, October 31 to November 1, 2026. Two stages until sunrise.",
     "site_url": "https://beyondtheveil-atx.netlify.app"
   },
@@ -12,7 +12,7 @@
   "hero": {
     "presenters": "Michael Pullano and Austin Dance Temple present",
     "title": "Beyond the Veil",
-    "subtitle": "Cross over. Arrive as your most expressed self. Dance till sunrise.",
+    "subtitle": "Cross over. Celebrate your most expressed self. Dance till sunrise.",
     "dates": "October 31 to November 1, 2026",
     "venue": "HAVAN",
     "place": "West Austin / Lakeway",
@@ -197,11 +197,23 @@
     "activations_label": "Activations",
     "activations": [
       {
-        "name": "Photo Area"
+        "name": "Professional Photography + Photo Zone"
       },
       {
         "name": "Tea Service",
-        "by": "by Casa Akasha"
+        "by": "by Casa Akasha",
+        "logo": "casa-akasha.webp",
+        "logo_alt": "Casa Akasha",
+        "logo_w": 640,
+        "logo_h": 231
+      },
+      {
+        "name": "Sound Beds",
+        "by": "by Zenthesia",
+        "logo": "zenthesia.webp",
+        "logo_alt": "Zenthesia",
+        "logo_w": 154,
+        "logo_h": 188
       },
       {
         "name": "Tobacco Bar"
@@ -511,7 +523,7 @@
       }
     ],
     "title": "Halloween 2025",
-    "kicker": "A Rabbit Hole Production"
+    "kicker": ""
   },
   "tickets": {
     "lead": "Two hundred guests. One night.",
