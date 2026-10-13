@@ -438,7 +438,7 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
 .community .video { margin-top: 1.4rem; }
 .marquee { overflow: hidden; margin: 2.2rem 0 0; padding: .4rem 0 1rem; -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); scrollbar-width: none; }
 .marquee::-webkit-scrollbar { display: none; }
-.marquee-track { display: flex; width: max-content; animation: river 190s linear infinite; }
+.marquee-track { display: flex; width: max-content; animation: river 152s linear infinite; }
 .marquee .shot { flex: 0 0 auto; width: min(52vw, 15rem); margin-right: .9rem; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 @keyframes river { to { transform: translateX(-50%); } }
