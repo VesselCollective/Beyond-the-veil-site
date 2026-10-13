@@ -468,6 +468,18 @@
         "h": 1024
       },
       {
+        "src": "tea-ceremony.webp",
+        "alt": "A candlelit tea ceremony under paper lanterns, guests in costume holding cups",
+        "w": 768,
+        "h": 1024
+      },
+      {
+        "src": "dancefloor.webp",
+        "alt": "Guests in horned masks under violet lasers on the dance floor",
+        "w": 1024,
+        "h": 1533
+      },
+      {
         "src": "fire-fans.webp",
         "alt": "A fire performer spinning flaming fans",
         "w": 1024,
@@ -486,8 +498,8 @@
         "h": 1024
       },
       {
-        "src": "dancefloor.webp",
-        "alt": "Guests in horned masks under violet lasers on the dance floor",
+        "src": "grounds.webp",
+        "alt": "A guest in a glowing crown looks out over the estate grounds at night",
         "w": 1024,
         "h": 1533
       },
@@ -498,20 +510,14 @@
         "h": 1024
       },
       {
-        "src": "grounds.webp",
-        "alt": "A guest in a glowing crown looks out over the estate grounds at night",
-        "w": 1024,
-        "h": 1533
-      },
-      {
-        "src": "medusa.webp",
-        "alt": "A smiling Medusa in a golden snake crown opens a candy-stocked case",
+        "src": "calavera.webp",
+        "alt": "A guest with half-calavera face paint, horns and a crown of gray roses",
         "w": 768,
         "h": 1024
       },
       {
-        "src": "calavera.webp",
-        "alt": "A guest with half-calavera face paint, horns and a crown of gray roses",
+        "src": "medusa.webp",
+        "alt": "A smiling Medusa in a golden snake crown opens a candy-stocked case",
         "w": 768,
         "h": 1024
       },
