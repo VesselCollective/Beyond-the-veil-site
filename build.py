@@ -332,7 +332,7 @@ def index_page():
 <section class="invitation" id="invitation" aria-labelledby="inv-h">
   <div class="hook">
     <p class="hook-head">{e(C['hook']['line'].split('. ', 1)[0])}.</p>
-    <p class="hook-line">{e(C['hook']['line'].split('. ', 1)[1])}</p>
+    {"".join(f'<p class="hook-line">{e(p)}</p>' for p in C['hook']['line'].split('. ', 1)[1].split(chr(10) + chr(10)))}
     <p class="hook-curated">{e(C['hook']['curated'])}</p>
     <p class="hook-sober"><strong>{e(C['hook']['alcohol_k'])}</strong> {e(C['hook']['alcohol_v'])}</p>
   </div>
