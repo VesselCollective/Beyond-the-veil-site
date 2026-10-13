@@ -426,26 +426,26 @@
     "credit": "Halloween 2025 was a Rabbit Hole production. Photos by Last Weekend.",
     "photos": [
       {
-        "src": "angels.webp",
-        "alt": "Three guests in holographic silver, white wings and eye halos",
-        "w": 1400,
-        "h": 1400
-      },
-      {
-        "src": "dancefloor.webp",
-        "alt": "Guests in horned masks under violet lasers on the dance floor",
-        "w": 1024,
-        "h": 1533
-      },
-      {
         "src": "fire-circle.webp",
         "alt": "A fire performer above a circle of guests, one kneeling in the center",
         "w": 1024,
         "h": 1533
       },
       {
+        "src": "angels.webp",
+        "alt": "Three guests in holographic silver, white wings and eye halos",
+        "w": 1400,
+        "h": 1400
+      },
+      {
         "src": "fire-fans.webp",
         "alt": "A fire performer spinning flaming fans",
+        "w": 1024,
+        "h": 1533
+      },
+      {
+        "src": "dancefloor.webp",
+        "alt": "Guests in horned masks under violet lasers on the dance floor",
         "w": 1024,
         "h": 1533
       },
