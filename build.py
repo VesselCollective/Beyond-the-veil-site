@@ -499,7 +499,7 @@ def index_page():
   {rule()}
   <p>Questions: <a href="mailto:{e(L['email'])}">{e(L['email'])}</a></p>
   <p>{e(C['footer']['noshare'])}</p>
-  <p class="fine">Michael Pullano and Austin Dance Temple. <a href="/guide/">Party Guide</a></p>
+  <p class="fine">Michael Pullano &amp; Austin Dance Temple. <a href="/guide/">Party Guide</a></p>
 </footer>
 
 <div class="sticky" aria-hidden="true">{buy("btn btn-holo").replace('rel="noopener"', 'rel="noopener" tabindex="-1"')}</div>
