@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "18"
+VERSION = "19"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -135,17 +135,17 @@ def hero():
       <a class="btn btn-ghost" href="#nominate">Nominate a guest</a>
     </div>
     <p class="rules-line">{rules}</p>
+    <div class="countdown-band" aria-label="Time until the gate opens">
+      <div class="countdown" role="timer">
+        <div><b data-u="d">--</b><small>Days</small></div>
+        <div><b data-u="h">--</b><small>Hours</small></div>
+        <div><b data-u="m">--</b><small>Minutes</small></div>
+        <div><b data-u="s">--</b><small>Seconds</small></div>
+      </div>
+      <p class="countdown-label">until the gate opens</p>
+    </div>
   </div>
-</section>
-<div class="countdown-band" aria-label="Time until the gate opens">
-  <div class="countdown" role="timer">
-    <div><b data-u="d">--</b><small>Days</small></div>
-    <div><b data-u="h">--</b><small>Hours</small></div>
-    <div><b data-u="m">--</b><small>Minutes</small></div>
-    <div><b data-u="s">--</b><small>Seconds</small></div>
-  </div>
-  <p class="countdown-label">until the gate opens</p>
-</div>"""
+</section>"""
 
 
 def faq_html(items):
