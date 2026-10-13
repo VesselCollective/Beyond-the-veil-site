@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Beyond the Veil · Come as your wildest self",
+    "title": "Beyond the Veil · Arrive as your most expressed self",
     "description": "A private, alcohol-free Halloween gathering at HAVAN, October 31 to November 1, 2026. Two stages until sunrise.",
     "site_url": "https://beyondtheveil-atx.netlify.app"
   },
@@ -12,7 +12,7 @@
   "hero": {
     "presenters": "Michael Pullano and Austin Dance Temple present",
     "title": "Beyond the Veil",
-    "subtitle": "Cross over. Come as your wildest self. Leave at sunrise.",
+    "subtitle": "Cross over. Arrive as your most expressed self. Dance till sunrise.",
     "dates": "October 31 to November 1, 2026",
     "venue": "HAVAN",
     "place": "West Austin / Lakeway",
@@ -438,10 +438,34 @@
         "h": 1400
       },
       {
+        "src": "throne-couple.webp",
+        "alt": "A couple in red brocade and a corset on a carved wooden throne",
+        "w": 768,
+        "h": 1024
+      },
+      {
+        "src": "fairy.webp",
+        "alt": "A guest in a sequined gown and iridescent fairy wings pulls a playful face",
+        "w": 768,
+        "h": 1024
+      },
+      {
         "src": "fire-fans.webp",
         "alt": "A fire performer spinning flaming fans",
         "w": 1024,
         "h": 1533
+      },
+      {
+        "src": "green-couple.webp",
+        "alt": "A green-haired forest sprite and a guest in a leopard mask and sequined jacket",
+        "w": 768,
+        "h": 1024
+      },
+      {
+        "src": "red-feathers.webp",
+        "alt": "A guest in a golden sunburst halo before red ostrich-feather wings",
+        "w": 768,
+        "h": 1024
       },
       {
         "src": "dancefloor.webp",
@@ -450,10 +474,22 @@
         "h": 1533
       },
       {
+        "src": "trio.webp",
+        "alt": "Three guests as a ringmaster in a red top hat, a lavender goddess and a golden laurel muse",
+        "w": 768,
+        "h": 1024
+      },
+      {
         "src": "grounds.webp",
         "alt": "A guest in a glowing crown looks out over the estate grounds at night",
         "w": 1024,
         "h": 1533
+      },
+      {
+        "src": "calavera.webp",
+        "alt": "A guest with half-calavera face paint, horns and a crown of gray roses",
+        "w": 768,
+        "h": 1024
       }
     ],
     "title": "Halloween 2025",

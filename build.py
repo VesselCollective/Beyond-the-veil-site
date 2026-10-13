@@ -293,7 +293,7 @@ def index_page():
         return "".join(
             f'<figure class="shot"{" aria-hidden=\"true\"" if hidden else ""}><img src="/img/{e(p["src"])}" alt="{"" if hidden else e(p["alt"])}" loading="lazy" width="{p["w"]}" height="{p["h"]}"></figure>'
             for p in C["community"]["photos"])
-    gallery = shots(False) + shots(True) + shots(True)
+    gallery = shots(False) + shots(True)
 
     tiers = "\n".join(f'<li><span class="tier-n">{i + 1}</span>{e(x)}</li>' for i, x in enumerate(t["tiers"]))
     notes = "".join(f"<li>{e(n)}</li>" for n in t["notes"])
