@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "16"
+VERSION = "17"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -255,7 +255,12 @@ def index_page():
         t = e(t)
         t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
         return re.sub(r"_(.+?)_", r"<em>\1</em>", t)
-    paras = "\n".join(f'<p{" class=\"cap\"" if i == 0 else ""}>{rich(p)}</p>' for i, p in enumerate(inv["paragraphs"]))
+    def para(i, p):
+        if isinstance(p, dict):
+            a, z = p["feature"]
+            return f'<div class="feature" aria-label="{e(a)} {e(z)}"><div class="gemline" aria-hidden="true"><i></i></div><p class="feature-a">{"".join(f'<span>{e(x)}</span>' for x in a.replace(", and ", ",|and ").split("|"))}</p><p class="feature-b">{e(z)}</p><div class="gemline" aria-hidden="true"><i></i></div></div>'
+        return f'<p{" class=\"cap\"" if i == 0 else ""}>{rich(p)}</p>'
+    paras = "\n".join(para(i, p) for i, p in enumerate(inv["paragraphs"]))
     flow = "\n".join(
         f'<li class="{"key" if s.get("key") else ""}"><time>{e(s["time"])}</time>'
         f'<h3>{e(s["name"])}</h3><p>{e(s["text"])}</p></li>' for s in C["flow"])

@@ -59,7 +59,12 @@
       "On the 31st of October, as the sun goes down and the veil between worlds thins, **a gate will open in the hills of Austin** to an estate that will become our playground.",
       "For centuries, people have gathered at this time of year to mark the turning from harvest to winter and to honor those who came before. Disguises were worn as a way to walk between worlds, to become someone else for one night and pass unrecognized among the spirits.",
       "This year, we're giving you a permission slip to wear a disguise that **does the opposite.** Create a costume that celebrates the bigness of your expression.",
-      "This event is your canvas, and your gifts are the paint. **Be bold, be wild, and play BIG!!**",
+      {
+        "feature": [
+          "This event is your canvas, and your gifts are the paint.",
+          "Be bold, be wild, and play BIG!!"
+        ]
+      },
       "Inside the gates, every expression is honored: your movement, your voice, your dance, and your essence.",
       "As we move beyond the veil, let the friction fall away, _let your “try” die, and let your gifts live._",
       "Everything you need to walk between worlds is below: the flow of the night, inspiration for your costume, how to buy tickets, ride-sharing options and parking."
