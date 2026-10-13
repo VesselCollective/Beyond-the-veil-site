@@ -327,7 +327,7 @@ main > section { position: relative; padding: clamp(2.8rem, 6.5vw, 4.5rem) var(-
 .vessel-inner { max-width: 64rem; margin: 0 auto; }
 .vessel .label { color: var(--gold); margin-top: 0; }
 .wordmark { width: min(62%, 18rem); margin: 0 auto 1.4rem; }
-.spaced { font-size: clamp(1.25rem, .9rem + 1.6vw, 2rem); letter-spacing: .32em; }
+.spaced { font-size: clamp(1.6rem, 1.1rem + 2vw, 2.6rem); letter-spacing: .16em; margin-right: -.16em; }
 .stats { font-family: var(--display); color: var(--gold); letter-spacing: .14em; font-size: clamp(.82rem, .7rem + .5vw, 1rem); margin: 1rem 0 2.4rem; }
 .stats .gem { background: var(--gold); box-shadow: none; }
 .vessel-grid { display: grid; gap: 2rem; align-items: center; text-align: left; }
