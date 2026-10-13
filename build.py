@@ -499,7 +499,6 @@ def index_page():
 </section>
 
 <section class="closing" aria-label="Closing">
-  <p class="closing-line">{e(C['closing']['line'])}</p>
   <p class="closing-call">{e(C['closing']['call'])}</p>
   {buy("btn btn-holo btn-lg")}
 </section>
