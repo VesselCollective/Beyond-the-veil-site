@@ -133,7 +133,10 @@ h3 { font-family: var(--display); font-weight: 400; color: var(--spectral); lett
     radial-gradient(120% 80% at 50% 45%, transparent 55%, rgba(7,8,13,.7) 100%);
 }
 .hero-top { position: relative; }
-.presenters { font-family: var(--display); color: var(--text); letter-spacing: .16em; font-size: clamp(.68rem, .6rem + .4vw, .9rem); margin: 0 auto 1rem; max-width: 30rem; text-wrap: balance; text-shadow: 0 2px 12px rgba(0,0,0,.8); }
+.presenters { font-family: var(--display); color: var(--text); letter-spacing: .16em; font-size: clamp(.66rem, .55rem + .45vw, .9rem); margin: 0 auto 1rem; text-shadow: 0 2px 12px rgba(0,0,0,.8); display: grid; gap: .25rem; justify-items: center; }
+.presenters span { white-space: nowrap; }
+.presenters .presents { color: var(--alien); letter-spacing: .3em; font-size: .85em; }
+@media (max-width: 400px) { .presenters { letter-spacing: .08em; } }
 .subtitle { font-family: var(--display); color: var(--spectral); letter-spacing: .24em; font-size: clamp(.78rem, .6rem + .9vw, 1.08rem); margin: 1rem 0 0; text-shadow: 0 2px 12px rgba(0,0,0,.8); }
 .hero-info { position: relative; max-width: 54rem; margin: 0 auto; width: 100%; }
 .dates { font-family: var(--display); color: var(--alien); font-size: clamp(1.2rem, .85rem + 1.6vw, 1.9rem); letter-spacing: .05em; margin: 0; text-shadow: 0 2px 14px rgba(0,0,0,.9); }

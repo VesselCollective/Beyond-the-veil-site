@@ -121,7 +121,7 @@ def hero():
     <img src="/img/hero.webp" srcset="/img/hero-800.webp 800w, /img/hero.webp 1254w" sizes="(max-width: 700px) 800px, 1254px" alt="" width="1254" height="1254" fetchpriority="high">
   </div>
   <div class="hero-top">
-    <p class="presenters">{e(h['presenters'])}</p>
+    <p class="presenters"><span>{e(h['presenters'])}</span><span class="presents">{e(h['presents'])}</span></p>
     <h1>{e(h['title'])}</h1>
     <p class="subtitle">{e(h['subtitle'])}</p>
   </div>
