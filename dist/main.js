@@ -42,6 +42,22 @@
     if (tickets) new IntersectionObserver(function (e) { ticketsOn = e[0].isIntersecting; sync(); }, { threshold: 0.1 }).observe(tickets);
     if (closing) new IntersectionObserver(function (e) { closingOn = e[0].isIntersecting; sync(); }).observe(closing);
   }
+  // Header hides while scrolling down and returns on any scroll up.
+  if (nav) {
+    var lastY = window.scrollY, ticking = false;
+    window.addEventListener('scroll', function () {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(function () {
+        var y = window.scrollY, dy = y - lastY;
+        if (doc.classList.contains('menu-open') || y < 80) nav.classList.remove('nav-hidden');
+        else if (dy > 6) nav.classList.add('nav-hidden');
+        else if (dy < -6) nav.classList.remove('nav-hidden');
+        if (Math.abs(dy) > 6) lastY = y;
+        ticking = false;
+      });
+    }, { passive: true });
+    nav.addEventListener('focusin', function () { nav.classList.remove('nav-hidden'); });
+  }
   var btn = document.querySelector('.menu-btn');
   var menu = document.getElementById('menu');
   function setMenu(open) {

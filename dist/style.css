@@ -556,3 +556,13 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
 @media (min-width: 641px) { .vessel-charts { grid-template-columns: 1fr 1fr; } }
 .vessel-photo { max-width: 24rem; margin: 0 auto; }
 @media (min-width: 761px) { .vessel-photo { justify-self: end; margin: 0; } }
+
+/* Header hides on scroll down, returns on scroll up */
+.nav { transition: background-color .35s ease, box-shadow .35s ease, transform .35s cubic-bezier(.2,.7,.2,1); will-change: transform; }
+.nav.nav-hidden { transform: translateY(-110%); }
+
+/* Phones: a slimmer floating ticket button */
+@media (max-width: 980px) {
+  .sticky { padding: .5rem var(--gutter) calc(.6rem + env(safe-area-inset-bottom)); background: linear-gradient(180deg, transparent, rgba(7,8,13,.75) 60%); }
+  .sticky .btn { width: auto; min-width: 0; min-height: 0; padding: .55rem 1.4rem; font-size: .74rem; }
+}
