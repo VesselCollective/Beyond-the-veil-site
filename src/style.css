@@ -404,12 +404,17 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
   .sticky { display: none; }
   .etsy-group li { flex-basis: calc(16.666% - .75rem); }
   .gallery { grid-auto-flow: row; grid-template-columns: repeat(5, 1fr); overflow: visible; max-width: 76rem; margin: 0 auto; padding: 1.4rem 0 1.6rem; }
-  .shot:nth-child(even) { transform: translateY(2.2rem); }
+  .gallery .shot:nth-child(even) { transform: translateY(2.2rem); }
+}
+@media (min-width: 981px) and (max-width: 1240px) {
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: .68rem; letter-spacing: .06em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .btn-holo, .ticket, .warning::before, .hero-bg img { animation: none; }
+  .btn-holo, .ticket, .warning::before, .hero-bg img, .marquee-track { animation: none; }
+  .marquee { overflow-x: auto; }
   .veil { transition: none; }
   *, *::before, *::after { transition-duration: 0s !important; }
 }
@@ -426,3 +431,31 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
   }
   .dates { font-size: 1.12rem; }
 }
+
+/* ---------- Halloween 2025: recap first, then a slow river of photos ---------- */
+.community { padding-top: clamp(3.4rem, 8vw, 5.5rem) !important; }
+.community .video { margin-top: 1.4rem; }
+.marquee { overflow: hidden; margin: 2.2rem 0 0; padding: .4rem 0 1rem; -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); scrollbar-width: none; }
+.marquee::-webkit-scrollbar { display: none; }
+.marquee-track { display: flex; width: max-content; animation: drift 70s linear infinite; }
+.marquee .shot { flex: 0 0 auto; width: min(52vw, 15rem); margin-right: .9rem; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@keyframes drift { to { transform: translateX(-33.3333%); } }
+
+/* ---------- The hook, above the letter ---------- */
+.hook { max-width: 44rem; margin: 0 auto clamp(2.4rem, 6vw, 3.6rem); text-align: center; display: grid; gap: 1.3rem; justify-items: center; }
+.hook-head { font-family: var(--display); color: var(--spectral); font-size: clamp(1.55rem, 1.1rem + 2vw, 2.5rem); line-height: 1.25; letter-spacing: .04em; margin: 0; text-wrap: balance; }
+.hook-line { color: var(--text); font-size: clamp(1.12rem, 1rem + .5vw, 1.32rem); line-height: 1.6; margin: 0; max-width: 36rem; text-wrap: balance; }
+.hook-curated { font-family: var(--script); font-style: italic; color: var(--alien); font-size: clamp(1.2rem, 1.05rem + .6vw, 1.45rem); line-height: 1.5; margin: 0; max-width: 36rem; text-wrap: balance; }
+.hook-sober { position: relative; margin: .4rem 0 0; padding: 1rem 1.4rem; border-radius: 999px; max-width: 38rem; color: var(--text); background: rgba(7,8,13,.55); box-shadow: inset 0 0 0 1px var(--hair-strong), 0 0 40px rgba(211,202,246,.12); text-wrap: balance; }
+.hook-sober strong { font-family: var(--display); font-weight: 600; letter-spacing: .08em; color: transparent; background: var(--holo); -webkit-background-clip: text; background-clip: text; }
+@media (max-width: 640px) { .hook-sober { border-radius: var(--radius); } }
+
+/* ---------- Party Guide page ---------- */
+.guide-intro { padding-top: clamp(7rem, 14vw, 9rem) !important; }
+.guide-intro h1 { font-size: clamp(2.4rem, 1.6rem + 4vw, 4.4rem); margin: 0; letter-spacing: .06em; }
+.guide-toc { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: 1.4rem; }
+.guide-toc a { font-family: var(--display); font-size: .78rem; letter-spacing: .12em; color: var(--spectral); text-decoration: none; padding: .55rem 1rem; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--hair-strong); }
+.guide-toc a:hover { background: rgba(236,238,242,.06); }
+.guide-page .nav .brand { opacity: 1; }
+.nav-links a[aria-current="page"] { color: var(--spectral); text-decoration: underline; text-underline-offset: .4em; }

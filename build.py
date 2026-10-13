@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "13"
+VERSION = "14"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -94,18 +94,20 @@ def calendar_links():
 
 NAV = [("#flow", "The Flow"), ("#music", "Music"), ("#costume", "Costume"), ("#tickets", "Tickets"),
        ("#vessel", "VESSEL"), ("#venue", "Venue"), ("#faq", "FAQ")]
+GUIDE = ("/guide/", "Party Guide")
 
 
-def nav():
-    inline = "".join(f'<a href="{h}">{t}</a>' for h, t in NAV)
-    return f"""<header class="nav" id="nav">
-  <a class="brand" href="#top" aria-label="Beyond the Veil, back to top">{GEM}<span>Beyond the Veil</span></a>
+def nav(base="", solid=False):
+    links = [(base + h, t) for h, t in NAV] + [GUIDE]
+    inline = "".join(f'<a href="{h}"' + (' aria-current="page"' if base and h == GUIDE[0] else "") + f'>{t}</a>' for h, t in links)
+    return f"""<header class="nav{' solid' if solid else ''}" id="nav">
+  <a class="brand" href="{base or ''}#top" aria-label="Beyond the Veil, back to top">{GEM}<span>Beyond the Veil</span></a>
   <nav class="nav-links" aria-label="Sections">{inline}</nav>
   {buy("btn btn-holo btn-sm nav-cta")}
   <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span class="sr-only">Open menu</span><i></i><i></i></button>
 </header>
 <div class="menu" id="menu" hidden>
-  <nav aria-label="Menu">{inline}<a href="#nominate">Nominate</a></nav>
+  <nav aria-label="Menu">{inline}<a href="{base}#nominate">Nominate</a></nav>
   {buy("btn btn-holo")}
 </div>"""
 
@@ -144,6 +146,103 @@ def hero():
   </div>
   <p class="countdown-label">until the gate opens</p>
 </div>"""
+
+
+def faq_html(items):
+    out = []
+    for f in items:
+        link = f' <a href="{e(f["href"])}">{e(f.get("link", "Read more"))}</a>' if f.get("href") else ""
+        out.append(f'<details><summary>{e(f["q"])}</summary><p>{e(f["a"])}{link}</p></details>')
+    return "\n".join(out)
+
+
+def guide_page():
+    g, ag, ins, vn = C["guide"], C["agreement"], C["inside"], C["venue"]
+    agree = "".join(f'<li><strong>{e(i["k"])}</strong><span>{e(i["v"])}</span></li>' for i in ag["items"])
+    inside = "".join(
+        f'<li><h3>{e(i["k"])}</h3><p>{e(i["v"])}</p>' + (f'<p class="must">{e(i["strong"])}</p>' if i.get("strong") else "") + "</li>"
+        for i in ins["items"])
+    food = "".join(f'<li><strong>{e(f["k"])}</strong> {e(f["v"])}</li>' for f in ins["food"])
+    vtimes = "".join(f'<div><dt>{e(x["k"])}</dt><dd>{e(x["v"])}</dd></div>' for x in vn["times"])
+    parking = "".join(f"<p>{e(p)}</p>" for p in vn["parking"])
+    rides = "".join(f"<p>{e(p)}</p>" for p in vn["rides"])
+    return head(f"Party Guide · {C['hero']['title']}", g["intro"]) + f"""<body class="guide-page">
+<a class="skip" href="#main">Skip to the guide</a>
+<canvas class="veil" aria-hidden="true"></canvas>
+<div class="veil-dim" aria-hidden="true"></div>
+{nav("/", solid=True)}
+
+<main id="main">
+<section class="guide-intro" aria-labelledby="guide-h">
+  <div class="wrap center">
+    <p class="kicker">{e(g['kicker'])}</p>
+    <h1 id="guide-h">{e(g['title'])}</h1>
+    {rule()}
+    <p class="lead">{e(g['intro'])}</p>
+    <nav class="guide-toc" aria-label="In this guide"><a href="#agreement">Group Agreement</a><a href="#inside">Inside the Gates</a><a href="#arrival">Getting There</a><a href="#guide-faq">Questions</a></nav>
+  </div>
+</section>
+
+<section id="agreement" class="agreement" aria-labelledby="agree-h">
+  <div class="wrap">
+    {heading(ag['title'], 'agree-h', 'Please read')}
+    <p class="intro">{e(ag['intro'])}</p>
+    <p>{e(ag['lead'])}</p>
+    <ol class="agree">{agree}</ol>
+    <p class="outro">{e(ag['outro'])}</p>
+  </div>
+</section>
+
+<section id="inside" class="inside" aria-labelledby="inside-h">
+  <div class="wrap">
+    {heading(ins['title'], 'inside-h', 'House notes')}
+    <ul class="inside-list">{inside}</ul>
+    <h3 class="label">{e(ins['food_label'])}</h3>
+    <ul class="points">{food}</ul>
+  </div>
+</section>
+
+<section id="arrival" class="venue" aria-labelledby="arrival-h">
+  <div class="wrap">
+    {heading('Getting There', 'arrival-h', vn['name'])}
+    <div class="address">
+      <strong>{e(vn['name'])}</strong>
+      <span>{e(vn['address'])}</span>
+      {ext(L['map'], 'Open in Maps', 'btn btn-ghost btn-sm')}
+    </div>
+    <h3>{e(vn['start_label'])}</h3>
+    <p>{e(vn['start'])}</p>
+    <dl class="facts small">{vtimes}</dl>
+    <h3>{e(vn['parking_label'])}</h3>
+    {parking}
+    <h3>{e(vn['rides_label'])}</h3>
+    {rides}
+    <p class="center">{ext(L['whatsapp'], 'Join the rideshare WhatsApp group', 'btn btn-holo')}</p>
+  </div>
+</section>
+
+<section id="guide-faq" class="faq" aria-labelledby="gfaq-h">
+  <div class="wrap">
+    {heading('Questions', 'gfaq-h', 'House rules')}
+    <div class="faq-list">
+{faq_html(g['faq'])}
+    </div>
+    <p class="center ask">Anything else? Email <a href="mailto:{e(L['email'])}">{e(L['email'])}</a>.</p>
+    <p class="center"><a class="btn btn-ghost" href="/">Back to the invitation</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  {rule()}
+  <p>Questions: <a href="mailto:{e(L['email'])}">{e(L['email'])}</a></p>
+  <p>{e(C['footer']['noshare'])}</p>
+</footer>
+<script src="/veil.js?v={VERSION}" defer></script>
+<script src="/main.js?v={VERSION}" defer></script>
+</body>
+</html>
+"""
 
 
 def index_page():
@@ -190,9 +289,11 @@ def index_page():
                   f'<span class="etsy-t">{e(i["t"])}</span><em>Shop on Etsy</em></a></li>' for i in g["items"])
         + "</ul></div>" for g in co["etsy_groups"])
 
-    gallery = "\n".join(
-        f'<figure class="shot"><img src="/img/{e(p["src"])}" alt="{e(p["alt"])}" loading="lazy" width="{p["w"]}" height="{p["h"]}"></figure>'
-        for p in C["community"]["photos"])
+    def shots(hidden):
+        return "".join(
+            f'<figure class="shot"{" aria-hidden=\"true\"" if hidden else ""}><img src="/img/{e(p["src"])}" alt="{"" if hidden else e(p["alt"])}" loading="lazy" width="{p["w"]}" height="{p["h"]}"></figure>'
+            for p in C["community"]["photos"])
+    gallery = shots(False) + shots(True) + shots(True)
 
     tiers = "\n".join(f'<li><span class="tier-n">{i + 1}</span>{e(x)}</li>' for i, x in enumerate(t["tiers"]))
     notes = "".join(f"<li>{e(n)}</li>" for n in t["notes"])
@@ -205,7 +306,7 @@ def index_page():
         f'<li><h3>{e(i["k"])}</h3><p>{e(i["v"])}</p>' + (f'<p class="must">{e(i["strong"])}</p>' if i.get("strong") else "") + "</li>"
         for i in ins["items"])
     food = "".join(f'<li><strong>{e(f["k"])}</strong> {e(f["v"])}</li>' for f in ins["food"])
-    faq = "\n".join(f'<details><summary>{e(f["q"])}</summary><p>{e(f["a"])}</p></details>' for f in C["faq"])
+    faq = faq_html(C["faq"])
     vid = L["video_id"]
 
     return head(C["meta"]["title"], C["meta"]["description"]) + f"""<body>
@@ -216,7 +317,25 @@ def index_page():
 {hero()}
 
 <main id="main">
+<section id="community" class="community" aria-labelledby="community-h">
+  <div class="wrap">{heading(C['community']['title'], 'community-h', C['community']['kicker'])}<p class="lead">{e(C['community']['caption'])}</p></div>
+  <div class="video">
+    <button type="button" data-id="{e(vid)}" aria-label="Play the Halloween 2025 recap video">
+      <img src="/img/recap-poster.webp" alt="" loading="lazy" width="1024" height="576">
+      <span class="play"></span><span class="video-label">Watch the Halloween 2025 recap</span>
+    </button>
+  </div>
+  <div class="marquee" aria-label="Photos from Halloween 2025"><div class="marquee-track">{gallery}</div></div>
+  <p class="credit">{e(C['community']['credit'])}</p>
+</section>
+
 <section class="invitation" id="invitation" aria-labelledby="inv-h">
+  <div class="hook">
+    <p class="hook-head">{e(C['hook']['line'].split('. ', 1)[0])}.</p>
+    <p class="hook-line">{e(C['hook']['line'].split('. ', 1)[1])}</p>
+    <p class="hook-curated">{e(C['hook']['curated'])}</p>
+    <p class="hook-sober"><strong>{e(C['hook']['alcohol_k'])}</strong> {e(C['hook']['alcohol_v'])}</p>
+  </div>
   <div class="letter">
     <h2 id="inv-h" class="greeting">{e(inv['greeting'])}</h2>
     {paras}
@@ -248,16 +367,6 @@ def index_page():
     <ul class="cast lineup">{cast}</ul>
     <p class="label">{e(mu['activations_label'])}</p>
     <ul class="activations">{acts}</ul>
-  </div>
-</section>
-
-<section id="agreement" class="agreement" aria-labelledby="agree-h">
-  <div class="wrap">
-    {heading(ag['title'], 'agree-h', 'Important details')}
-    <p class="intro">{e(ag['intro'])}</p>
-    <p>{e(ag['lead'])}</p>
-    <ol class="agree">{agree}</ol>
-    <p class="outro">{e(ag['outro'])}</p>
   </div>
 </section>
 
@@ -297,20 +406,6 @@ def index_page():
     </div>
     <p class="center">{ext(L['etsy'], 'See every Etsy favorite', 'btn btn-ghost btn-sm')}</p>
   </div>
-</section>
-
-<section id="community" class="community" aria-labelledby="community-h">
-  <div class="wrap">{heading('The Community', 'community-h', 'Halloween 2025')}<p class="lead">{e(C['community']['caption'])}</p></div>
-  <div class="gallery">
-{gallery}
-  </div>
-  <div class="video">
-    <button type="button" data-id="{e(vid)}" aria-label="Play the Halloween 2025 recap video">
-      <img src="/img/recap-poster.webp" alt="" loading="lazy" width="1024" height="576">
-      <span class="play"></span><span class="video-label">Watch the 2025 recap</span>
-    </button>
-  </div>
-  <p class="credit">{e(C['community']['credit'])}</p>
 </section>
 
 <section id="tickets" class="tickets" aria-labelledby="tickets-h">
@@ -371,15 +466,6 @@ def index_page():
   </div>
 </section>
 
-<section id="inside" class="inside" aria-labelledby="inside-h">
-  <div class="wrap">
-    {heading(ins['title'], 'inside-h', 'Read everything below')}
-    <ul class="inside-list">{inside}</ul>
-    <h3 class="label">{e(ins['food_label'])}</h3>
-    <ul class="points">{food}</ul>
-  </div>
-</section>
-
 <section id="nominate" class="nominate" aria-labelledby="nominate-h">
   <div class="wrap center">
     {heading(po['title'], 'nominate-h')}
@@ -410,7 +496,7 @@ def index_page():
   {rule()}
   <p>Questions: <a href="mailto:{e(L['email'])}">{e(L['email'])}</a></p>
   <p>{e(C['footer']['noshare'])}</p>
-  <p class="fine">Michael Pullano and Austin Dance Temple. {e(C['community']['credit'])}</p>
+  <p class="fine">Michael Pullano and Austin Dance Temple. <a href="/guide/">Party Guide</a></p>
 </footer>
 
 <div class="sticky" aria-hidden="true">{buy("btn btn-holo").replace('rel="noopener"', 'rel="noopener" tabindex="-1"')}</div>
@@ -440,13 +526,13 @@ def main():
     for f in ("style.css", "main.js", "veil.js"):
         shutil.copy(SRC / f, DIST / f)
     (DIST / "index.html").write_text(index_page())
+    (DIST / "guide").mkdir()
+    (DIST / "guide" / "index.html").write_text(guide_page())
     _, ics = calendar_links()
     (DIST / "beyond-the-veil.ics").write_text(ics)
     (DIST / "favicon.svg").write_text(FAVICON)
     touch_icon().save(DIST / "img" / "touch-icon.png")
     (DIST / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
-    # The old ticket-holder guide now lives on the main page.
-    (DIST / "_redirects").write_text("/guide /#venue 301\n/guide/* /#venue 301\n")
     (DIST / "_headers").write_text(
         "/*\n  X-Robots-Tag: noindex, nofollow, noarchive\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Content-Type-Options: nosniff\n"
         "/beyond-the-veil.ics\n  Content-Type: text/calendar; charset=utf-8\n"

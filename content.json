@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Beyond the Veil · A Halloween Transformation",
+    "title": "Beyond the Veil · One night between worlds",
     "description": "A private, alcohol-free Halloween gathering at HAVAN, October 31 to November 1, 2026. Two stages until sunrise.",
     "site_url": "https://beyondtheveil-atx.netlify.app"
   },
@@ -12,7 +12,7 @@
   "hero": {
     "presenters": "Michael Pullano and Austin Dance Temple present",
     "title": "Beyond the Veil",
-    "subtitle": "A Halloween Transformation",
+    "subtitle": "One night between worlds. Wear your biggest self. Dance until first light.",
     "dates": "October 31 to November 1, 2026",
     "venue": "HAVAN",
     "place": "West Austin / Lakeway",
@@ -70,28 +70,44 @@
     {
       "time": "7:00 to 8:00 PM",
       "name": "The Arrival",
-      "text": "Please arrive during the arrival window to preserve the integrity and flow of the experience. Doors open at 7 and close at 8."
+      "text": "Step through the gate into an estate transformed for one night. Get your portrait taken by our professional photographer, wander the grounds, and take in a crowd of people who came to play. Doors close at 8 sharp so the whole room crosses together."
     },
     {
       "time": "8:00 to 8:30 PM",
       "name": "The Gathering",
-      "text": "Professional photos, then everyone gathers outside."
+      "text": "Two hundred of us gather outside under the night sky. This is the moment a room full of costumes becomes one community."
     },
     {
       "time": "8:30 PM",
       "name": "The Crossing",
-      "text": "The opening ceremony, led by Leah Free. We name the group agreements together and cross the veil.",
+      "text": "An opening ceremony created for this night only, led by Leah Free. We set the tone, name how we'll care for each other, and cross the veil together. Nobody walks into this party alone.",
       "key": true
     },
     {
       "time": "9:00 PM to sunrise",
       "name": "The Night",
-      "text": "Two stages run until morning. At 9, phones go away so we can enjoy the night, and at 2 AM the clocks fall back, giving us an extra hour."
+      "text": "Two stages of Austin's best DJs, bass and house, from 9 until the sun comes up. Phones go away at 9, so you're fully in it, with nothing between you and the music."
+    },
+    {
+      "time": "Through the night",
+      "name": "The Performances",
+      "text": "This isn't a house party with a playlist. Catch Spooky Halloween Story Time with Brent Pella, a comedy experience, and a live song and dance performance by Natalie Porretta and Zoe Dane."
+    },
+    {
+      "time": "Midnight",
+      "name": "The Witching Hour",
+      "text": "A special performance at the stroke of midnight. We're not telling you what it is. You'll want to be on the dance floor when it starts.",
+      "key": true
+    },
+    {
+      "time": "2:00 AM",
+      "name": "The Extra Hour",
+      "text": "The clocks fall back. While the rest of the city gets an extra hour of sleep, you get an extra hour on the dance floor."
     },
     {
       "time": "Sunrise, about 6:45 AM",
       "name": "First Light",
-      "text": "Sunshine plays the sunrise set as the sun comes up over the hills."
+      "text": "Sunshine plays the sunrise set as the sky over the hills turns gold. You'll greet the first morning of November with the people who danced through the night beside you."
     }
   ],
   "music": {
@@ -406,8 +422,8 @@
     ]
   },
   "community": {
-    "caption": "Halloween 2025. Every year is a different world, but this is the community you'll be dancing with.",
-    "credit": "Photos from Halloween 2025 by Last Weekend.",
+    "caption": "Last year, in the hills of Austin. Every year is a different world, but this is the community you'll be dancing with.",
+    "credit": "Halloween 2025 was a Rabbit Hole production. Photos by Last Weekend.",
     "photos": [
       {
         "src": "angels.webp",
@@ -439,7 +455,9 @@
         "w": 1024,
         "h": 1533
       }
-    ]
+    ],
+    "title": "Halloween 2025",
+    "kicker": "A Rabbit Hole Production"
   },
   "tickets": {
     "lead": "Two hundred guests. One night.",
@@ -464,10 +482,10 @@
       "1 Complete Protocol"
     ],
     "paragraphs": [
-      "We built LoveStack so you could skip the research and focus on your journey.",
-      "Two formulas, five days, every dose portioned and organized by day. LoveStack makes taking care of your body during heart-opening experiences simple."
+      "LoveStack makes taking care of your body during heart-opening experiences simple.",
+      "Two formulas, five days, every dose portioned and organized for you."
     ],
-    "offer": "Add LoveStack to your ticket for 20% off, and pick it up when you arrive."
+    "offer": "Add LoveStack to your ticket for 20% off, and pick it up when you arrive at the event."
   },
   "venue": {
     "title": "The Venue",
@@ -577,28 +595,18 @@
       "a": "Only with a $50 parking pass, added at checkout. Cars without one won't be allowed on the property."
     },
     {
-      "q": "Can I use my phone?",
-      "a": "Yes, from 7 to 9 PM for photos and video, always with consent. After that, phones go away for the night."
-    },
-    {
       "q": "Will there be a photographer?",
       "a": "Yes, professional photography is provided at the beginning of the night."
     },
     {
+      "q": "Are there house rules?",
+      "a": "Yes: a short group agreement built on consent, plus a few practical notes on phones, shoes and pets. It's all in the Party Guide.",
+      "href": "/guide/",
+      "link": "Read the Party Guide"
+    },
+    {
       "q": "What should I wear?",
       "a": "Go big in iridescent, metallic, pearl, chrome, silver, gold or smoke. Zero-effort costumes get sent to the costume corner."
-    },
-    {
-      "q": "Where do my coat and bag go?",
-      "a": "We'll have plenty of places to store coats, bags and extra layers."
-    },
-    {
-      "q": "Do I keep my shoes on?",
-      "a": "Only if they're part of your costume. Otherwise, leave them at the front door outside."
-    },
-    {
-      "q": "Can I bring my pet?",
-      "a": "No animal pets are allowed at the party or on the property."
     },
     {
       "q": "Can I transfer my ticket?",
@@ -611,10 +619,6 @@
     {
       "q": "What's LoveStack?",
       "a": "A supplement protocol by VESSEL, our official supplement partner. Add it to your ticket for 20% off and pick it up when you arrive."
-    },
-    {
-      "q": "What if someone crosses a line?",
-      "a": "Anyone who doesn't honor the group agreements will be asked to leave. Find any member of our team if you need help."
     }
   ],
   "closing": {
@@ -623,5 +627,38 @@
   },
   "footer": {
     "noshare": "This is a private invitation. Please don't post this link publicly."
+  },
+  "hook": {
+    "line": "If you were there last Halloween, you already know. If you weren't, you just saw why people haven't stopped talking about it. Last year, 300 people came through the gate. This year, only 200 will.",
+    "curated": "This is a curated guest list. Everyone here was invited because we trust them to care for the room and the people in it.",
+    "alcohol_k": "Alcohol-free, by design.",
+    "alcohol_v": "Two hundred people fully present, dancing until sunrise, and waking up Sunday feeling incredible."
+  },
+  "guide": {
+    "kicker": "For ticket holders",
+    "title": "The Party Guide",
+    "intro": "You're in. Here's everything to know before you cross the veil. Give it a few minutes before the night, and you'll walk in ready.",
+    "faq": [
+      {
+        "q": "Can I use my phone?",
+        "a": "Yes, from 7 to 9 PM for photos and video, always with consent. After that, phones go away for the night."
+      },
+      {
+        "q": "Where do my coat and bag go?",
+        "a": "We'll have plenty of places to store coats, bags and extra layers."
+      },
+      {
+        "q": "Do I keep my shoes on?",
+        "a": "Only if they're part of your costume. Otherwise, leave them at the front door outside."
+      },
+      {
+        "q": "Can I bring my pet?",
+        "a": "No animal pets are allowed at the party or on the property."
+      },
+      {
+        "q": "What if someone crosses a line?",
+        "a": "Anyone who doesn't honor the group agreements will be asked to leave. Find any member of our team if you need help."
+      }
+    ]
   }
 }
