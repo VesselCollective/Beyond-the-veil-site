@@ -444,8 +444,8 @@
         "h": 1024
       },
       {
-        "src": "fairy.webp",
-        "alt": "A guest in a sequined gown and iridescent fairy wings pulls a playful face",
+        "src": "green-couple.webp",
+        "alt": "A green-haired forest sprite and a guest in a leopard mask and sequined jacket",
         "w": 768,
         "h": 1024
       },
@@ -456,8 +456,8 @@
         "h": 1533
       },
       {
-        "src": "green-couple.webp",
-        "alt": "A green-haired forest sprite and a guest in a leopard mask and sequined jacket",
+        "src": "pink-fringe.webp",
+        "alt": "A guest in pink beaded fringe laughs with a silver stick between her teeth",
         "w": 768,
         "h": 1024
       },
@@ -474,8 +474,26 @@
         "h": 1533
       },
       {
+        "src": "medusa.webp",
+        "alt": "A smiling Medusa in a golden snake crown opens a candy-stocked case",
+        "w": 768,
+        "h": 1024
+      },
+      {
+        "src": "calavera.webp",
+        "alt": "A guest with half-calavera face paint, horns and a crown of gray roses",
+        "w": 768,
+        "h": 1024
+      },
+      {
         "src": "trio.webp",
         "alt": "Three guests as a ringmaster in a red top hat, a lavender goddess and a golden laurel muse",
+        "w": 768,
+        "h": 1024
+      },
+      {
+        "src": "fairy.webp",
+        "alt": "A guest in a sequined gown and iridescent fairy wings pulls a playful face",
         "w": 768,
         "h": 1024
       },
@@ -486,8 +504,8 @@
         "h": 1533
       },
       {
-        "src": "calavera.webp",
-        "alt": "A guest with half-calavera face paint, horns and a crown of gray roses",
+        "src": "laser-dance.webp",
+        "alt": "Two dancers in tasseled hats under magenta lasers on the dance floor",
         "w": 768,
         "h": 1024
       }
