@@ -542,3 +542,17 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
   .hero h1 { font-size: clamp(3rem, 1rem + 6.4vw, 5.4rem); }
   .hero .countdown b { font-size: clamp(1.9rem, 1.2rem + 1.8vw, 2.6rem); }
 }
+
+/* LoveStack: protocol + supplement facts, side by side */
+.vessel-charts { display: grid; grid-template-columns: 1fr; gap: 1.2rem; max-width: 52rem; margin: 2.4rem auto 0; }
+.vessel-charts figure { margin: 0; }
+.vessel-charts a { display: block; border-radius: var(--radius); overflow: hidden; box-shadow: 0 0 0 1px var(--hair), 0 24px 60px rgba(0,0,0,.45); transition: transform .3s ease; }
+.vessel-charts a:hover { transform: translateY(-3px); }
+.vessel-charts img { display: block; width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; background: #f6efe7; }
+.vessel-charts figure:last-child img { object-fit: contain; }
+.vessel-charts figcaption { margin-top: .7rem; font-family: var(--display); letter-spacing: .14em; font-size: .72rem; color: var(--mist); text-align: center; }
+.vessel-charts figcaption span { display: block; font-family: var(--body, inherit); letter-spacing: .04em; font-size: .9em; opacity: .7; margin-top: .2rem; text-transform: none; }
+.vessel-more { margin-top: 1.8rem; }
+@media (min-width: 641px) { .vessel-charts { grid-template-columns: 1fr 1fr; } }
+.vessel-photo { max-width: 24rem; margin: 0 auto; }
+@media (min-width: 761px) { .vessel-photo { justify-self: end; margin: 0; } }

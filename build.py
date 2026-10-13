@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "19"
+VERSION = "20"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -452,7 +452,11 @@ def index_page():
         {buy("btn btn-holo btn-lg", "Buy tickets + LoveStack")}
       </div>
     </div>
-    <img class="vessel-chart" src="/img/lovestack-protocol.webp" alt="How to use LoveStack: LoveSupport doses 1 to 3 on days 1 and 2, then LoveRestore doses 4 to 6 with your first meal on days 3 to 5" loading="lazy" width="1200" height="1200">
+    <div class="vessel-charts">
+      <figure><a href="/img/lovestack-protocol.webp" target="_blank" rel="noopener"><img src="/img/lovestack-protocol.webp" alt="How to use LoveStack: LoveSupport doses 1 to 3 on days 1 and 2, then LoveRestore doses 4 to 6 with your first meal on days 3 to 5" loading="lazy" width="1200" height="1200"></a><figcaption>How to use LoveStack</figcaption></figure>
+      <figure><a href="/img/lovestack-facts.webp" target="_blank" rel="noopener"><img src="/img/lovestack-facts.webp" alt="Supplement Facts for LoveSupport and LoveRestore" loading="lazy" width="1055" height="1080"></a><figcaption>Supplement Facts <span>Tap to enlarge</span></figcaption></figure>
+    </div>
+    <p class="center vessel-more">{ext("https://www.myvessel.co", "Learn more at myvessel.co", "btn btn-ghost")}</p>
   </div>
 </section>
 
