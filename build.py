@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "21"
+VERSION = "22"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -488,6 +488,11 @@ def index_page():
     {heading(po['title'], 'nominate-h')}
     <p>{e(po['text'])}</p>
     <p class="lead">{e(po['nominate'])}</p>
+    <div class="sponsor">
+      <p class="sponsor-head">{e(po['sponsor_head'])}</p>
+      <ul>{"".join(f"<li>{e(x)}</li>" for x in po['sponsor_points'])}</ul>
+      <p class="sponsor-note">{e(po['sponsor_note'])}</p>
+    </div>
     {ext(L['nominate'], 'Nominate a guest')}
   </div>
 </section>

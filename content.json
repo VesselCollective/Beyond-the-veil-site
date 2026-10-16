@@ -645,9 +645,15 @@
     ]
   },
   "plusones": {
-    "title": "About Plus-Ones",
+    "title": "Nominate & sponsor a guest",
     "text": "Beyond the Veil is a curated gathering, and our guest list has been carefully assembled. Your invitation is personal and doesn't include a plus-one.",
-    "nominate": "Know someone who would add real magic to this night? You can nominate them below. Our team reviews every nomination, and with so few places left, we can't promise a ticket. If there's a fit, we'll reach out to them directly."
+    "nominate": "Know someone who would add real magic to this night? You can nominate them, as long as you'll be there yourself. Our team reviews every nomination, and with so few places left, we can't promise a ticket. If there's a fit, we'll reach out to them directly.",
+    "sponsor_head": "When you nominate someone, you become their sponsor.",
+    "sponsor_points": [
+      "You must be attending Beyond the Veil yourself.",
+      "You vouch for them: that they'll honor the group agreement and care for the room and the people in it."
+    ],
+    "sponsor_note": "Nominations from anyone not attending won't be reviewed."
   },
   "faq": [
     {
@@ -656,7 +662,11 @@
     },
     {
       "q": "Can I bring a plus-one?",
-      "a": "No, every invitation is personal. Nominate them instead, and our team will review it."
+      "a": "No, every invitation is personal. If you're attending, you can nominate and sponsor someone, and our team will review it."
+    },
+    {
+      "q": "Who can nominate a guest?",
+      "a": "Only people who are attending. When you nominate someone, you sponsor them: you vouch for them and you're responsible for how they show up."
     },
     {
       "q": "When should I arrive?",
@@ -710,7 +720,7 @@
     },
     {
       "q": "What if it sells out?",
-      "a": "A waitlist opens. You can also nominate as many people as you like."
+      "a": "A waitlist opens. Guests who are attending can also nominate and sponsor people."
     },
     {
       "q": "What's LoveStack?",
