@@ -306,8 +306,8 @@
         "swatch": "steel"
       },
       {
-        "name": "Blacks/Charcoal/Smoke",
-        "swatch": "smoke"
+        "name": "Moonlight",
+        "swatch": "moonlight"
       }
     ],
     "words_label": "Style Words",
@@ -318,11 +318,13 @@
       "Alluring",
       "Veiled",
       "Mystical",
-      "Ethereal",
+      "Angelic",
       "Lunar",
       "Moonlit",
       "Cosmic",
-      "Starborn"
+      "Starborn",
+      "Luminous",
+      "Celestial"
     ],
     "pinterest_label": "Pinterest Mood Board (For Men & Women)",
     "etsy_label": "Etsy Shop Ideas (For Men & Women)",
@@ -437,7 +439,26 @@
           }
         ]
       }
-    ]
+    ],
+    "light": {
+      "title": "The light side of the veil",
+      "lead": "This isn't a typical Halloween. We're crossing into the luminous side of the spirit realm: angels, celestial beings, starlight, moon goddesses. Think uplifting, radiant and beautiful, not dark and dreary.",
+      "bring_label": "Bring the light",
+      "bring": [
+        "Angelic, celestial, luminous",
+        "Iridescent, pearl, silver, chrome, gold",
+        "Wings, halos, crowns, sheer veils",
+        "Fae and faun looks welcome",
+        "Glitter, gems, light-catching makeup"
+      ],
+      "leave_label": "Leave at home",
+      "leave": [
+        "Blood, gore, fake wounds",
+        "Vampires, zombies, demons, horror characters",
+        "Skulls and scary masks"
+      ],
+      "noshame": "Already planned something darker? No stress. Keep the base and lift it toward the light: swap the blood for shimmer, and add silver, pearl, a halo, wings or a veil. Love wearing black? Bring it, just let it catch the light."
+    }
   },
   "community": {
     "caption": "One night. Three hundred people. A story Austin is still telling.",
@@ -712,7 +733,7 @@
     },
     {
       "q": "What should I wear?",
-      "a": "Go big in iridescent, metallic, pearl, chrome, silver, gold or smoke. Zero-effort costumes get sent to the costume corner."
+      "a": "Go big in iridescent, metallic, pearl, chrome, silver or gold. Light, not dark: no blood, gore or horror looks. Zero-effort costumes get sent to the costume corner."
     },
     {
       "q": "Can I transfer my ticket?",

@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "22"
+VERSION = "23"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -384,6 +384,15 @@ def index_page():
   <div class="wrap">
     {heading(co['title'], 'costume-h', 'Your costume')}
     <p class="intro">{e(co['lead'])}</p>
+    <div class="lightside">
+      <h3 class="lightside-title">{e(co['light']['title'])}</h3>
+      <p class="lightside-lead">{e(co['light']['lead'])}</p>
+      <div class="lightside-cols">
+        <div class="ls-bring"><p class="ls-label">{e(co['light']['bring_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in co['light']['bring'])}</ul></div>
+        <div class="ls-leave"><p class="ls-label">{e(co['light']['leave_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in co['light']['leave'])}</ul></div>
+      </div>
+      <p class="lightside-note">{e(co['light']['noshame'])}</p>
+    </div>
     <ul class="points">{points}</ul>
   </div>
   <aside class="warning" aria-label="{e(co['warning_label'])}">
