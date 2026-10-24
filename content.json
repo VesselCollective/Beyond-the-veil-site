@@ -174,19 +174,19 @@
             "photo": "richness.webp"
           },
           {
+            "name": "Shalman",
+            "photo": "shalman.webp"
+          },
+          {
             "name": "MAMU",
             "photo": "mamu.webp"
           },
           {
             "name": "Seanchaí",
             "photo": "seanchai.webp"
-          },
-          {
-            "name": "Shalman",
-            "photo": "shalman.webp"
           }
         ],
-        "more": "and more"
+        "more": "Including Special Guest Appearances"
       }
     ],
     "featuring_label": "Featuring",
