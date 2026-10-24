@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "24"
+VERSION = "25"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -416,14 +416,14 @@ def index_page():
     <div class="pin-frame" id="pin-frame">
       <a class="pin-fallback" data-pin-do="embedBoard" data-pin-scale-height="380" data-pin-scale-width="110" href="{e(L['pinterest'])}">Open the mood board on Pinterest</a>
     </div>
-    <p class="center">{ext(L['pinterest'], 'Open the full board on Pinterest', 'btn btn-ghost btn-sm')}</p>
+    <p class="center">{ext(L['pinterest'], 'Open the full board on Pinterest', 'btn btn-brand btn-pinterest')}</p>
   </div>
   <div class="wrap wide">
     <h3 class="label">{e(co['etsy_label'])}</h3>
     <div class="etsy">
 {etsy}
     </div>
-    <p class="center">{ext(L['etsy'], 'See every Etsy favorite', 'btn btn-ghost btn-sm')}</p>
+    <p class="center">{ext(L['etsy'], 'See every Etsy favorite', 'btn btn-brand btn-etsy')}</p>
   </div>
 </section>
 

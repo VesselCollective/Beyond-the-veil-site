@@ -594,3 +594,9 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
 .lightside-note p { margin: 0; color: var(--text); font-size: 1.06rem; line-height: 1.6; }
 .lightside-note strong { font-weight: 500; color: #fff; }
 @media (min-width: 641px) { .lightside-cols { grid-template-columns: 1.15fr 1fr; } }
+
+/* Brand-colored outbound buttons */
+.btn-brand { color: #fff; font-weight: 600; letter-spacing: .08em; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+.btn-brand:hover { color: #fff; transform: translateY(-1px); filter: brightness(1.08); }
+.btn-pinterest { background: #E60023; box-shadow: 0 10px 34px rgba(230,0,35,.35); }
+.btn-etsy { background: #F1641E; box-shadow: 0 10px 34px rgba(241,100,30,.35); }
