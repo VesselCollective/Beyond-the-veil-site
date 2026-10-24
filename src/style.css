@@ -221,6 +221,7 @@ main > section { position: relative; padding: clamp(2.8rem, 6.5vw, 4.5rem) var(-
 .activations li { padding: 1.4rem 1rem; border-radius: var(--radius); background: var(--organza), var(--glass); box-shadow: inset 0 0 0 1px var(--hair); display: grid; gap: .2rem; }
 .activations li { align-content: center; justify-items: center; }
 .act-logo { display: block; width: auto; height: 4.6rem; max-width: 80%; object-fit: contain; margin: 0 auto .6rem; }
+.act-logo[src$="lelick.svg"] { height: 2.6rem; margin: 1rem auto 1.6rem; }
 .act-name { font-family: var(--display); font-size: 1.3rem; color: var(--spectral); letter-spacing: .06em; }
 .act-by { font-family: var(--script); font-style: italic; font-size: 1.15rem; color: var(--alien); }
 

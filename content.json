@@ -230,7 +230,11 @@
         "by": "Pre-Rolls and Roll-Your-Own Available"
       },
       {
-        "name": "LeLick Lollipop Bar"
+        "name": "LeLick Lollipop Bar",
+        "logo": "lelick.svg",
+        "logo_alt": "LeLick",
+        "logo_w": 178,
+        "logo_h": 64
       }
     ],
     "host_label": "Co-host",
