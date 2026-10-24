@@ -457,7 +457,16 @@
         "Vampires, zombies, demons, horror characters",
         "Skulls and scary masks"
       ],
-      "noshame": "Already planned something darker? No stress. Keep the base and lift it toward the light: swap the blood for shimmer, and add silver, pearl, a halo, wings or a veil. Love wearing black? Bring it, just let it catch the light."
+      "noshame": [
+        [
+          "Already planned something darker?",
+          "No stress. Keep the base and lift it toward the light: swap the blood for shimmer, and add silver, pearl, a halo, wings or a veil."
+        ],
+        [
+          "Love wearing black?",
+          "Bring it, just let it catch the light."
+        ]
+      ]
     }
   },
   "community": {

@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "23"
+VERSION = "24"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -391,7 +391,7 @@ def index_page():
         <div class="ls-bring"><p class="ls-label">{e(co['light']['bring_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in co['light']['bring'])}</ul></div>
         <div class="ls-leave"><p class="ls-label">{e(co['light']['leave_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in co['light']['leave'])}</ul></div>
       </div>
-      <p class="lightside-note">{e(co['light']['noshame'])}</p>
+      <div class="lightside-note">{"".join(f'<p><strong>{e(k)}</strong> {e(v)}</p>' for k, v in co['light']['noshame'])}</div>
     </div>
     <ul class="points">{points}</ul>
   </div>
