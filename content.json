@@ -680,12 +680,33 @@
   },
   "plusones": {
     "title": "Nominate & sponsor a guest",
-    "text": "Beyond the Veil is a curated gathering, and our guest list has been carefully assembled. Your invitation is personal and doesn't include a plus-one.",
-    "nominate": "Know someone who would add real magic to this night? You can nominate them, as long as you'll be there yourself. Our team reviews every nomination, and with so few places left, we can't promise a ticket. If there's a fit, we'll reach out to them directly.",
-    "sponsor_head": "When you nominate someone, you become their sponsor.",
+    "text": "Beyond the Veil is a curated gathering. Our guest list has been carefully assembled.",
+    "noplus": "Your invitation is personal and doesn't include a plus-one.",
+    "ask": "Know someone who would add real magic to this night?",
+    "steps": [
+      [
+        "Nominate",
+        "Tell us who they are. You must be attending yourself."
+      ],
+      [
+        "We review",
+        "Our team reads every nomination. With so few places left, we can't promise a ticket."
+      ],
+      [
+        "We reach out",
+        "If there's a fit, we'll contact them directly."
+      ]
+    ],
+    "sponsor_head": "Nominate someone, and you become their sponsor.",
     "sponsor_points": [
-      "You must be attending Beyond the Veil yourself.",
-      "You vouch for them: that they'll honor the group agreement and care for the room and the people in it."
+      [
+        "You're attending.",
+        "You must be at Beyond the Veil yourself."
+      ],
+      [
+        "You vouch for them.",
+        "They'll honor the group agreement and care for the room and the people in it."
+      ]
     ],
     "sponsor_note": "Nominations from anyone not attending won't be reviewed."
   },

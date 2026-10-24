@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "26"
+VERSION = "27"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -495,11 +495,13 @@ def index_page():
 <section id="nominate" class="nominate" aria-labelledby="nominate-h">
   <div class="wrap center">
     {heading(po['title'], 'nominate-h')}
-    <p>{e(po['text'])}</p>
-    <p class="lead">{e(po['nominate'])}</p>
+    <p class="nom-intro">{e(po['text'])}</p>
+    <p class="noplus">{e(po['noplus'])}</p>
+    <p class="nom-ask">{e(po['ask'])}</p>
+    <ol class="nom-steps">{"".join(f'<li><span class="nom-num">{i}</span><strong>{e(t)}</strong><span>{e(d)}</span></li>' for i, (t, d) in enumerate(po['steps'], 1))}</ol>
     <div class="sponsor">
       <p class="sponsor-head">{e(po['sponsor_head'])}</p>
-      <ul>{"".join(f"<li>{e(x)}</li>" for x in po['sponsor_points'])}</ul>
+      <ul>{"".join(f"<li><strong>{e(a)}</strong> {e(t)}</li>" for a, t in po['sponsor_points'])}</ul>
       <p class="sponsor-note">{e(po['sponsor_note'])}</p>
     </div>
     {ext(L['nominate'], 'Nominate a guest')}

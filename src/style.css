@@ -564,12 +564,28 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
   .sticky .btn { width: auto; min-width: 0; min-height: 0; padding: .55rem 1.4rem; font-size: .74rem; }
 }
 
-/* Nomination: sponsor rule */
-.sponsor { position: relative; text-align: left; max-width: 34rem; margin: 1.4rem auto 1.8rem; padding: 1.3rem 1.4rem 1.1rem; border-radius: var(--radius); background: rgba(7,8,13,.55); box-shadow: inset 0 0 0 1px var(--hair-strong), 0 0 40px rgba(216,182,115,.08); }
-.sponsor::before { content: ""; position: absolute; left: 0; top: 1.2rem; bottom: 1.2rem; width: 2px; border-radius: 2px; background: var(--gold); }
-.sponsor-head { font-family: var(--display); color: var(--gold); letter-spacing: .04em; font-size: 1.05rem; line-height: 1.4; margin: 0 0 .7rem; }
-.sponsor ul { margin: 0 0 .8rem; padding-left: 1.1rem; display: grid; gap: .4rem; color: var(--text); }
-.sponsor-note { margin: 0; color: var(--spectral); font-size: .95em; font-style: italic; }
+/* Nomination: intro, steps, sponsor rule */
+.nom-intro { max-width: 30rem; margin: 0 auto .9rem; color: var(--mist); font-size: 1.02rem; line-height: 1.6; text-wrap: balance; }
+.noplus { display: inline-block; margin: 0 auto 2rem; padding: .55rem 1.1rem; border-radius: 999px; color: var(--spectral); font-weight: 500; font-size: .98rem; line-height: 1.45; background: rgba(211,202,246,.1); box-shadow: inset 0 0 0 1px rgba(211,202,246,.4); text-wrap: balance; }
+.nom-ask { font-family: var(--script); font-style: italic; color: var(--spectral); font-size: clamp(1.5rem, 1.2rem + 1.3vw, 2rem); line-height: 1.25; max-width: 28rem; margin: 0 auto 1.4rem; text-wrap: balance; }
+.nom-steps { list-style: none; padding: 0; margin: 0 auto 1.8rem; display: grid; gap: .8rem; text-align: left; max-width: 36rem; }
+.nom-steps li { display: grid; grid-template-columns: 2.2rem 1fr; column-gap: .9rem; align-items: start; padding: 1rem 1.1rem; border-radius: 1rem; background: rgba(7,8,13,.45); box-shadow: inset 0 0 0 1px var(--hair); }
+.nom-num { grid-row: 1 / span 2; width: 2.2rem; height: 2.2rem; border-radius: 50%; display: grid; place-items: center; font-family: var(--sans); font-weight: 600; color: var(--void); background: var(--gold); font-size: 1.02rem; box-shadow: 0 0 18px rgba(216,182,115,.35); }
+.nom-steps strong { font-family: var(--display); font-weight: 400; color: var(--gold); letter-spacing: .06em; font-size: 1.02rem; line-height: 1.3; }
+.nom-steps li > span:last-child { color: var(--text); font-size: .98rem; line-height: 1.5; margin-top: .2rem; }
+@media (min-width: 641px) {
+  .nom-steps { grid-template-columns: repeat(3, 1fr); max-width: none; }
+  .nom-steps li { grid-template-columns: 1fr; text-align: center; justify-items: center; align-content: start; padding: 1.3rem 1rem 1.2rem; row-gap: .5rem; }
+  .nom-num { grid-row: auto; }
+}
+.sponsor { position: relative; text-align: left; max-width: 36rem; margin: 0 auto 1.8rem; padding: 1.3rem 1.4rem 1.2rem 1.6rem; border-radius: var(--radius); background: linear-gradient(135deg, rgba(216,182,115,.12), rgba(7,8,13,.55)); box-shadow: inset 0 0 0 1px rgba(216,182,115,.45), 0 0 40px rgba(216,182,115,.1); }
+.sponsor::before { content: ""; position: absolute; left: 0; top: 1.2rem; bottom: 1.2rem; width: 3px; border-radius: 3px; background: var(--gold); }
+.sponsor-head { font-family: var(--sans); font-weight: 500; color: var(--gold); letter-spacing: .02em; font-size: 1.12rem; line-height: 1.4; margin: 0 0 .9rem; }
+.sponsor ul { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: .7rem; color: var(--text); line-height: 1.5; }
+.sponsor li { position: relative; padding-left: 1.6rem; }
+.sponsor li::before { content: "\2726"; position: absolute; left: 0; top: .05rem; color: var(--gold); font-size: .95rem; }
+.sponsor li strong { color: #fff; font-weight: 600; }
+.sponsor-note { margin: 0; padding-top: .85rem; border-top: 1px solid rgba(216,182,115,.25); color: var(--mist); font-size: .94rem; font-style: italic; }
 
 /* Costume: the light side of the veil */
 .sw-moonlight { background: radial-gradient(circle at 35% 30%, #ffffff, #dfe6f5 45%, #a9b6d6 100%); box-shadow: inset 0 0 0 1px var(--hair-strong), 0 0 22px rgba(200,215,255,.35); }
