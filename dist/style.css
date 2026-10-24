@@ -400,7 +400,8 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
   .lineup { gap: 1.2rem; }
   .lineup li { flex-basis: calc(25% - .9rem); }
   .cast li { flex-basis: calc(20% - .96rem); }
-  .activations { grid-template-columns: repeat(4, 1fr); max-width: 64rem; }
+  .activations { display: flex; flex-wrap: wrap; justify-content: center; max-width: 60rem; }
+  .activations li { flex: 0 1 calc(33.333% - .54rem); }
   .palette-words { grid-template-columns: minmax(0, 22rem) 1fr; gap: 1rem 3.4rem; align-items: start; }
   .palette-words .costume-board { grid-row: span 2; margin: 2.6rem 0 0; }
   .palette-words .colors { grid-template-columns: repeat(5, 1fr); max-width: none; }

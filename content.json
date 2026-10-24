@@ -211,7 +211,7 @@
       },
       {
         "name": "Tea Service",
-        "by": "by Casa Akasha",
+        "by": "produced by Naomi Appel",
         "logo": "casa-akasha.webp",
         "logo_alt": "Casa Akasha",
         "logo_w": 640,
@@ -226,7 +226,11 @@
         "logo_h": 188
       },
       {
-        "name": "Tobacco Bar"
+        "name": "Organic Tobacco Bar",
+        "by": "Pre-Rolls and Roll-Your-Own Available"
+      },
+      {
+        "name": "LeLick Lollipop Bar"
       }
     ],
     "host_label": "Co-host",
