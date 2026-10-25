@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "30"
+VERSION = "31"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -130,6 +130,7 @@ def hero():
     <p class="dates">{e(h['dates'])}</p>
     <p class="place"><strong>{e(h['venue'])}</strong> {GEM} {e(h['place'])}</p>
     <dl class="facts">{facts}</dl>
+    <a class="dresscode" href="#theme"><span class="dc-sw" aria-hidden="true">{"".join(f'<i class="sw-{s}"></i>' for s in C['theme']['swatches'][:5])}</span><span>{e(h['dresscode'])}</span><span class="dc-arrow" aria-hidden="true">&rarr;</span></a>
     <div class="actions">
       {buy("btn btn-holo btn-lg")}
       <a class="btn btn-ghost" href="#nominate">Nominate a guest</a>
@@ -319,6 +320,7 @@ def index_page():
     faq = faq_html(C["faq"])
     vid = L["video_id"]
 
+    th = C["theme"]
     return head(C["meta"]["title"], C["meta"]["description"]) + f"""<body>
 <a class="skip" href="#main">Skip to the invitation</a>
 <canvas class="veil" aria-hidden="true"></canvas>
@@ -327,6 +329,25 @@ def index_page():
 {hero()}
 
 <main id="main">
+<section id="theme" class="theme" aria-labelledby="theme-h">
+  <div class="wrap wide">
+    {heading(th['title'], 'theme-h', th['kicker'])}
+    <p class="lead">{e(th['lead'])}</p>
+    <div class="theme-grid">
+      <figure class="theme-board"><img src="/img/silver-veil.webp" alt="The Silver Veil moodboard: lunar, chrome and mystic tones with sheer organza, crystal and liquid metal" loading="lazy" width="480" height="600"></figure>
+      <div class="theme-body">
+        <ul class="theme-sw" aria-label="Color palette">{"".join(f'<li class="sw sw-{s}"></li>' for s in th['swatches'])}</ul>
+        <div class="theme-cols">
+          <div class="tc-wear"><p class="tc-label">{e(th['bring_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in th['bring'])}</ul></div>
+          <div class="tc-skip"><p class="tc-label">{e(th['leave_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in th['leave'])}</ul></div>
+        </div>
+        <a class="btn btn-holo" href="#costume">{e(th['cta'])}</a>
+      </div>
+    </div>
+    <p class="theme-contrast"><strong>{e(th['contrast_k'])}</strong> {e(th['contrast'])}</p>
+  </div>
+</section>
+
 <section id="community" class="community" aria-labelledby="community-h">
   <div class="wrap">{heading(C['community']['title'], 'community-h', C['community']['kicker'])}<p class="lead">{e(C['community']['caption'])}</p></div>
   <div class="video">

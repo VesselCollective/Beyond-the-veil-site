@@ -39,7 +39,8 @@
       "Alcohol-free",
       "Private event"
     ],
-    "presents": "Present"
+    "presents": "Present",
+    "dresscode": "Dress code: The Light Side"
   },
   "links": {
     "tickets": "https://www.viewcy.com/event/beyondtheveil/checkout?event=0e057e98-884d-4aa1-91bd-bd8a811f57ab&ticketType=in-person",
@@ -577,7 +578,7 @@
       }
     ],
     "title": "Halloween 2025",
-    "kicker": ""
+    "kicker": "Last year's party, a different theme"
   },
   "tickets": {
     "lead": "Two hundred guests. One night.",
@@ -833,5 +834,33 @@
         "a": "Anyone who doesn't honor the group agreements will be asked to leave. Find any member of our team if you need help."
       }
     ]
+  },
+  "theme": {
+    "kicker": "This year's dress code",
+    "title": "The Light Side of the Veil",
+    "lead": "Angels, celestial beings, moon goddesses and starlight. Radiant and beautiful, not dark and scary.",
+    "swatches": [
+      "iridescent",
+      "pearl",
+      "silver",
+      "white",
+      "gold",
+      "chrome"
+    ],
+    "bring_label": "Wear",
+    "bring": [
+      "Iridescent, pearl, silver, white, gold",
+      "Wings, halos, crowns, sheer veils",
+      "Glitter, gems, light-catching makeup"
+    ],
+    "leave_label": "Skip",
+    "leave": [
+      "Blood, gore, fake wounds",
+      "Vampires, zombies, demons",
+      "Skulls and scary masks"
+    ],
+    "cta": "See the full costume guide",
+    "contrast_k": "Heads up:",
+    "contrast": "the 2025 photos below are from last year's darker theme. This year we flip it to the light."
   }
 }
