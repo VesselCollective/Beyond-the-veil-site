@@ -231,11 +231,12 @@
         "by": "Pre-Rolls and Roll-Your-Own Available"
       },
       {
-        "name": "Lollipop Bar",
+        "name": "Halloween Candy Bar",
         "logo": "lelick.svg",
         "logo_alt": "LeLick",
         "logo_w": 178,
-        "logo_h": 64
+        "logo_h": 64,
+        "by": "sponsored by LeLick"
       }
     ],
     "host_label": "Co-host",
