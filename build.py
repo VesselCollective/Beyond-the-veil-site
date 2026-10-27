@@ -285,7 +285,7 @@ def index_page():
                    + [(mu["featuring_label"], f) for f in mu["featuring"]])
     cast = "".join(portrait(p["name"], p.get("photo"), role=r) for r, p in cast_people)
     acts = "".join(
-        f'<li>' + (f'<img class="act-logo" src="/img/{e(a["logo"])}" alt="{e(a["logo_alt"])}" width="{a["logo_w"]}" height="{a["logo_h"]}" loading="lazy">' if a.get("logo") else "") + f'<span class="act-name">{e(a["name"])}</span>'  + (f'<span class="act-by">{e(a["by"])}</span>' if a.get("by") else "") + "</li>"
+        f'<li>' + (f'<img class="act-logo" src="/img/{e(a["logo"])}" alt="{e(a["logo_alt"])}" width="{a["logo_w"]}" height="{a["logo_h"]}" loading="lazy">' if a.get("logo") else "") + (f'<span class="act-name">{e(a["name"])}</span>' if a.get("name") else "")  + (f'<span class="act-by">{e(a["by"])}</span>' if a.get("by") else "") + "</li>"
         for a in mu["activations"])
 
     agree = "".join(f'<li><strong>{e(i["k"])}</strong><span>{e(i["v"])}</span></li>' for i in ag["items"])
