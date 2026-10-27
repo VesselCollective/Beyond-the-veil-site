@@ -212,7 +212,12 @@
     "activations_label": "Activations",
     "activations": [
       {
-        "name": "Professional Photography + Photo Zone"
+        "name": "",
+        "by": "by Dani Amelio",
+        "logo": "edible-altars.webp",
+        "logo_alt": "Edible Altars",
+        "logo_w": 640,
+        "logo_h": 251
       },
       {
         "name": "Tea Service",
@@ -223,12 +228,12 @@
         "logo_h": 231
       },
       {
-        "name": "",
-        "by": "by Dani Amelio",
-        "logo": "edible-altars.webp",
-        "logo_alt": "Edible Altars",
-        "logo_w": 640,
-        "logo_h": 251
+        "name": "Candy Apothecary",
+        "logo": "lelick.svg",
+        "logo_alt": "LeLick",
+        "logo_w": 178,
+        "logo_h": 64,
+        "by": "sponsored by LeLick"
       },
       {
         "name": "Sound Beds",
@@ -239,16 +244,11 @@
         "logo_h": 188
       },
       {
-        "name": "Organic Tobacco Bar",
-        "by": "Pre-Rolls and Roll-Your-Own Available"
+        "name": "Professional Photography + Photo Zone"
       },
       {
-        "name": "Candy Apothecary",
-        "logo": "lelick.svg",
-        "logo_alt": "LeLick",
-        "logo_w": 178,
-        "logo_h": 64,
-        "by": "sponsored by LeLick"
+        "name": "Organic Tobacco Bar",
+        "by": "Pre-Rolls and Roll-Your-Own Available"
       }
     ],
     "host_label": "Co-host",
