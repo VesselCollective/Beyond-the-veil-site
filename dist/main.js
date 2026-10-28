@@ -140,12 +140,25 @@
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function get(u, tries) {
-    return fetch(u).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .catch(function (err) { if ((tries || 0) < 1) return new Promise(function (ok) { setTimeout(ok, 1200); }).then(function () { return get(u, 1); }); throw err; });
+    tries = tries || 0;
+    var ctl = window.AbortController ? new AbortController() : null;
+    var timer = ctl && setTimeout(function () { ctl.abort(); }, 9000);
+    return fetch(u, ctl ? { signal: ctl.signal } : undefined)
+      .then(function (r) { if (timer) clearTimeout(timer); if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { if (!j || !j.properties || !j.properties.periods || !j.properties.periods.length) throw new Error('empty'); return j; })
+      .catch(function (err) {
+        if (timer) clearTimeout(timer);
+        if (tries < 2) return new Promise(function (ok) { setTimeout(ok, 1500 * (tries + 1)); }).then(function () { return get(u, tries + 1); });
+        throw err;
+      });
   }
+  var KEY = 'btv-wx-v1';
+  function save(o) { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {} }
+  function load() { try { return JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { return null; } }
   function hr(t) { return new Date(t).toLocaleTimeString('en-US', { hour: 'numeric', timeZone: TZ }); }
   function pop(p) { return p.probabilityOfPrecipitation && p.probabilityOfPrecipitation.value != null ? p.probabilityOfPrecipitation.value : 0; }
   function mph(p) { var m = String(p.windSpeed || '').match(/\d+/g); return m ? Math.max.apply(null, m.map(Number)) : 0; }
+  function windTxt(p) { return mph(p) ? 'wind ' + esc(p.windDirection) + ' ' + esc(p.windSpeed) : 'calm winds'; }
   function sym(p) {
     var t = String(p.shortForecast || '').toLowerCase(), day = p.isDaytime;
     var s = /thunder|t-storm/.test(t) ? '⛈' : /rain|shower|drizzle/.test(t) ? '☔' : /fog|haze|smoke/.test(t) ? '≈'
@@ -171,7 +184,7 @@
     var stats = '<div class="wx-stats">'
       + '<div><b>' + lo + '°–' + hi + '°' + esc(u) + '</b><small>Temperature</small></div>'
       + '<div><b>' + rain + '%</b><small>Rain chance</small></div>'
-      + '<div><b>' + wind + ' mph</b><small>Wind</small></div></div>';
+      + '<div><b>' + (wind ? wind + ' mph' : 'Calm') + '</b><small>Wind</small></div></div>';
     var strip = '<div class="wx-strip" role="listbox" aria-label="Hourly forecast, Oct 31 to Nov 1">' + hrs.map(function (p, i) {
       var r = pop(p);
       return '<button type="button" role="option" class="wx-hour' + (r >= 40 ? ' wet' : '') + '" aria-selected="' + (i === sel) + '" data-i="' + i + '">'
@@ -181,7 +194,7 @@
     }).join('') + '</div>';
     var p = hrs[sel];
     var detail = '<p class="wx-detail"><strong>' + esc(hr(p.startTime)) + '</strong> ' + esc(p.shortForecast) + ', ' + esc(p.temperature) + '°' + esc(u)
-      + ', ' + pop(p) + '% chance of rain, wind ' + esc(p.windDirection) + ' ' + esc(p.windSpeed) + '</p>';
+      + ', ' + pop(p) + '% chance of rain, ' + windTxt(p) + '</p>';
     var labels = hrs.map(function (x) { return hr(x.startTime); });
     var dup = labels.some(function (l, i) { return labels.indexOf(l) !== i; });
     var note = dup ? '<p class="wx-note">Clocks fall back at 2 AM, so 1 AM happens twice: one extra hour on the dance floor.</p>' : '';
@@ -224,17 +237,29 @@
     });
   });
 
-  get('https://api.weather.gov/points/' + box.getAttribute('data-lat') + ',' + box.getAttribute('data-lon'))
-    .then(function (pt) { return Promise.all([get(pt.properties.forecastHourly), get(pt.properties.forecast).catch(function () { return null; })]); })
-    .then(function (r) {
-      hourly = r[0].properties.periods || [];
-      week = r[1] ? r[1].properties.periods : null;
-      var t = r[0].properties.updateTime || r[0].properties.generatedAt;
-      if (t && upd) upd.textContent = '· updated ' + new Date(t).toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone: TZ });
-      if (!hourly.some(function (p) { var s = Date.parse(p.startTime); return s >= START && s < END; }) && Date.now() < START) {
-        view = 'week'; Array.prototype.forEach.call(tabs, function (x) { x.setAttribute('aria-selected', String(x.getAttribute('data-view') === 'week')); });
-      }
-      render();
-    })
-    .catch(function () { failed = true; render(); });
+  function stamp(t, saved) {
+    if (t && upd) upd.textContent = '\u00B7 ' + (saved ? 'saved ' : 'updated ') + new Date(t).toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit', timeZone: TZ });
+  }
+  function apply(h, w, t, saved) {
+    hourly = h || []; week = w || null; failed = false; stamp(t, saved);
+    var hasNight = hourly.some(function (p) { var s = Date.parse(p.startTime); return s >= START && s < END; });
+    if (!hasNight && week && Date.now() < START) {
+      view = 'week'; Array.prototype.forEach.call(tabs, function (x) { x.setAttribute('aria-selected', String(x.getAttribute('data-view') === 'week')); });
+    }
+    render();
+  }
+  var cached = load();
+  if (cached && cached.h) apply(cached.h, cached.w, cached.t, true);
+  var base = 'https://api.weather.gov/gridpoints/' + box.getAttribute('data-grid');
+  Promise.all([
+    get(base + '/forecast/hourly').catch(function () { return null; }),
+    get(base + '/forecast').catch(function () { return null; })
+  ]).then(function (r) {
+    if (!r[0] && !r[1]) throw new Error('nws down');
+    var h = r[0] ? r[0].properties.periods : (cached && cached.h) || [];
+    var w = r[1] ? r[1].properties.periods : (cached && cached.w) || null;
+    var t = (r[0] || r[1]).properties.updateTime || (r[0] || r[1]).properties.generatedAt;
+    save({ h: h, w: w, t: t });
+    apply(h, w, t, false);
+  }).catch(function () { if (!hourly) { failed = true; render(); } });
 })();

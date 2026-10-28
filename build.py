@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "32"
+VERSION = "33"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -221,7 +221,7 @@ def guide_page():
     <p class="center">{ext(L['whatsapp'], 'Join the rideshare WhatsApp group', 'btn btn-holo')}</p>
     <h3>{e(vn['weather_label'])}</h3>
     {"".join(f"<p>{e(p)}</p>" for p in vn['weather'])}
-    <div class="wx" data-lat="{vn['weather_point']['lat']}" data-lon="{vn['weather_point']['lon']}">
+    <div class="wx" data-grid="{vn['weather_point']['grid']}">
       <div class="wx-head">
         <p class="wx-title">Live forecast for HAVAN</p>
         <p class="wx-src">National Weather Service <span class="wx-updated"></span></p>
