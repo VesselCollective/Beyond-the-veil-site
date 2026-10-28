@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "31"
+VERSION = "32"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -221,7 +221,18 @@ def guide_page():
     <p class="center">{ext(L['whatsapp'], 'Join the rideshare WhatsApp group', 'btn btn-holo')}</p>
     <h3>{e(vn['weather_label'])}</h3>
     {"".join(f"<p>{e(p)}</p>" for p in vn['weather'])}
-    <p class="center">{ext(L['weatherlab'], 'Check the forecast on Weather Lab', 'btn btn-ghost')}</p>
+    <div class="wx" data-lat="{vn['weather_point']['lat']}" data-lon="{vn['weather_point']['lon']}">
+      <div class="wx-head">
+        <p class="wx-title">Live forecast for HAVAN</p>
+        <p class="wx-src">National Weather Service <span class="wx-updated"></span></p>
+      </div>
+      <div class="wx-tabs" role="tablist">
+        <button type="button" role="tab" aria-selected="true" data-view="night">Party night</button>
+        <button type="button" role="tab" aria-selected="false" data-view="week">Next 7 days</button>
+      </div>
+      <div class="wx-body" aria-live="polite"><p class="wx-msg">Loading the latest forecast…</p></div>
+      <p class="wx-foot">{ext(L['nws'], 'Open the full NWS forecast', 'btn btn-ghost btn-sm')}</p>
+    </div>
   </div>
 </section>
 

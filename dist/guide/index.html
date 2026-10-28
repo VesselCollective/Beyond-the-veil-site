@@ -22,7 +22,7 @@
 <link rel="preload" href="/img/hero.webp" as="image" type="image/webp">
 <link rel="preload" href="/fonts/cinzel-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css?v=31">
+<link rel="stylesheet" href="/style.css?v=32">
 </head>
 <body class="guide-page">
 <a class="skip" href="#main">Skip to the guide</a>
@@ -86,8 +86,19 @@
     <p>We strongly encourage rideshare, carpools, and drop-offs. HAVAN sits in a remote part of the hills outside Austin, and finding a ride home late at night or early in the morning can be difficult, so please arrange your ride home before you arrive.</p><p>To make it easier, we&#x27;ve created a WhatsApp group just for Beyond the Veil guests. Join it to coordinate carpools to and from HAVAN.</p>
     <p class="center"><a class="btn btn-holo" href="https://chat.whatsapp.com/I1if1DSFr8KDo9C47AAp6F" target="_blank" rel="noopener">Join the rideshare WhatsApp group</a></p>
     <h3>Weather</h3>
-    <p>The night moves between indoor and outdoor spaces, and Hill Country nights in late October can turn cool after midnight. Check the forecast the day before and dress in layers.</p><p>For a live forecast map, open Google DeepMind&#x27;s Weather Lab, zoom in on Austin, and switch between the temperature and precipitation layers.</p>
-    <p class="center"><a class="btn btn-ghost" href="https://deepmind.google.com/science/weatherlab" target="_blank" rel="noopener">Check the forecast on Weather Lab</a></p>
+    <p>The night moves between indoor and outdoor spaces, and Hill Country nights in late October can turn cool after midnight. Check the forecast the day before and dress in layers.</p>
+    <div class="wx" data-lat="30.3275" data-lon="-97.9749">
+      <div class="wx-head">
+        <p class="wx-title">Live forecast for HAVAN</p>
+        <p class="wx-src">National Weather Service <span class="wx-updated"></span></p>
+      </div>
+      <div class="wx-tabs" role="tablist">
+        <button type="button" role="tab" aria-selected="true" data-view="night">Party night</button>
+        <button type="button" role="tab" aria-selected="false" data-view="week">Next 7 days</button>
+      </div>
+      <div class="wx-body" aria-live="polite"><p class="wx-msg">Loading the latest forecast…</p></div>
+      <p class="wx-foot"><a class="btn btn-ghost btn-sm" href="https://forecast.weather.gov/MapClick.php?lat=30.3275&amp;lon=-97.9749" target="_blank" rel="noopener">Open the full NWS forecast</a></p>
+    </div>
   </div>
 </section>
 
@@ -112,7 +123,7 @@
   <p>Questions: <a href="mailto:beyondtheveil.atx@gmail.com">beyondtheveil.atx@gmail.com</a></p>
   <p>This is a private invitation. Please don&#x27;t post this link publicly.</p>
 </footer>
-<script src="/veil.js?v=31" defer></script>
-<script src="/main.js?v=31" defer></script>
+<script src="/veil.js?v=32" defer></script>
+<script src="/main.js?v=32" defer></script>
 </body>
 </html>
