@@ -219,6 +219,9 @@ def guide_page():
     <h3>{e(vn['rides_label'])}</h3>
     {rides}
     <p class="center">{ext(L['whatsapp'], 'Join the rideshare WhatsApp group', 'btn btn-holo')}</p>
+    <h3>{e(vn['weather_label'])}</h3>
+    {"".join(f"<p>{e(p)}</p>" for p in vn['weather'])}
+    <p class="center">{ext(L['weatherlab'], 'Check the forecast on Weather Lab', 'btn btn-ghost')}</p>
   </div>
 </section>
 

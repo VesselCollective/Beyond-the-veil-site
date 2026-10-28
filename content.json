@@ -51,7 +51,8 @@
     "map": "https://maps.app.goo.gl/XPe5EBJudQ72DAZX9",
     "whatsapp": "https://chat.whatsapp.com/I1if1DSFr8KDo9C47AAp6F",
     "video_id": "0vq4PG9OyAU",
-    "email": "beyondtheveil.atx@gmail.com"
+    "email": "beyondtheveil.atx@gmail.com",
+    "weatherlab": "https://deepmind.google.com/science/weatherlab"
   },
   "invitation": {
     "greeting": "Welcome, epic being.",
@@ -669,6 +670,11 @@
         "src": "havan-aerial.webp",
         "alt": "An aerial view of HAVAN on its hilltop above the Lakeway valley"
       }
+    ],
+    "weather_label": "Weather",
+    "weather": [
+      "The night moves between indoor and outdoor spaces, and Hill Country nights in late October can turn cool after midnight. Check the forecast the day before and dress in layers.",
+      "For a live forecast map, open Google DeepMind's Weather Lab, zoom in on Austin, and switch between the temperature and precipitation layers."
     ]
   },
   "inside": {
