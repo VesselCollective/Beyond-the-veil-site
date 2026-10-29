@@ -715,36 +715,32 @@
     ]
   },
   "plusones": {
-    "title": "Nominate & sponsor a guest",
-    "text": "Beyond the Veil is a curated gathering. Our guest list has been carefully assembled.",
-    "noplus": "Your invitation is personal and doesn't include a plus-one.",
-    "ask": "Know someone who would add real magic to this night?",
-    "steps": [
-      [
-        "Nominate",
-        "Tell us who they are. You must be attending yourself."
-      ],
-      [
-        "We review",
-        "Our team reads every nomination. With so few places left, we can't promise a ticket."
-      ],
-      [
-        "We reach out",
-        "If there's a fit, we'll contact them directly."
-      ]
+    "title": "Nominate a Guest",
+    "noplus": "Your invite is personal. No plus-ones.",
+    "test_kicker": "The one-question test",
+    "test_q": "Would you share an RV with them at Burning Man?",
+    "yes_k": "Hell yes",
+    "yes_v": "Nominate them.",
+    "no_k": "Not sure",
+    "no_v": "Please don't.",
+    "fit_label": "We're looking for",
+    "fit": [
+      "People you'd trust in your camp",
+      "Kind, self-aware, consent-minded",
+      "Here to connect, dance and play"
     ],
-    "sponsor_head": "Nominate someone, and you become their sponsor.",
+    "nofit_label": "Not a fit",
+    "nofit": [
+      "Someone you only kind of know",
+      "Anyone who needs looking after",
+      "Anyone you'd have to apologize for"
+    ],
+    "sponsor_head": "You're their sponsor",
     "sponsor_points": [
-      [
-        "You're attending.",
-        "You must be at Beyond the Veil yourself."
-      ],
-      [
-        "You vouch for them.",
-        "They'll honor the group agreement and care for the room and the people in it."
-      ]
-    ],
-    "sponsor_note": "Nominations from anyone not attending won't be reviewed."
+      "You must be attending yourself.",
+      "You vouch for how they show up.",
+      "Few spots left, so no guarantees. If it's a fit, we'll reach out to them."
+    ]
   },
   "faq": [
     {
@@ -757,7 +753,7 @@
     },
     {
       "q": "Who can nominate a guest?",
-      "a": "Only people who are attending. When you nominate someone, you sponsor them: you vouch for them and you're responsible for how they show up."
+      "a": "Only people who are attending. Use one test: would you share an RV with them at Burning Man? If you're not sure, please don't nominate them. When you nominate someone, you sponsor them: you vouch for them and you're responsible for how they show up."
     },
     {
       "q": "When should I arrive?",

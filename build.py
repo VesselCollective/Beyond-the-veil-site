@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "33"
+VERSION = "34"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -530,14 +530,22 @@ def index_page():
 <section id="nominate" class="nominate" aria-labelledby="nominate-h">
   <div class="wrap center">
     {heading(po['title'], 'nominate-h')}
-    <p class="nom-intro">{e(po['text'])}</p>
     <p class="noplus">{e(po['noplus'])}</p>
-    <p class="nom-ask">{e(po['ask'])}</p>
-    <ol class="nom-steps">{"".join(f'<li><span class="nom-num">{i}</span><strong>{e(t)}</strong><span>{e(d)}</span></li>' for i, (t, d) in enumerate(po['steps'], 1))}</ol>
+    <div class="rvtest">
+      <p class="rv-kicker">{e(po['test_kicker'])}</p>
+      <p class="rv-q">{e(po['test_q'])}</p>
+      <div class="rv-answers">
+        <p class="rv-yes"><span aria-hidden="true">&#10003;</span><strong>{e(po['yes_k'])}</strong>{e(po['yes_v'])}</p>
+        <p class="rv-no"><span aria-hidden="true">&#10005;</span><strong>{e(po['no_k'])}</strong>{e(po['no_v'])}</p>
+      </div>
+    </div>
+    <div class="fitcols">
+      <div class="fit-yes"><p class="fit-label">{e(po['fit_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in po['fit'])}</ul></div>
+      <div class="fit-no"><p class="fit-label">{e(po['nofit_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in po['nofit'])}</ul></div>
+    </div>
     <div class="sponsor">
       <p class="sponsor-head">{e(po['sponsor_head'])}</p>
-      <ul>{"".join(f"<li><strong>{e(a)}</strong> {e(t)}</li>" for a, t in po['sponsor_points'])}</ul>
-      <p class="sponsor-note">{e(po['sponsor_note'])}</p>
+      <ul>{"".join(f"<li>{e(x)}</li>" for x in po['sponsor_points'])}</ul>
     </div>
     {ext(L['nominate'], 'Nominate a guest')}
   </div>
