@@ -727,3 +727,12 @@ footer .fine { font-size: .8em; margin-top: 1.4rem; }
 .nominate .sponsor ul { margin-bottom: 0; }
 .nominate .sponsor li { padding-left: 1.4rem; }
 @media (max-width: 400px) { .fitcols { grid-template-columns: 1fr; } }
+
+/* Nominate v3: headline + stacked fit lists */
+.nom-headline { max-width: 30rem; margin: 1.8rem auto 1.1rem; font-family: var(--script); font-style: italic; font-weight: 500; font-size: clamp(1.45rem, 1.15rem + 1.2vw, 1.9rem); line-height: 1.2; color: #fff; text-wrap: balance; }
+.fitcols { grid-template-columns: 1fr; max-width: 34rem; gap: .7rem; }
+.fitcols > div { padding: 1.1rem 1.2rem; }
+.fitcols ul { gap: .65rem; font-size: .98rem; line-height: 1.45; }
+.fitcols li { padding-left: 1.35rem; }
+.fit-yes li strong { color: #fff; font-weight: 600; }
+.fit-no li strong { color: var(--gold); font-weight: 600; }

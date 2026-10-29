@@ -15,7 +15,7 @@ DIST = ROOT / "dist"
 C = json.loads((ROOT / "content.json").read_text())
 e = html.escape
 L = C["links"]
-VERSION = "35"
+VERSION = "36"
 GEM = '<span class="gem" aria-hidden="true"></span>'
 BUY = "Buy tickets"
 
@@ -539,9 +539,10 @@ def index_page():
         <p class="rv-no"><span aria-hidden="true">&#10005;</span><strong>{e(po['no_k'])}</strong>{e(po['no_v'])}</p>
       </div>
     </div>
+    <p class="nom-headline">{e(po['headline'])}</p>
     <div class="fitcols">
-      <div class="fit-yes"><p class="fit-label">{e(po['fit_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in po['fit'])}</ul></div>
-      <div class="fit-no"><p class="fit-label">{e(po['nofit_label'])}</p><ul>{"".join(f"<li>{e(x)}</li>" for x in po['nofit'])}</ul></div>
+      <div class="fit-yes"><p class="fit-label">{e(po['fit_label'])}</p><ul>{"".join(f"<li><strong>{e(k)}</strong> {e(v)}</li>" for k, v in po['fit'])}</ul></div>
+      <div class="fit-no"><p class="fit-label">{e(po['nofit_label'])}</p><ul>{"".join(f"<li><strong>{e(k)}</strong> {e(v)}</li>" for k, v in po['nofit'])}</ul></div>
     </div>
     <div class="sponsor">
       <p class="sponsor-head">{e(po['sponsor_head'])}</p>

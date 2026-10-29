@@ -725,22 +725,49 @@
     "no_v": "Please don't.",
     "fit_label": "We're looking for",
     "fit": [
-      "People you'd trust in your camp",
-      "Kind, self-aware, consent-minded",
-      "Here to connect, dance and play"
+      [
+        "Becoming.",
+        "They want to step into the light side as the boldest version of themselves."
+      ],
+      [
+        "Creating.",
+        "Making the costume is part of the experience for them, not a last-minute errand."
+      ],
+      [
+        "Committing.",
+        "They're through the gate by 8 PM, before it closes for the opening ceremony."
+      ],
+      [
+        "Shining.",
+        "They bring their gifts and their energy into the room."
+      ]
     ],
     "nofit_label": "Not a fit",
     "nofit": [
-      "Someone you only kind of know",
-      "Anyone who needs looking after",
-      "Anyone you'd have to apologize for"
+      [
+        "Costume optional.",
+        "They plan to throw something on at the last minute."
+      ],
+      [
+        "Coasting.",
+        "They'd rather watch than step in."
+      ],
+      [
+        "Fashionably late.",
+        "They'll roll in after the gate closes."
+      ],
+      [
+        "Hiding.",
+        "They'd wear a costume to blend in, not to be seen."
+      ]
     ],
     "sponsor_head": "You're their sponsor",
     "sponsor_points": [
       "You must be attending yourself.",
       "You vouch for how they show up.",
       "Few spots left, so no guarantees. If it's a fit, we'll reach out to them."
-    ]
+    ],
+    "headline": "This night is for people ready to let the try die and let their gift live."
   },
   "faq": [
     {
